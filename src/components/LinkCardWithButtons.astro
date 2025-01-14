@@ -1,0 +1,84 @@
+---
+import { LinkButton } from '@astrojs/starlight/components';
+
+type LinkCardButton = {
+  title: string;
+  url: string;
+};
+
+// Props type definition
+interface Props {
+  actions: LinkCardButton[];
+  title: String;
+  description: String;
+}
+
+const {
+    title,
+    description,
+    actions = [],
+    ...attributes
+  }: Props = Astro.props;
+---
+
+<div class="sl-link-card">
+	<span class="sl-flex stack">
+		<span class="title">{title}</span>
+		{description && <span class="description">{description}</span>}
+	</span>
+    {
+        actions.length > 0 && (
+            <div class="sl-flex actions">
+                {actions.map(
+                    ({ title, url}) => (
+                        <LinkButton href={url} variant='primary'>
+                            {title}
+                        </LinkButton>
+                    )
+                )}
+            </div>
+        )
+    }
+</div>
+
+<style>
+	.sl-link-card {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 0.5rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding: 1rem;
+		box-shadow: var(--sl-shadow-sm);
+		position: relative;
+        text-align: center;
+	}
+
+    .actions {
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.stack {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.title {
+		color: var(--sl-color-white);
+		font-weight: 600;
+		font-size: var(--sl-text-lg);
+	}
+
+	.description {
+		color: var(--sl-color-gray-3);
+		line-height: 1.5;
+	}
+
+	.icon {
+		color: var(--sl-color-gray-3);
+	}
+
+
+</style>

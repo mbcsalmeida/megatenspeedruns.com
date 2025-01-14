@@ -1,0 +1,49 @@
+---
+title: Megaten Speedrun Resources
+description: Megaten Speedrun Resources website.
+template: splash
+hero:
+  tagline: This website is a collection of references to sources of information and guides on speedrunning Megaten games.
+  actions:
+    - text: Explore Resources
+      link: /smt/smt1/
+      icon: right-arrow
+    - text: Twitch Team
+      link: https://starlight.astro.build
+      icon: external
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '../../components/LinkCardWithBackground.astro';
+import myImportedImage from '../../assets/houston.webp';
+
+<CardGrid>
+	<LinkCard title="Shin Megami Tensei" href="/smt/">
+	</LinkCard>
+	<LinkCard title="Persona" href="/persona/">
+	</LinkCard>
+	<LinkCard title="Devil Summoner" href="/devilsummoner/">
+	</LinkCard>
+	<LinkCard title="Digital Devil Saga" href="/dds/">
+	</LinkCard>
+	<LinkCard title="Metaphor: ReFantazio" href="/metaphor/">
+	</LinkCard>
+	<LinkCard title="Devil Children" href="/devilchildren/">
+	</LinkCard>
+	<LinkCard title="Last Bible" href="/lastbible/">
+	</LinkCard>
+	<LinkCard title="Others" href="/others/">
+	</LinkCard>
+	<LinkCardWithBackground
+    title="Community Resources"
+    description="Join the Astro community and discover resources."
+    href="https://astro.build/community"
+    srcUrl={myImportedImage}
+    alt="Community Resources Background"
+  />
+</CardGrid>
+
+
+#### Maintained by the Megaten Speedruns Community
+
+If you'd like to contribute, please join our Discord server.
