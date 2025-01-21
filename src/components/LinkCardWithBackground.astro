@@ -1,20 +1,19 @@
 ---
 import { Image } from 'astro:assets';
 
-
 const {
     title,
     description,
-    href,
-    srcUrl,
+    imagePath,
     alt = 'Background Image', 
     ...attributes
   } = Astro.props;
+
 ---
 
 <div class="sl-link-card">
     <Image
-     src={srcUrl},
+     src={imagePath},
      alt={alt},
      class="background"
     />
@@ -31,9 +30,9 @@ const {
 		display: grid;
 		grid-template-columns: 1fr auto;
 		gap: 0.5rem;
-		border: 1px solid var(--sl-color-gray-5);
+		border: 1px solid white;
 		border-radius: 0.5rem;
-		padding: 3rem;
+		padding: 5rem;
 		box-shadow: var(--sl-shadow-sm);
 		position: relative;
         text-align: center;

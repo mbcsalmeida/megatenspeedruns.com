@@ -3,12 +3,59 @@ title: Shin Megami Tensei Devil Summoner
 description: All Resources for Shin Megami Tensei Devil Summoner
 ---
 
-import { LinkCard,Card, CardGrid } from '@astrojs/starlight/components';
 
-Description of the game
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '../../../components/DocsHero.astro'
+import cover from '/src/assets/covers/devilsummoner/ds-ss.png'
+
+<DocsHero 
+    content="Shin Megami Tensei: Devil Summoner is the first entry in the Devil Summoner series."
+    srcUrl={cover}
+    alt="Shin Megami Tensei Devil Summoner Cover"
+/>
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/dsm" description="See all the submitted runs on Speedrun.com"/>
 
-## Sega Saturn
+## Speedrun History
+<Tabs>
+<TabItem label="Any% - PSP">
+<Steps>
+1. Devil Summoner was released in Japan on December 25, 1995.
+2. The first recorded speedrun was done by sioneus on 2021/08/25 with a time of **3:10:57** later improved to [**2:39:09**](https://www.twitch.tv/videos/1129250187)
+3. On 2023/12/22, ToxicTT showcased his new manip route and obtained a time of [**1:4912**](https://www.twitch.tv/videos/2011224710)
+4. The current world record is held by ToxicTT done on 2024/06/12 with a time of [**1:22:09**](https://www.twitch.tv/videos/2170411533)
+</Steps>
+</TabItem>
 
-## PSP Version
+<TabItem label="Any% - Sega Saturn">
+<Steps>
+1. Devil Summoner was released in Japan on December 22, 2005.
+2. There are details of a Sega Saturn run by [hirosue_peer](http://blog.livedoor.jp/hirosue_peer/archives/51923552.html#more) with an alleged time of **** but not recording.
+3. The current world record seems to be [**5:00:44**](https://youtu.be/mSqw5wxS4kg?si=D1GYFKgOmtiZCjWv) by Ucchare.
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Any% - PSP">Complete the game as fast as possible. Step manip is allowed.</Card>
+    <Card title="Any% - Sega Saturn">Complete the game as fast as possible.</Card>
+</CardGrid>
+
+## Glitches & Tricks
+<details>
+<summary>**One-way door skip**</summary>
+
+If you save in front of a one-way door and reload the game, you can pass through it. 
+</details>
+
+## Notes
+- [Reflection Route - Sega Saturn](http://blog.livedoor.jp/hirosue_peer/archives/51920261.html) by hirosue_peer
+- [Any% - Manipless notes - PSP](https://sioneus.me/notes/devsum) by sioneus
+- [Any% - Maniped notes - PSP](https://drive.google.com/file/d/1usmiIcoktgdbDrXDjk9DKvuGJsvwwahS/view?usp=sharing) by ToxicTT
+
+## Resources
+- [atwiki - Sega Saturn](https://w.atwiki.jp/devilsummoner/pages/8.html)
+- [atwiki - PSP](https://w.atwiki.jp/devilsummoner/pages/401.html)
+- [PSP - Manip Research](https://docs.google.com/document/d/1MR4vNeT9zWdZGytsVQ7VpFI4NeRKdDpL1O-SC1c5TIE/edit?usp=sharing)
+- [PSP - Speedrun data](https://docs.google.com/spreadsheets/d/1wQD9vwD8gQpxl1ZmbyizgbarcfeeiH9ssTWOG_Z4o2w/edit?usp=sharing)

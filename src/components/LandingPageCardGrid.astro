@@ -1,0 +1,15 @@
+---
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from './LinkCardWithBackground.astro';
+
+const images = await Astro.glob("/src/assets/landing/*").then(files => {
+  return files.map(file => file.default);
+});
+---
+
+<CardGrid>
+    {images.map((image) => (
+        <LinkCardWithBackground title="Text" href="/smt/" imagePath={image} />
+    )
+    )}
+</CardGrid>

@@ -8,40 +8,37 @@ hero:
     - text: Explore Resources
       link: /smt/smt1/
       icon: right-arrow
-    - text: Twitch Team
-      link: https://starlight.astro.build
-      icon: external
+    - text: Events
+      link: /events
+      icon: star
+
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '../../components/LinkCardWithBackground.astro';
-import myImportedImage from '../../assets/houston.webp';
+import smtImage from '/src/assets/landing/smt.png';
+import personaImage from '/src/assets/landing/persona.jpg';
+import dsumImage from '/src/assets/landing/devilsummoner.jpg';
+import ddsImage from '/src/assets/landing/dds.avif';
+import devichilImage from '/src/assets/landing/devilchildren.avif';
+import metaphorImage from '/src/assets/landing/metaphor.jpg';
+import lastbibleImage from '/src/assets/landing/lastbible.jpg';
+import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
+import othersImage from '/src/assets/landing/others.png';
 
 <CardGrid>
-	<LinkCard title="Shin Megami Tensei" href="/smt/">
-	</LinkCard>
-	<LinkCard title="Persona" href="/persona/">
-	</LinkCard>
-	<LinkCard title="Devil Summoner" href="/devilsummoner/">
-	</LinkCard>
-	<LinkCard title="Digital Devil Saga" href="/dds/">
-	</LinkCard>
-	<LinkCard title="Metaphor: ReFantazio" href="/metaphor/">
-	</LinkCard>
-	<LinkCard title="Devil Children" href="/devilchildren/">
-	</LinkCard>
-	<LinkCard title="Last Bible" href="/lastbible/">
-	</LinkCard>
-	<LinkCard title="Others" href="/others/">
-	</LinkCard>
-	<LinkCardWithBackground
-    title="Community Resources"
-    description="Join the Astro community and discover resources."
-    href="https://astro.build/community"
-    srcUrl={myImportedImage}
-    alt="Community Resources Background"
-  />
+	<LinkCardWithBackground title="Shin Megami Tensei" href="/smt/smt1" imagePath={smtImage} alt="Click here for SMT Resources" />
+	<LinkCardWithBackground title="Persona" href="/persona/persona1" imagePath={personaImage} alt="Click here for Persona Resources"/>
+	<LinkCardWithBackground title="Devil Summoner" href="/devilsummoner/devilsummoner" imagePath={dsumImage} alt="Click here for Devil Summoner Resources"/>
+	<LinkCardWithBackground title="Digital Devil Saga" href="/dds/dds1" imagePath={ddsImage} alt="Click here for DDS Resources"/>
+	<LinkCardWithBackground title="Metaphor: ReFantazio" href="/metaphor/metaphor-re" imagePath={metaphorImage} alt="Click here for Metaphor Resources"/>
+	<LinkCardWithBackground title="Devil Children" href="/devilchildren/redblack" imagePath={devichilImage} alt="Click here for Devil Children Resources"/>
+	<LinkCardWithBackground title="Last Bible" href="/lastbible/lb1" imagePath={lastbibleImage} alt="Click here for Last Bible Resources"/>
+	<LinkCardWithBackground title="Devil Survivor" href="/devilsurvivor/ds1" imagePath={survivorImage} alt="Click here for other Resources"/>
+  <LinkCardWithBackground title="Others" href="/others/mt1" imagePath={othersImage} alt="Click here for other Resources"/>
 </CardGrid>
+
+
 
 
 #### Maintained by the Megaten Speedruns Community

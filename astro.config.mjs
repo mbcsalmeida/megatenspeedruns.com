@@ -11,11 +11,14 @@ export default defineConfig({
 				"jp" : "メガテンRTA全書",
 			},
 			logo: {
-				src: "./src/assets/houston.webp",
+				src: "./src/assets/logo.png",
 				replacesTitle: true
 			},
 			favicon: "favicon.png",
-			customCss: ["./src/globals.css"],
+			customCss: [
+				"./src/globals.css",
+				"@fontsource/dm-serif-display/400.css"
+			],
 			social: {
 				discord: "https://discord.gg/pwe7yncyHF",
 				twitch: "https://www.twitch.tv/team/smtspeedrunning",
@@ -55,6 +58,10 @@ export default defineConfig({
 				{
 					label: "Devil Children",
 					autogenerate: {directory: "devilchildren"}
+				},
+				{
+					label: "Devil Survivor",
+					autogenerate: {directory: "devilsurvivor"}
 				},
 				{
 					label: "Last Bible",

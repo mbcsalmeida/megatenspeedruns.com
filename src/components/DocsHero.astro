@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+
+const {
+    content,
+    srcUrl,
+    alt
+} = Astro.props
+---
+
+<div class="sl-flex">
+    <span>
+        {content}
+    </span>
+    <Image 
+        src={srcUrl}
+        alt={alt}
+        class="imgSize"
+    />
+</div>
+
+<style>
+    .imgSize{
+        max-width: 30% !important;
+    }
+</style>
