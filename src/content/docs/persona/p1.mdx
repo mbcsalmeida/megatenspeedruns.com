@@ -1,0 +1,62 @@
+---
+title: Persona 1
+description: All Resources for Persona 1
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p1-ps1.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 1 is the first entry in the Persona series, deviating from the traditional SMT gameplay of using demons as party members and instead having a party full of human characters, each with a specific demon, known as a persona. The main character has a starting persona and can from there obtain and fuse others."
+    srcUrl={cover}
+    alt="Persona 1 Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
+    [
+        {title:"Revelations: Persona",
+        url:"https://www.speedrun.com/revelations_persona"},
+        {title:"Shin Megami Tensei: Persona",
+        url:"https://www.speedrun.com/smtp"}
+    ]
+}/>
+
+## Speedrun History
+<Tabs>
+    <TabItem label="PS1 - SEBEC">
+        <Steps>
+            1. Relevations: Persona was released in Japan on September 20, 1996.
+            2. The current world record holder is Supergamer57 with a time of [**8:12:35**]()
+        </Steps>
+    </TabItem>
+    <TabItem label="PSP - SEBEC">
+        <Steps>
+            1. Shin Megami Tensei: Persona was released in Japan on April 29, 2009.
+            2. The current world record holder is Tick_Show with a time of [**2:51:05**]()
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## Categories
+<CardGrid>
+    <Card title="SEBEC"></Card>
+    <Card title="Snow Queen Quest"></Card>
+</CardGrid>
+
+## Glitches & Tricks
+- [Explanation of **Latent Ressurection**](https://docs.google.com/document/d/1kTg6F_4B4_KlQRtoJTnOHh7EltJZE96BOOVgs71YRaI/edit?usp=sharing)
+- [RNG Manip Tutorial Video for the PSP version](https://www.youtube.com/watch?v=XbeCnspdEtw)
+
+## Notes
+- [PSX - SQQ Bad Ending](https://docs.google.com/document/d/1r72GQq2kGc8mkSHD6bxKtGBw8nPl5kOj/edit?usp=sharing) by ToxicTT
+- [PSP - SEBEC RNG Manip Notes](https://docs.google.com/document/d/1wpqpY8Txhs3VinAd5Q361gkvQDpR6WhLEUsGA6fKp_c/edit?usp=sharing) by Worldie
+- [PSP - SQQ Good Ending Notes](https://docs.google.com/document/d/1-07b4bMfO0mvx16YeJopYE0TNm3F5_LG6gH0nEpExgQ/edit?usp=sharing) by jojo07
+- [PSP - SQQ Bad Ending Notes](https://docs.google.com/document/d/1RbL2I2R3N77hSb4fFA1mEFEHaCSAplOKwuXPuToRwhA/edit?usp=sharing) by Lonne
+- [PSP - SEBEC Notes](https://pastebin.com/0Wf7rGW3) by Mauve
+
+## Resources
+- [atwiki](https://w.atwiki.jp/persona1/)
+- [wikidot](http://persona1.wikidot.com/)

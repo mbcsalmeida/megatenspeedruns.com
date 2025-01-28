@@ -1,0 +1,54 @@
+---
+title: Persona Q
+description: All Resources for Persona Q
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/pq.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona Q is a duology of Persona spin-offs featuring the characters from Persona 3, Persona 4 and Persona 5 and a gameplay similar to the Etrian Odyssey series."
+    srcUrl={cover}
+    alt="Persona Q Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
+    [
+        {title:"Persona Q: Shadow of the Labyrinth",
+        url:"https://www.speedrun.com/persona_q_shadow_of_the_labyrinth"},
+        {title:"Persona Q2: New Cinema Labyrinth",
+        url:"https://www.speedrun.com/persona_q2_new_cinema_labyrinth"}
+    ]
+}/>
+
+## Speedrun History
+<Tabs>
+    <TabItem label="Persona Q: Shadow of the Labyrinth">
+        <Steps>
+            1. Persona Q: Shadow of the Labyrinth was released in Japan on June 5, 2014.
+            2. The current world record holder is PinkPajamas, with a run completed on Risky difficulty, with a time of [**8:37:37**]()
+        </Steps>
+    </TabItem>
+    <TabItem label="Persona Q2: New Cinema Labyrinth">
+        <Steps>
+            1. Persona Q2: New Cinema Labyrinth was released in Japan on November 29, 2018.
+            2. The current world record holder is PinkPajamas, with a run completed on Risky difficulty, with a time of [**9:58:44**]()
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Any%">Complete the game, usage of play coins is prohibitted. There is a subcategory for each difficulty.</Card>
+</CardGrid>
+
+## Notes
+- [PQ - Any% - Risky](https://docs.google.com/document/d/1PXUCNG59DiLiK1aEfT17fWBZAdIbO9CAuuR7uScn0N8/edit) by PinkPajamas
+- [PQ2 - Any% - Risky](https://docs.google.com/document/d/1-xB_ckHZ6Xxui9R12d7Jp9Lq79T0TyacKV7EDTw7CHE/edit) by PinkPajamas
+
+## Resources
+- [PQ2 Skill Table](https://docs.google.com/spreadsheets/d/12X88sV7k2R-IpZ0-6pwEL_A-NNcp7KT7ktl1d1qV63s/edit#gid=625594584)
+- [PQ2 Enemy Table](https://docs.google.com/spreadsheets/d/1Kjb0pebf_gatrRBz2zU5z-QoltKIZaSHT2EIN1ReeLw/edit#gid=1943148282)
+- [PQ2 Chest List](https://pastebin.com/xSYnRC9J)

@@ -1,0 +1,98 @@
+---
+import { Image } from 'astro:assets';
+
+const {
+    title,
+    description,
+    imagePath,
+    alt = 'Background Image', 
+    ...attributes
+  } = Astro.props;
+
+---
+
+<div class="sl-link-card">
+    <Image
+     src={imagePath},
+     alt={alt},
+     class="background"
+    />
+	<span class="sl-flex stack">
+		<a {...attributes}>
+			<span class="title" set:html={title} />
+		</a>
+		{description && <span class="description" set:html={description} />}
+	</span>
+</div>
+
+<style>
+	.sl-link-card {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 0.5rem;
+		border: 1px solid white;
+		border-radius: 0.5rem;
+		padding: 5rem;
+		box-shadow: var(--sl-shadow-sm);
+		position: relative;
+        text-align: center;
+	}
+
+    .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.6; /* Adjust for visibility */
+	object-fit: cover;
+  }
+
+	a {
+		text-decoration: none;
+		line-height: var(--sl-line-height-headings);
+	}
+
+	/* a11y fix for https://github.com/withastro/starlight/issues/487 */
+	a::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+	}
+
+	.stack {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.title {
+		color: var(--sl-color-white);
+		font-weight: 600;
+		font-size: var(--sl-text-lg);
+	}
+
+	.description {
+		color: var(--sl-color-gray-3);
+		line-height: 1.5;
+	}
+
+	.icon {
+		color: var(--sl-color-gray-3);
+	}
+
+	/* Hover state */
+	.sl-link-card:hover {
+		background: var(--sl-color-gray-7, var(--sl-color-gray-6));
+		border-color: var(--sl-color-gray-2);
+		opacity: 0.8;
+	}
+
+	.sl-link-card:hover .icon {
+		color: var(--sl-color-white);
+	}
+</style>

@@ -1,0 +1,63 @@
+---
+title: Tokyo Mirage Sessions
+description: All Resources for Tokyo Mirage Sessions
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import tmsCover from '/src/assets/covers/others/tms.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Tokyo Mirage Sessions ♯FE s a crossover between Atlus' Shin Megami Tensei franchise and Nintendo's Fire Emblem series, despite showing no particular features of either series, other than spell names."
+    srcUrl={tmsCover}
+    alt="Tokyo Mirage Sessions Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
+    [
+        {title:"Tokyo Mirage Sessions #FE",
+        url:"https://www.speedrun.com/tms_fe"},
+        {title:"Tokyo Mirage Sessions #FE Encore",
+        url:"https://www.speedrun.com/tms_fe_encore"}
+    ]
+}/>
+
+## Speedrun History
+
+<Tabs>
+<TabItem label="Hard, NG - Wii U">
+<Steps>
+1. Tokyo Mirage Sessions #FE was released in Japan on December 26, 2015.
+2. The first recorded speedrun was done by O-den on 2017/05/03 with a time of [**11:12:55**](https://www.nicovideo.jp/watch/sm31141771)
+3. On 2018/04/29 legrandgrand improved the world record to a time of [**11:15:36**](https://www.twitch.tv/videos/256836198) with improvements on HeroMystic's route.
+4. On 2018/05/06, HeroMystic took back the world record with a time of [**10:30:45**](https://www.twitch.tv/videos/258238938).
+5. 0n 2018/05/09, legrandgrand reclaimed the world record with a time of [**9:12:15](https://youtu.be/noBNKezb4TI).
+6. The current world record is [**8:52:42**](https://youtu.be/HIhQ-qu3Oi8) held by legrandgrand.
+</Steps>
+</TabItem>
+
+<TabItem label="Hard, NG - Switch">
+<Steps>
+1. Tokyo Mirage Sessions #FE Encore was released in Japan on January 17, 2020.
+2. The first recorded speedrun was done by legrandgrand with a time of [**8:29:58**](https://www.twitch.tv/videos/542257073).
+3. The current world record is held by legrandgrand with a time of [**7:17:21**](https://www.twitch.tv/videos/549294476).
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Hard, NG"></Card>
+    <Card title="Easy, NG"></Card>
+    <Card title="Normal, NG+"></Card>
+    <Card title="Lunatic, NG (Best END)">Start a new game file on Lunatic Difficulty and obtain the Director Outfit for Itsuki by clearing all side stories (best ending).</Card>
+</CardGrid>
+
+## Notes
+- [Wii U - Hard, NG](https://pastebin.com/umeHrwTs) by legrandgrand
+- [Wii U - Easy, NG](https://emilybrooks.github.io/tms/) by emilybrooks
+- [Switch - Hard, NG](https://pastebin.com/umeHrwTs) by legrandgrand
+
+## Resources
+- [Data Sheet](https://docs.google.com/spreadsheets/d/1LSA0F4c_j0e_xB9Kya5Rl43bWEsGD9NGIAJS9rYwfQk/edit#gid=0)

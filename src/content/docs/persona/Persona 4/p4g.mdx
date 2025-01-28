@@ -1,0 +1,44 @@
+---
+title: Persona 4 Golden
+description: All Resources for Persona 4
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p4g.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 4 is the fourth mainline entry in the persona series."
+    srcUrl={cover}
+    alt="Persona 4 Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p4g" description="See all the submitted runs on Speedrun.com"/>
+
+## Speedrun History
+<Tabs syncKey='persona4'>
+    <TabItem label="Hard, Golden Ending">
+        <Steps>
+            1. Persona 4: Golden was released in Japan on June 14, 2012.
+            2. The current world record holder is mulsqi with a time of [**5:52:15**]()
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Hard, Golden Ending"></Card>
+    <Card title="Hard, Golden Ending NMG"></Card>
+    <Card title="Very Hard, Golden Ending"></Card>
+    <Card title="Any%"></Card>
+    <Card title="NG+, Golden Ending"></Card>
+</CardGrid>
+
+## Notes
+- [Vita - Hard, Golden Ending](https://www.speedrun.com/ja-JP/p4g/guides/itd10) by asapaska
+- [PC - Hard, Golden Ending](https://www.speedrun.com/ja-JP/p4g/guides/g2225) by Ford373
+- [Any%](https://pastebin.com/E8dEq0yD) by mulsqi
+
+## Resources
+- [Golden Manip Sheet](https://docs.google.com/spreadsheets/d/1azMTPr7T1naao0vXywZMd1p3SvFHBeCUFKIxmMHif-4/edit#gid=0)
