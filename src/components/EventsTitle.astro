@@ -1,0 +1,27 @@
+---
+// Import your page metadata
+
+const { title, year } = Astro.props;
+---
+
+<span>
+    <h2>{title}</h2>
+    <h5>{year}</h5>
+</span>
+
+<style>
+    h5, h4, h2, a{
+        color: white !important;
+      }
+
+      @media (max-width: 768px) {
+
+        h2 {
+          font-size: 1.6rem; /* Adjust heading sizes */
+        }
+
+        h5 {
+          font-size: 1rem; /* Adjust subheading sizes */
+        }
+      }
+</style>

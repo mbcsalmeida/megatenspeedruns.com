@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+
+type GameGridItem = {
+    url: string;
+    altText: string;
+    imagePath: ImageMetadata;
+}
+
+interface Props {
+    mobilePlaylistUrl: string;
+    gameList: GameGridItem[];
+}
+
+const { mobilePlaylistUrl, gameList = [], ...attributes } : Props = Astro.props;
+---
+
+
+
+<>
+<a class="mobile-grid" href={mobilePlaylistUrl}>
+    <h4>Playlist</h4>
+  </a>
+  {
+        gameList.length > 0 && (
+            <div class="image-grid">
+                {gameList.map(
+                    ({ url, altText, imagePath}) => (
+                        <div class="grid-item">
+                            <a href={url}>
+                                <Image src={imagePath} alt={altText} class="grid-item-img"/>
+                            </a>
+                        </div>
+                    )
+                )}
+            </div>
+        )
+    }
+  
+</>
+
+<style>
+    .mobile-grid{
+        display: none;
+    }
+
+    .grid-item {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+    .grid-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 0;
+    }
+
+    .grid-item-img:hover {
+    transform: scale(1.05);
+    }
+
+    .grid-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .image-grid {
+          display: none;
+        }
+
+        .mobile-grid{
+          display: inline;
+        }
+      }
+
+</style>

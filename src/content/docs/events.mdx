@@ -1,5 +1,239 @@
 ---
 title: Community Events
-layout: /src/components/EventsHero.astro
 template: splash
 ---
+
+import { Image } from 'astro:assets';
+import EventsTitle from '/src/components/EventsTitle.astro';
+import EventsGameGrid from '/src/components/EventsGameGrid.astro';
+
+import dds1 from '/src/assets/logos/dds1.png';
+import smt4a from '/src/assets/logos/smt4a.png';
+import p4g from '/src/assets/logos/p4g.png';
+import smt3 from "/src/assets/logos/nocturne.png";
+import smt1 from '/src/assets/logos/smt1.png';
+import smt2 from "/src/assets/logos/smt2.png";
+import smtsjr from "/src/assets/logos/smtsjr.png";
+import tms from "/src/assets/logos/tms.png";
+import demikidsdark from "/src/assets/logos/demikidsdark.png";
+import dds2 from "/src/assets/logos/dds2.png";
+import smt4 from "/src/assets/logos/smt4.png";
+import mt2 from "/src/assets/logos/mt2.png";
+import smt5 from "/src/assets/logos/smt5.png";
+import redblack from "/src/assets/logos/redblackps1.avif";
+import sh from "/src/assets/logos/sh3ds.png";
+import desurb2 from "/src/assets/logos/desurb2.png";
+import fes from "/src/assets/logos/p3fes.png";
+import smt5v from "/src/assets/logos/smt5v.png";
+import persona1 from "/src/assets/logos/persona1.webp";
+import smt3hd from "/src/assets/logos/smt3hd.png";
+import smtif from "/src/assets/logos/smtif.png";
+import sh2 from "/src/assets/logos/sh2.png";
+
+import marathon1 from "/src/assets/events/marathon1.png";
+import marathon2 from "/src/assets/events/marathon2.png";
+import marathon3 from "/src/assets/events/marathon3.png";
+import marathon4 from "/src/assets/events/marathon4.png";
+
+<div class="not-content">
+    <div class="parallax-section">
+        <Image src={marathon1} alt={"aa"} class="marathon-image"/>
+        <div class="text-container text-container-content">
+            <EventsTitle title="Shin Megami Tensei Marathon" year="2017" />
+            <EventsGameGrid mobilePlaylistUrl="https://www.youtube.com/playlist?list=PL8PZB25uZuZ4C6Bs_2uVr6FqVPly8_l2S"  
+                gameList={
+                    [
+                        {url: "https://youtu.be/STNDEtnqF0w?si=9x5HZdPV9mrGj6KD",
+                        altText: "DDS1 by PinkPajamas",
+                        imagePath: dds1},
+                        {url: "https://youtu.be/SaqQ3u_mOaE?si=B27cQVbbRYKmYKh1",
+                        altText: "SMT4 Apocalypse by ChampionBeef",
+                        imagePath: smt4a},
+                        {url: "https://youtu.be/Kis6r4PVbk4?si=4rMKtgd6Bd4sasJK",
+                        altText: "P4G by Ghoul02",
+                        imagePath: p4g},
+                        {url: "https://youtu.be/b4oZSIdTgWA?si=iOKl5bS7DVACleoC",
+                        altText:"Shin Megami Tensei: Nocturne by PinkPajamas",
+                        imagePath: smt3}
+                    ]
+                }
+            />
+        </div>
+    </div>
+    <div class="parallax-section">
+        <Image src={marathon2} alt={"aa"} class="marathon-image"/>
+        <div class="text-container text-container-content">
+            <EventsTitle title="Shin Megami Tensei Marathon II" year="2022" />
+            <EventsGameGrid 
+                mobilePlaylistUrl="https://www.youtube.com/playlist?list=PL8PZB25uZuZ4VPFr6jH3j5xa0Glouhgr6"
+                gameList={[
+                    {
+                        url: "https://youtu.be/QHgiZkcgZtY?si=lWeGlUs4DOezX6mr",
+                        altText: "SMT1 Race by Sioneus and FilthyBlasphemer",
+                        imagePath: smt1
+                    },
+                    {
+                        url: "https://youtu.be/__JezO0YNTI?si=7QQ8WEsWJn8EvEw9",
+                        altText: "SMT2 by Electra_rta",
+                        imagePath: smt2
+                    },
+                    {
+                        url: "https://youtu.be/dJFTDdfZhjY?si=aSmWzCd2oTXbZIQK",
+                        altText: "SMT:SJ Redux by PinkPajamas",
+                        imagePath: smtsjr
+                    },
+                    {
+                        url: "https://youtu.be/AsPDEo40fwA?si=4xhDyyZckYDioo-o",
+                        altText: "TMS Encore by legrandgrand",
+                        imagePath: tms
+                    },
+                    {
+                        url: "https://youtu.be/duBSijJ51Sg?si=rZKg2wiYcnSEfqiH",
+                        altText: "DemiKids Dark by lilfatkid",
+                        imagePath: demikidsdark
+                    },
+                    {
+                        url: "https://youtu.be/ETx5v7olm9U?si=AhUEUb-BUkLLzrJS",
+                        altText: "Desu2 Record Breaker by ChampionBeef",
+                        imagePath: desurb2
+                    },
+                    {
+                        url: "https://youtu.be/eW-3QuIEAKE?si=TMDjfabgcx_GqwC5",
+                        altText: "DDS2 by Kanri",
+                        imagePath: dds2
+                    },
+                    {
+                        url: "https://youtu.be/PDYP0Cds0lk?si=vjpDJBf1o3yehPvE",
+                        altText: "P4G by asapaska",
+                        imagePath: p4g
+                    },
+                    {
+                        url: "https://youtu.be/6Z7lYsrnwQ4?si=XpeqUDpHwzS9_hZV",
+                        altText: "SMT4 by Koolzo",
+                        imagePath: smt4
+                    }
+                ]}
+            />
+
+        </div>
+    </div>
+    <div class="parallax-section">
+        <Image src={marathon3} alt={"aa"} class="marathon-image"/>
+        <div class="text-container text-container-content">
+            <EventsTitle title="Shin Megami Tensei Marathon 3:Nocturne" year="2023" />
+            <EventsGameGrid 
+                mobilePlaylistUrl="https://www.youtube.com/playlist?list=PL8PZB25uZuZ6smXxtSOd8h60AImOIja9S"
+                gameList={[
+                    {
+                        url: "https://youtu.be/JDSJO4bH6ts?si=p-3zhjszMyY5sEus",
+                        altText: "SMT4 Apocalypse by Freedom_Pulse",
+                        imagePath: smt4a
+                    },
+                    {
+                        url: "https://youtu.be/YRfI5hqY52I?si=urneeSrMtcQ_Kt-b",
+                        altText: "SMT1 by pipio_gppjpp",
+                        imagePath: smt1
+                    },
+                    {
+                        url: "https://youtu.be/gRauit0kc-c?si=sBd7DL0_0sFi9xYZ",
+                        altText: "MT2 by akiyabo",
+                        imagePath: mt2
+                    },
+                    {
+                        url: "https://youtu.be/o62YNw7zLuo?si=6qEAEnxeB5sf-4v_",
+                        altText: "TMS Encore by EmilyBrooks",
+                        imagePath: tms
+                    },
+                    {
+                        url: "https://youtu.be/2ZoKjfXCrWw?si=vh4jJyd9xRDx24p9",
+                        altText: "SMTV by shaggy3311",
+                        imagePath: smt5
+                    },
+                    {
+                        url: "https://youtu.be/-r8SVNZ6284?si=j9CPkH6U65hZQ-26",
+                        altText: "Devil Children: Red Book by sioneus",
+                        imagePath: redblack
+                    },
+                    {
+                        url: "https://youtu.be/uXG1V8bZP-M?si=8xU-L2akiLRYM6q8",
+                        altText: "Soul Hackers by sioneus",
+                        imagePath: sh
+                    },
+                    {
+                        url: "https://youtu.be/vd4PFVTWF04?si=2cspL4V7KxBojvIK",
+                        altText: "P3FES by TatsuyaAct",
+                        imagePath: fes
+                    },
+                    {
+                        url: "https://youtu.be/hj5y0QUZ9AM?si=nkqa25xvAgXbAdB3",
+                        altText: "SMT3 race by mizusima40 and Shiner",
+                        imagePath: smt3
+                    }
+                ]}
+            />
+
+        </div>
+    </div>
+    <div class="parallax-section">
+        <Image src={marathon4} alt={"Shin Megami Tensei RTA Marathon 2024"} class="marathon-image"/>
+        <div class="text-container text-container-content">
+            <EventsTitle title="Shin Megami Tensei RTA Marathon 2024" year="2024" />
+            <EventsGameGrid 
+                mobilePlaylistUrl="https://www.youtube.com/playlist?list=PL8PZB25uZuZ5iEmuwvkKTAl3_iaCPkDc7"
+                gameList={[
+                    {
+                        url: "https://youtu.be/7Gh5vOnaGBQ?si=qeB7iDQiQKeK0H2V",
+                        altText: "SMTVV by Jonperi23",
+                        imagePath: smt5v
+                    },
+                    {
+                        url: "https://youtu.be/Ty6jYtaoq8c?si=5QVAAzPEhdPz1b0R",
+                        altText: "The Answer by Kap",
+                        imagePath: fes
+                    },
+                    {
+                        url: "https://youtu.be/W71X2BnRrZw?si=Es3sgA36uuTv36ui",
+                        altText: "MT2 by akiyabo",
+                        imagePath: mt2
+                    },
+                    {
+                        url: "https://youtu.be/7tmC3Jqx3ws?si=XLvHrp68WG7qIUxF",
+                        altText: "SMT4 by Freedom_Pulse",
+                        imagePath: smt4
+                    },
+                    {
+                        url: "https://youtu.be/yMRy1eDq-dk?si=LOHBnPjXJfNqNlPS",
+                        altText: "Persona 1 by Lonne",
+                        imagePath: persona1
+                    },
+                    {
+                        url: "https://youtu.be/DrVrl0cvv5c?si=GArXyWLMc6rjNZMB",
+                        altText: "SMT1 race by Symm, Xano, Sguy and jojo",
+                        imagePath: smt1
+                    },
+                    {
+                        url: "https://youtu.be/PmhXySMs2rA?si=jBI2mOyglP_xcJmy",
+                        altText: "SMT3HD by Brotodile",
+                        imagePath: smt3hd
+                    },
+                    {
+                        url: "https://youtu.be/Ec225nWzcU4?si=wehZNCa51xR5tvBV",
+                        altText: "SMT If... by Symm",
+                        imagePath: smtif
+                    },
+                    {
+                        url: "https://youtu.be/aX49E6lveX4?si=nIuD3VQhVkt54AVW",
+                        altText: "Soul Hackers 2 by shaggy3311",
+                        imagePath: sh2
+                    },
+                    {
+                        url: "https://youtu.be/cxLRqugBmjs?si=AYlns7HKtnMX_Jzd",
+                        altText: "SMT5V by ChampionBeef",
+                        imagePath: smt5v
+                    }
+                ]}
+            />
+
+        </div>
+    </div>
+</div>
