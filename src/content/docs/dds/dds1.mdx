@@ -1,10 +1,64 @@
 ---
-title: Digital Devil Saga
-description: All Resources for Digital Devil Saga
+title: Shin Megami Tensei - Digital Devil Saga
+description: All Resources for Shin Megami Tensei - Digital Devil Saga
 ---
 
-import { LinkCard,Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/dds/dds.jpg'
 
-Description of the game
+<DocsHero 
+    content="Shin Megami Tensei - Digital Devil Saga is spin-off of the Shin Megami Tensei series with a more traditional RPG approach to the gameplay, without recruitable demons or fusions. "
+    srcUrl={cover}
+    alt="Shin Megami Tensei - Digital Devil Saga Cover"
+/>
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/smtdds" description="See all the submitted runs on Speedrun.com"/>
+
+## Speedrun History
+<Tabs>
+    <TabItem label="Any%">
+        <Steps>
+        1. Shin Megami Tensei: Digital Devil Saga was originally released worldwide by July 21, 2006.
+        2. The first recorded run was done on 2013/03/22 by コッパ with a time of [**6:30:36**](http://www.nicovideo.jp/mylist/36384692).
+        3. On 2016/01/20, Kanri improved the world record to [**6:17:07**](https://www.twitch.tv/videos/36491163)
+        4. On 2016/12/14, ChampionBeef improved the record once more to [**5:46:41**](https://www.twitch.tv/videos/107477957)
+        5. Soon after PinkPajamas started making improvements to the route, now known as the Beginner's or Safe route, and achieved a time of [**4:35:02**](https://www.twitch.tv/videos/247209086) on 2018/04/08 which stood as world record for nearly 2 years.
+        6. On 2020/10/06, Freedom_Pulse beat the world record with a time of [**4:32:44**](https://www.twitch.tv/videos/762145103) and by 1st June, 2021 brought it down to [**4:18:07**](https://www.twitch.tv/videos/1043213075)
+        7. On 2021/06/27, mui_14 achieved the first sub 4h time with a time of [**3:55:49**](https://youtu.be/9uDyoT7ArEQ)
+        8. The current world record is held by mizusima40 with a time of [**3:47:01**](https://www.twitch.tv/videos/1146434213)
+        </Steps>
+    </TabItem>
+    <TabItem label="100%">
+        <Steps>
+        1. Shin Megami Tensei: Digital Devil Saga was originally released worldwide by July 21, 2006.
+        2. On 2017/01/01, Kanri completed the first recorded run with a time of [**31:04:15**](https://www.twitch.tv/videos/111253143)
+        3. The current world record was done on 2020/09/25 by Kanri with a time of [**22:54:45**](https://www.twitch.tv/videos/751575502)
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Any%"></Card>
+    <Card title="100%"></Card>
+</CardGrid>
+
+## Notes
+- [Any% Beginner](https://docs.google.com/document/d/1n9fY3B_Yg5MAPk2S0MSyVwEIuyRmflm-xkLRoMH8nM8/edit?usp=sharing) by PinkPajamas and edited by Freedom
+- [Any% Risky](https://docs.google.com/document/d/1O8AA_0WkObV9_1VhhAfbvVfghRaYRw-MOEioo1rEorM/edit?usp=sharing) by Freedom_Pukse
+- [100% Notes](https://docs.google.com/document/d/1CW4LBJo6spHJz5GUT1JiiXBJ66f5fuPDUcnOXFYTkmQ/edit?usp=sharing) by Kanri
+
+# Resources
+- [Data Collection](https://docs.google.com/spreadsheets/d/1hiSnn5IB0Yng9xKEw8QBRzlnJqTxXvABv2zIXAfG9jo/edit#gid=0)
+- [atwiki](https://w.atwiki.jp/ddsat/)
+- [Clean Maps](http://gamekouryaku.com/ddsaga/data/chart.html)
+- [Vanguard Base Maps](https://imgur.com/a/ajGNfTU)
+- [Manipura 1 Maps](https://imgur.com/a/PIlg0qn)
+- [Citadel Maps](https://imgur.com/a/nQOegvD)
+- [Manipura 2 Maps](https://imgur.com/a/aUgPS0r)
+- [Coordinate 136 Maps](https://imgur.com/a/p3oyGWd)
+- [Deserted Ship Maps](https://imgur.com/a/y3RA8Iq)
+- [Samsara Tunnel Maps](https://imgur.com/a/RwJz2jn)
+- [Brutes Base Maps](https://imgur.com/a/XO30D2X)
+- [Karma Temple Maps](https://imgur.com/a/uoCcI1o)

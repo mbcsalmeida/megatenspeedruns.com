@@ -24,8 +24,8 @@
 	--sl-color-gray-4: #8689a6;
 	--sl-color-gray-5: #bfc1d0;
 	--sl-color-gray-6: #ebedf9;
-	--sl-color-gray-7: #f5f6fc;
-	--sl-color-black: #ffffff;
+	--sl-color-gray-7: #dae3ebdc;
+	--sl-color-black: #f5feff;
 }
 
 /* styles.css */
@@ -40,3 +40,22 @@
 	transform: translateY(0);
   }
   
+  .scroll {
+
+	position: fixed;
+	
+	left: 0;
+	
+	z-index: 1;
+	
+	}
+	
+	.flyGuy {
+	
+	transform: rotate(81deg);
+	
+	top: 0.5rem;
+	
+	z-index: 1;
+	
+	}

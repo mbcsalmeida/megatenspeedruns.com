@@ -10,6 +10,9 @@ export default defineConfig({
 				en: "Megaten Speedruns Resources",
 				"jp" : "メガテンRTA全書",
 			},
+			editLink: {
+				baseUrl: "https://github.com/mbcsalmeida/megatenspeedruns.com/edit/dev"
+			},
 			logo: {
 				src: "./src/assets/logo.png",
 				replacesTitle: true
@@ -32,44 +35,57 @@ export default defineConfig({
 				"jp": {
 					label: "日本語",
 					lang: "ja-JP"
+				},
+				"es": {
+					label: "Español",
+					lang: "es-ES"
 				}
 			},
 			sidebar: [
 				{
 					label: "Shin Megami Tensei",
-					autogenerate: {directory: "smt"}
+					autogenerate: {directory: "smt"},
+					collapsed: true
 				},
 				{
 					label: "Persona",
-					autogenerate: {directory: "persona"}
+					autogenerate: {directory: "persona"},
+					collapsed: true
 				},
 				{
 					label: "Digital Devil Saga",
-					autogenerate: {directory: "dds"}
+					autogenerate: {directory: "dds"},
+					collapsed: true
 				},
 				{
 					label: "Devil Summoner",
-					autogenerate: {directory: "devilsummoner"}
+					autogenerate: {directory: "devilsummoner"},
+					collapsed: true
 				},
 				{
 					label: "Metaphor",
-					autogenerate: {directory: "metaphor"}
+					autogenerate: {directory: "metaphor"},
+					collapsed: true
 				},
 				{
 					label: "Devil Children",
-					autogenerate: {directory: "devilchildren"}
+					autogenerate: {directory: "devilchildren"},
+					collapsed: true
 				},
 				{
 					label: "Devil Survivor",
-					autogenerate: {directory: "devilsurvivor"}
+					autogenerate: {directory: "devilsurvivor"},
+					collapsed: true
 				},
 				{
 					label: "Last Bible",
-					autogenerate: {directory: "lastbible"}
+					autogenerate: {directory: "lastbible"},
+					collapsed: true
 				},
 				{
 					label: "Others",
-					autogenerate: {directory: "others"}
+					autogenerate: {directory: "others"},
+					collapsed: true
 				},
 			],
 		}),

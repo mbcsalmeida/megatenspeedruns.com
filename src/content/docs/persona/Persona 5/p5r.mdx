@@ -1,0 +1,29 @@
+---
+title: Persona 5 Royal
+description: All Resources for Persona 5 Royal
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p5r.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 5 Royal is the fifth mainline entry in the persona series. Its expansion, Royal, added new content."
+    srcUrl={cover}
+    alt="Persona 5 Royal Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p5r" description="See all the submitted runs on Speedrun.com"/>
+
+## Speedrun History
+<Steps>
+    1. Persona 5 Royal was released in Japan on October 31, 2019.
+    2. The current world record holder is Liv with a time of [**14:09:58**]()
+</Steps>
+
+
+## Categories
+<CardGrid>
+    <Card title="Hard, True Ending">There is a subcategory for the Legacy, Remaster and PC versions.</Card>
+</CardGrid>

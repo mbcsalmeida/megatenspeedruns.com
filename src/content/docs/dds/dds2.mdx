@@ -1,10 +1,53 @@
 ---
-title: Digital Devil Saga 2
-description: All Resources for Digital Devil Saga 2
+title: Shin Megami Tensei - Digital Devil Saga 2
+description: All Resources for Shin Megami Tensei - Digital Devil Saga 2
 ---
 
-import { LinkCard,Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/dds/dds2.jpg'
 
-Description of the game
+<DocsHero 
+    content="Shin Megami Tensei - Digital Devil Saga 2 is the second entry in the Digital Devil Saga and a direct sequel to the story of Digital Devil Saga 1."
+    srcUrl={cover}
+    alt="Shin Megami Tensei - Digital Devil Saga 2 Cover"
+/>
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/smtdds2" description="See all the submitted runs on Speedrun.com"/>
+
+## Speedrun History
+<Tabs>
+    <TabItem label="Normal Mode w/o Data Transfer">
+        <Steps>
+            1. Shin Megami Tensei: Digital Devil Saga 2 was originally released worldwide by March 17, 2007.
+            2. The first recorded run was completed by Kanri on 2016/06/29 with a time of [**6:38:39**](https://www.twitch.tv/videos/75217182).
+            3. On 2017/03/08, runner KMB_Chimera improved the world record to a time of [**5:25:52**](https://youtu.be/KHk1pWwnWoI)
+            4. On 2017/04/19, runner Otogitune improved the world record to a time of [**5:21:00**](https://youtu.be/eWseqZ659J0)
+            5. On 2017/09/02, Kanri got back the world record with a the first sub 5h run, [**4:59:39**](https://www.twitch.tv/videos/171613321)
+            4. After nearly 5 years, on 2022/05/13, Freedom_Pulse improved the world record to a time of [**4:56:38**](https://youtu.be/kVZIZmqB0uM)
+            5. The current world record is held by Jonperi23 with a time of [**4:52:10**](https://youtu.be/Q5RQTGDrL18)
+        </Steps>
+    </TabItem>
+    <TabItem label="Hard Mode, All Bosses">
+        <Steps>
+        1. Shin Megami Tensei: Digital Devil Saga 2 was originally released worldwide by March 17, 2007.
+        2. The first recorded run was completed by Kanri on 2018/08/09 with a time of [**15:59:54**](https://www.twitch.tv/videos/294945452)
+        3. On 2023/01/05, Freedom_Pulse improved the world record by two hours to [**13:52:42**](https://youtu.be/W1v9DgvS6KQ)
+        4. In 2023, known accomplished router and runner Shaggy3311 started improving the route and finished his first world record with a time of [**12:20:57**](https://www.twitch.tv/videos/1952253332)
+        5. The current world record is held by Shaggy3311 with a time of [**9:30:49**](https://www.twitch.tv/videos/2345484629)
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Normal Mode w/o Data Transfer"></Card>
+    <Card title="Hard Mode, All Bosses"></Card>
+</CardGrid>
+
+## Notes
+- [Normal Mode](https://docs.google.com/document/d/1JWi6sD_VjVyDs4iPsUlSmdunfQhmz2Z9bAPXFl0U7RI/edit?usp=sharing) by Kanri
+- [Hard Mode, All Bosses](https://docs.google.com/spreadsheets/d/1GJ-JCrp2X41xG_BZBmLiXAydGvJhlsmU_SWmgu6h4gc/edit#gid=462462708) by Shaggy
+
+# Resources
+- [atwiki](https://w.atwiki.jp/ddsat/)

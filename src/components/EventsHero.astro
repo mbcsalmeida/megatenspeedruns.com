@@ -1,11 +1,404 @@
 ---
-import { Image } from "astro:assets";
-import lastbibleImage from '/src/assets/landing/lastbible.jpg';
+// Import your page metadata
+
+const { title, template } = Astro.props;
 ---
 
-<div class="not-content">
-    <Image
-        src={lastbibleImage},
-        alt="",
-        />
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <style>
+      .content-panel:has(h1#_top:not([data-page-title])) {
+        display: none;
+      }
+
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+      }
+
+      .background-container {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+      }
+
+      .text-container {
+        flex: 1;
+        padding: 2rem;
+        box-sizing: border-box;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0;
+        backdrop-filter: blur(2px);
+      }
+
+      .mobile-grid{
+        display: none;
+      }
+
+      .parallax-section {
+        width: 100vw;
+        position: relative;
+        left: calc(-50vw + 50%);
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .parallax-section .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .grid-item {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 0;
+      }
+
+      .grid-item img:hover {
+        transform: scale(1.05);
+      }
+
+      .grid-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      h5, h4, h2, a{
+        color: white !important;
+      }
+
+      @media (max-width: 768px) {
+        .text-container {
+          max-width: 90%; /* Restrict the width */
+          font-size: 1.4rem; /* Reduce font size for readability */
+          padding: 1rem;
+        }
+
+        .text-container h2 {
+          font-size: 1.6rem; /* Adjust heading sizes */
+        }
+
+        .text-container h5 {
+          font-size: 1rem; /* Adjust subheading sizes */
+        }
+
+        .image-grid {
+          display: none;
+        }
+
+        .mobile-grid{
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body class="not-content">
+    <div
+      class="parallax-section"
+      style="background-image: url('/src/assets/events/marathon1.png');"
+    >
+      <div class="background-container"></div>
+      <div class="text-container content">
+        <h2>Shin Megami Tensei Marathon</h2>
+        <h5>2017</h5>
+        <a class="mobile-grid" href="https://www.youtube.com/playlist?list=PL8PZB25uZuZ4C6Bs_2uVr6FqVPly8_l2S">
+          <h4>Playlist</h4>
+        </a>
+        <div class="image-grid">
+          <div class="grid-item">
+            <a href="https://youtu.be/STNDEtnqF0w?si=9x5HZdPV9mrGj6KD">
+              <img src="/src/assets/logos/dds1.png" alt="DDS1 by PinkPajamas" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/SaqQ3u_mOaE?si=B27cQVbbRYKmYKh1">
+              <img
+                src="/src/assets/logos/smt4a.png"
+                alt="SMT4 Apocalypse by ChampionBeef"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/Kis6r4PVbk4?si=4rMKtgd6Bd4sasJK">
+              <img src="/src/assets/logos/p4g.png" alt="P4G by Ghoul02" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/b4oZSIdTgWA?si=iOKl5bS7DVACleoC">
+              <img
+                src="/src/assets/logos/nocturne.png"
+                alt="Shin Megami Tensei: Nocturne by PinkPajamas"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="parallax-section"
+      style="background-image: url('/src/assets/events/marathon2.png');"
+    >
+      <div class="background-container"></div>
+      <div class="text-container content">
+        <h2>Shin Megami Tensei Marathon II</h2>
+        <h5>2020</h5>
+        <a class="mobile-grid" href="https://www.youtube.com/playlist?list=PL8PZB25uZuZ4VPFr6jH3j5xa0Glouhgr6">
+          <h4>Playlist</h4>
+        </a>
+        <div class="image-grid">
+          <div class="grid-item">
+            <a href="https://youtu.be/QHgiZkcgZtY?si=lWeGlUs4DOezX6mr">
+              <img
+                src="/src/assets/logos/smt1.png"
+                alt="SMT1 Race by Sioneus and FilthyBlasphemer"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/__JezO0YNTI?si=7QQ8WEsWJn8EvEw9">
+              <img src="/src/assets/logos/smt2.png" alt="SMT2 by Electra_rta" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/dJFTDdfZhjY?si=aSmWzCd2oTXbZIQK">
+              <img
+                src="/src/assets/logos/smtsjr.png"
+                alt="SMT:SJ Redux by PinkPajamas"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/AsPDEo40fwA?si=4xhDyyZckYDioo-o">
+              <img
+                src="/src/assets/logos/tms.png"
+                alt="TMS Encore by legrandgrand"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/duBSijJ51Sg?si=rZKg2wiYcnSEfqiH">
+              <img
+                src="/src/assets/logos/demikidsdark.png"
+                alt="DemiKids Dark by lilfatkid"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/ETx5v7olm9U?si=AhUEUb-BUkLLzrJS">
+              <img
+                src="/src/assets/logos/desurb2.png"
+                alt="Desu2 Record Breaker by ChampionBeef"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/eW-3QuIEAKE?si=TMDjfabgcx_GqwC5">
+              <img src="/src/assets/logos/dds2.png" alt="DDS2 by Kanri" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/PDYP0Cds0lk?si=vjpDJBf1o3yehPvE">
+              <img src="/src/assets/logos/p4g.png" alt="P4G by asapaska" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/6Z7lYsrnwQ4?si=XpeqUDpHwzS9_hZV">
+              <img src="/src/assets/logos/smt4.png" alt="SMT4 by Koolzo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="parallax-section"
+      style="background-image: url('/src/assets/events/marathon3.png');"
+    >
+      <div class="background-container"></div>
+      <div class="text-container content">
+        <h2>Shin Megami Tensei Marathon 3:Nocturne</h2>
+        <h5>2023</h5>
+        <a class="mobile-grid" href="https://www.youtube.com/playlist?list=PL8PZB25uZuZ6smXxtSOd8h60AImOIja9S">
+          <h4>Playlist</h4>
+        </a>
+        <div class="image-grid">
+          <div class="grid-item">
+            <a href="https://youtu.be/JDSJO4bH6ts?si=p-3zhjszMyY5sEus">
+              <img
+                src="/src/assets/logos/smt4a.png"
+                alt="SMT4 Apocalypse by Freedom_Pulse"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/YRfI5hqY52I?si=urneeSrMtcQ_Kt-b">
+              <img
+                src="/src/assets/logos/smt1.png"
+                alt="SMT1 by pipio_gppjpp"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/gRauit0kc-c?si=sBd7DL0_0sFi9xYZ">
+              <img src="/src/assets/logos/mt2.png" alt="MT2 by akiyabo" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/o62YNw7zLuo?si=6qEAEnxeB5sf-4v_">
+              <img
+                src="/src/assets/logos/tms.png"
+                alt="TMS Encore by EmilyBrooks"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/2ZoKjfXCrWw?si=vh4jJyd9xRDx24p9">
+              <img src="/src/assets/logos/smt5.png" alt="SMTV by shaggy3311" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/-r8SVNZ6284?si=j9CPkH6U65hZQ-26">
+              <img
+                src="/src/assets/logos/redblackps1.avif"
+                alt="Devil Children: Red Book by sioneus"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/uXG1V8bZP-M?si=8xU-L2akiLRYM6q8">
+              <img
+                src="/src/assets/logos/sh3ds.png"
+                alt="Soul Hackers by sioneus"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/vd4PFVTWF04?si=2cspL4V7KxBojvIK">
+              <img
+                src="/src/assets/logos/p3fes.png"
+                alt="P3FES by TatsuyaAct"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/hj5y0QUZ9AM?si=nkqa25xvAgXbAdB3">
+              <img
+                src="/src/assets/logos/nocturne.png"
+                alt="SMT3 race by mizusima40 and Shiner"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="parallax-section"
+      style="background-image: url('/src/assets/events/marathon4.png');"
+    >
+      <div class="background-container"></div>
+      <div class="text-container content">
+        <h2>Shin Megami Tensei RTA Marathon 2024</h2>
+        <h5>2024</h5>
+        <a class="mobile-grid" href="https://www.youtube.com/playlist?list=PL8PZB25uZuZ5iEmuwvkKTAl3_iaCPkDc7">
+          <h4>Playlist</h4>
+        </a>
+        <div class="image-grid">
+          <div class="grid-item">
+            <a href="https://youtu.be/7Gh5vOnaGBQ?si=qeB7iDQiQKeK0H2V">
+              <img src="/src/assets/logos/smt5v.png" alt="SMTVV by Jonperi23" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/Ty6jYtaoq8c?si=5QVAAzPEhdPz1b0R">
+              <img src="/src/assets/logos/p3fes.png" alt="The Answer by Kap" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/W71X2BnRrZw?si=Es3sgA36uuTv36ui">
+              <img src="/src/assets/logos/mt2.png" alt="MT2 by akiyabo" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/7tmC3Jqx3ws?si=XLvHrp68WG7qIUxF">
+              <img
+                src="/src/assets/logos/smt4.png"
+                alt="SMT4 by Freedom_Pulse"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/yMRy1eDq-dk?si=LOHBnPjXJfNqNlPS">
+              <img src="/src/assets/logos/persona1.webp" alt="Persona 1 by Lonne" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/DrVrl0cvv5c?si=GArXyWLMc6rjNZMB">
+              <img
+                src="/src/assets/logos/smt1.png"
+                alt="SMT1 race by Symm, Xano, Sguy and jojo"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/PmhXySMs2rA?si=jBI2mOyglP_xcJmy">
+              <img
+                src="/src/assets/logos/smt3hd.png"
+                alt="SMT3HD by Brotodile"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/Ec225nWzcU4?si=wehZNCa51xR5tvBV">
+              <img src="/src/assets/logos/smtif.png" alt="SMT If... by Symm" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/aX49E6lveX4?si=nIuD3VQhVkt54AVW">
+              <img
+                src="/src/assets/logos/sh2.png"
+                alt="Soul Hackers 2 by shaggy3311"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://youtu.be/cxLRqugBmjs?si=AYlns7HKtnMX_Jzd">
+              <img
+                src="/src/assets/logos/smt5v.png"
+                alt="SMT5V by ChampionBeef"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

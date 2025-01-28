@@ -3,15 +3,79 @@ title: Shin Megami Tensei If...
 description: All Resources for Shin Megami Tensei If...
 ---
 
-import { LinkCard,Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/smt/smtif-sfc.jpg'
 
-Description of the game
+<DocsHero 
+    content="Shin Megami Tensei If... is the third entry in the Shin Megami Tensei series, developed with an extension of the SMT2 engine and is considered by fans the predecessor to the Persona series due to its school setting and the ability to choose a human partner which leads to a different ending."
+    srcUrl={cover}
+    alt="Shin Megami Tensei If... Cover"
+/>
+
+#### List of TAS VODS
+- [Shin Megami Tensei If... (SFC) by masaya in 15:40](https://youtu.be/0apYerUf2Bg?si=vJSlI1Qk4LG29WTI)
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/smtif" description="See all the submitted runs on Speedrun.com"/>
 
-#### List of TAS VODS
+## Speedrun History
 
-## SNES Version
+<Tabs>
+    <TabItem label="SNES - Yumi">
+        <Steps>
+            1. Shin Megami Tensei If... was released in Japan on October 28, 1994.
+            2. The first recorded run for the Yumi Route was done by korosuke with a time of [**3:02:12**](https://www.nicovideo.jp/watch/sm4278579)
+            3. On 2018/11/18, Symm achieved a new world record of [**1:52:34**](https://youtu.be/jpRJI88N1Ak)
+            4. On 2019/06/01, mizusima40 achieved a new world record of [**1:30:16**](https://www.twitch.tv/videos/382656890)
+            5. On 2021/01/14, Symm reclaimed the world record of [**1:30:15**](https://youtu.be/XJUBxrIB-0o)
+        </Steps>
+    </TabItem>
+    <TabItem label="SNES - Akira">
+        <Steps>
+            1. Shin Megami Tensei If... was released in Japan on October 28, 1994.
+            2. The first recorded run for the Akira Route was done by ドミネーター with a time of [**2:09:51**](https://youtu.be/XJUBxrIB-0o)
+            3. On 2017/04/23, kakkun achieved a new record of [**2:00:05**](https://youtu.be/w-e6EiCBUi8)
+            4. On 2019/07/01, mizusima40 achieved a new record of [**1:50:18**](https://www.twitch.tv/videos/405448859)
+            5. On 2023/03/17, pipio attempted new route adjustments and beat the Akira world record that had been standing for 4 years with a time of [**1:45:50**](https://www.twitch.tv/videos/1767631900)
+            6. On 2024/11/09, mizusima40 reclaimed the world record with a time of [**1:45:05**](https://www.twitch.tv/videos/2297346734)
+        </Steps>
+    </TabItem>
+    <TabItem label="PS1 - Yumi">
+        <Steps>
+            1. Shin Megami Tensei If... was released in Japan on December 26, 2002.
+            2  The first ever recorded run of the PS1 version of If... was done on 2011/03/04 by TA539, completing Charlie's route on EASY difficulty with no restrictions, with a time of [**1:39:14**]
+            3. The first ever Yumi route run was done by equi on 2020/08/24 on EASY difficulty, with no restrictions, with a time of [**1:12:34**](http://www.nicovideo.jp/watch/sm33552720)
+            3. On 2021/08/29, R-0109 ran Yumi route on NORMAL difficulty with restrictions and achieved a time of [**1:30:13**](https://www.twitch.tv/videos/1137351030)
+            4. On 2023/02/15, ToxicTT ran Yumi on EASY difficulty with restrictions and achieved a time of [**1:21:15**](https://www.twitch.tv/videos/1737221310)
+        </Steps>
+    </TabItem>
+    <TabItem label="PS1 - Akira">
+        <Steps>
+            1. Shin Megami Tensei If... was released in Japan on December 26, 2002.
+            2. The first ever run and current world record was done by equi on 2018/07/19 on EASY difficulty with no restrictions with a time of [**1:16:09**](http://www.nicovideo.jp/watch/sm37411190)
+        </Steps>
+    </TabItem>
+</Tabs>
 
-## PS1 Version
+## Categories
 
+<CardGrid>
+    <Card title="Yumi Route"></Card>
+    <Card title="Reiko Route"></Card>
+    <Card title="Charlie Route"></Card>
+    <Card title="Akira Route"></Card>
+    <Card title="All Partner"></Card>
+    <Card title="Any%/Major Glitch"></Card>
+</CardGrid>
+
+## Glitches & Tricks
+- [Video Explanation of **Item Change**](https://youtu.be/_Qbltn0xQSY) by Symm
+
+## Notes
+- [SFC - Yumi Route](https://docs.google.com/document/d/1L65JojSDJbEiVVBQ-FSBxCJw0uMcRcVbv6jdEgUpGrE/edit) by Symm
+- [SFC - Any% Notes](https://docs.google.com/document/d/1CbioFKZGBdRYKP7O6mt7lJsCZt7TyXhzPdGMviKx_xM/edit) by Liv
+- [PSX - Yumi, Easy, Restricted](https://docs.google.com/document/d/19GLRO2Fk64HxYN07SOGizfyd5l7uZNiVjtObR--hO74/edit) by ToxicTT
+
+## Resources
+- [atwiki (SFC)](https://w.atwiki.jp/shinmegamitenseiif/pages/16.html)
+- [atwiki (PSX)](https://w.atwiki.jp/shinmegamitenseiif/pages/264.html)

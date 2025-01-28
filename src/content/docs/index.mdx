@@ -14,7 +14,7 @@ hero:
 
 ---
 
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '../../components/LinkCardWithBackground.astro';
 import smtImage from '/src/assets/landing/smt.png';
 import personaImage from '/src/assets/landing/persona.jpg';
@@ -28,7 +28,7 @@ import othersImage from '/src/assets/landing/others.png';
 
 <CardGrid>
 	<LinkCardWithBackground title="Shin Megami Tensei" href="/smt/smt1" imagePath={smtImage} alt="Click here for SMT Resources" />
-	<LinkCardWithBackground title="Persona" href="/persona/persona1" imagePath={personaImage} alt="Click here for Persona Resources"/>
+	<LinkCardWithBackground title="Persona" href="/persona/p1" imagePath={personaImage} alt="Click here for Persona Resources"/>
 	<LinkCardWithBackground title="Devil Summoner" href="/devilsummoner/devilsummoner" imagePath={dsumImage} alt="Click here for Devil Summoner Resources"/>
 	<LinkCardWithBackground title="Digital Devil Saga" href="/dds/dds1" imagePath={ddsImage} alt="Click here for DDS Resources"/>
 	<LinkCardWithBackground title="Metaphor: ReFantazio" href="/metaphor/metaphor-re" imagePath={metaphorImage} alt="Click here for Metaphor Resources"/>
@@ -38,9 +38,12 @@ import othersImage from '/src/assets/landing/others.png';
   <LinkCardWithBackground title="Others" href="/others/mt1" imagePath={othersImage} alt="Click here for other Resources"/>
 </CardGrid>
 
+<Card title="About">
+
+</Card>
+
+<Card title="Maintained by the Megaten Speedruns Community">
+If you'd like to contribute, please join our Discord server or click the *Edit Page* button at the bottom of the page.
+</Card>
 
 
-
-#### Maintained by the Megaten Speedruns Community
-
-If you'd like to contribute, please join our Discord server.
