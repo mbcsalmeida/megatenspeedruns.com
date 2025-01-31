@@ -14,76 +14,55 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
     alt="Shin Megami Tensei V Cover"
 />
 
-<LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
-    [
-        {title:"Shin Megami Tensei V",
-        url:"https://www.speedrun.com/smtv"},
-        {title:"Shin Megami Tensei V: Vengeance",
-        url:"https://www.speedrun.com/smtvv"}
-    ]
-}/>
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/smtv" description="See all the submitted runs on Speedrun.com"/>
 
 ## Speedrun History
 <Tabs>
-    <TabItem label="Original - Hard TNE">
+    <TabItem label="Hard TNE">
         <Steps>
             1. Shin Megami Tensei V was released worldwide on November 11, 2021.
-            2. The current world record is held by Shaggy3311 with a time of [**7:25:44**]()
+            2. The first completed run was done on 2021/12/31 by romulostx with a time of [**12:40:45**](https://www.twitch.tv/videos/1248653824). This time would be improved to a time of [**9:53:27**](https://www.twitch.tv/videos/1449363167)
+            3. On 2022/05/28, Shaggy3311 improved the record to a time of [**9:29:02**](https://www.twitch.tv/videos/1311852027) and brought it down to a time of [**8:24:14**](https://www.twitch.tv/videos/1582026223)
+            4. On 2022/11/25, asapaska improved the world record to a time of [**8:10:56**](https://www.twitch.tv/videos/1663222487)
+            2. The current world record is held by Shaggy3311 with a time of [**7:25:44**](https://www.twitch.tv/videos/1696104648)
         </Steps>
     </TabItem>
-    <TabItem label="Vengeance - CoV Hard">
+    <TabItem label="Safety Any%">
         <Steps>
-        1. Shin Megami Tensei V: Vengenace was released worldwide on June 14, 2024.
-        2. The current world record is held by Jonperi23 with a time of [**3:50:36**]()
+        1. Shin Megami Tensei V was released worldwide on November 11, 2021.
+        2. The first completed run was done on 2021/11/27 by secretbunnyninja with a time of [**5:09:22**](https://youtu.be/6jNkOEN_jak)
+        3. On 2021/1203, Engiki improved to a time of [**3:05:45**]. The vod is no longer available.
+        4. 5 days later, sioneus improved the record to a time of [**2:41:55**](https://www.twitch.tv/videos/1227257096)
+        5. 8 days later, Engiki reclaimed the record to a time of [**2:40:34**](https://www.twitch.tv/videos/1235172003)
+        6. On 2022/01/22, sioneus reclaimed the record to a time of [**2:32:22**](https://youtu.be/QRTuZuuBN2U)
+        7. 1 day later, DarkRedDove set a new record of [**2:30:30**](https://www.twitch.tv/videos/1274550863)
+        8. At ESA Summer 2022, sioneus achieved a new time with some route improvements and reached a time of [**2:22:28**](https://www.twitch.tv/videos/1542182099)
+        2. The current world record is held by asapaska with a time of [**2:17:53**](https://youtu.be/uGDf9znO1Gw)
         </Steps>
     </TabItem>
 </Tabs>
 
 ## Categories
-<Tabs>
-    <TabItem label="SMTV">
-        <CardGrid>
-            <Card title="True Neutral Ending"></Card>
-            <Card title="Any%"></Card>
-            <Card title="All Bosses"></Card>
-            <Card title="Demifiend%"></Card>
-        </CardGrid>
-    </TabItem>
-    <TabItem label="SMTV:Vengeance">
-        <CardGrid>
-            <Card title="CoV Any%"></Card>
-            <Card title="CoC Any%"></Card>
-            <Card title="CoC TNE"></Card>
-        </CardGrid>
-    </TabItem>
-</Tabs>
+<CardGrid>
+    <Card title="True Neutral Ending"></Card>
+    <Card title="Any%"></Card>
+    <Card title="All Bosses"></Card>
+    <Card title="Demifiend%"></Card>
+</CardGrid>
 
 ## Glitches & Tricks
 - [Video Tutorial for **Student Skip**](https://www.youtube.com/watch?v=P9axb5forXU)
 - [Video Tutorial for **Empyrean Early**](https://www.youtube.com/watch?v=Q2nPlbozqmk)
-- [Video Tutorial for **Dodging Encounter in the Temple of Eternity**](https://www.youtube.com/watch?v=Dpf04VdjYXk)
 
 ## Notes
-<Tabs>
-    <TabItem label="SMTV">
-        - [Normal - TNE](https://docs.google.com/spreadsheets/d/1JhqzDNeBEdVHRlefVq-YtO0oYZQHkOk6HpKX6OR0RsE/edit#gid=0) by shaggy
-        - [Hard - TNE](https://docs.google.com/spreadsheets/d/18hEXZOrQhRr7nzpNYC5wGyUdavg3-BpKjEg8K5cmXnQ/edit#gid=2095762135) by shaggy
-        - [Safety - TNE](https://drive.google.com/file/d/1jPxf_-QCTZAzLNr5WVKmQn7d7zlLljGw/view?usp=sharing) by ToxicTT
-        - [Normal - Any% - Futsunushi route](https://docs.google.com/spreadsheets/d/1VlBLx98wTelumMt5hk_kwZoHwTZCdbFQ/edit#gid=367221705) by sioneus
-        - [Hard - Any%](https://docs.google.com/spreadsheets/d/1TZ7IceQeqBaPmphOFDDjaGy4SB0zlXzAgxn3CH5MXZQ/edit#gid=283801600) by sioneus
-        - [Safety - Any%](https://drive.google.com/file/d/16BxAFY6_M2AJhMxPUvF1KNd7lal1tUHS/view?usp=sharing) by ToxicTT
-        - [Hard - Demifiend%](https://docs.google.com/spreadsheets/d/1DF5a5QJAL9xiOZPlvNNWg2F-CbYV9FdYQ__RTeb_ohI/edit#gid=2095762135) by shaggy
-    </TabItem>
-    <TabItem label="SMTV:Vengeance">
-        - [CoV - Normal - Chaos](https://docs.google.com/spreadsheets/d/1V9TvVGsbRu3N8Afh6rmilUYkMomUvYJnLtZCWJLGqig/edit?usp=sharing) by inunyako
-        - [CoV - Normal - Chaos - Empyrean Skip](https://docs.google.com/document/d/1ifnjgkOwxlHZj2GGHeuDj7Aizld6uVZ9Sadcpco2-pY/edit) by ChampionBeef and inunyako
-        - [CoV - Hard - Chaos](https://docs.google.com/spreadsheets/d/1kX4N5FU0YMUbx_CDXjdsOtu8aVJnILNrvzX4ZkS0Lf4/edit?usp=sharing) by shaggy and Jonperi23
-        - [CoC - Safety - Any%](https://docs.google.com/spreadsheets/d/1lypYbOAzdCjQqsLO43_BoH23UNdreDhKXtWg2OYYDXw/edit?gid=0#gid=0) by shaggy
-        - [CoV - Safety - Any%](https://docs.google.com/spreadsheets/d/1hCaggr8nvzF_1boLbyO0O2lPYsKjWyXfYxBQaTMKLwM/edit?gid=0#gid=0) by shaggy
-        - [CoC - TNE - Any%](https://docs.google.com/document/d/1uspKIQz6KK6v1raki5C3uVOKw9-Y7Mwcc0l00vnXBC8/edit?usp=sharing) by ChampionBeef
-        - [CoC - Normal - Any%](https://docs.google.com/spreadsheets/d/1dLo31ssNckHZ8yyMfXc2spdbmAPYIZgRa-6zSbPWBCc/edit?gid=0#gid=0) by septerna
-    </TabItem>
-</Tabs>
+- [Normal - TNE](https://docs.google.com/spreadsheets/d/1JhqzDNeBEdVHRlefVq-YtO0oYZQHkOk6HpKX6OR0RsE/edit#gid=0) by shaggy
+- [Hard - TNE](https://docs.google.com/spreadsheets/d/18hEXZOrQhRr7nzpNYC5wGyUdavg3-BpKjEg8K5cmXnQ/edit#gid=2095762135) by shaggy
+- [Safety - TNE](https://drive.google.com/file/d/1jPxf_-QCTZAzLNr5WVKmQn7d7zlLljGw/view?usp=sharing) by ToxicTT
+- [Normal - Any% - Futsunushi route](https://docs.google.com/spreadsheets/d/1VlBLx98wTelumMt5hk_kwZoHwTZCdbFQ/edit#gid=367221705) by sioneus
+- [Hard - Any%](https://docs.google.com/spreadsheets/d/1TZ7IceQeqBaPmphOFDDjaGy4SB0zlXzAgxn3CH5MXZQ/edit#gid=283801600) by sioneus
+- [Safety - Any%](https://drive.google.com/file/d/16BxAFY6_M2AJhMxPUvF1KNd7lal1tUHS/view?usp=sharing) by ToxicTT
+- [Hard - Demifiend%](https://docs.google.com/spreadsheets/d/1DF5a5QJAL9xiOZPlvNNWg2F-CbYV9FdYQ__RTeb_ohI/edit#gid=2095762135) by shaggy
+
 
 ## Resources
 - [Demon King Castle Guide Maps](https://imgur.com/a/e6wZ2Z5) by shaggy
@@ -91,6 +70,3 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 - [SMTV General Resource Sheet](https://docs.google.com/spreadsheets/d/1WtF2wrwTR1rE5U4BAOTaZlJJmVYUwfBnc_0s_w5G_kg/edit#gid=0) by ChampionBeef
 - [Mechanics Calculations Sheet](https://docs.google.com/spreadsheets/d/1d2fNm0p9zGd4zQeop5jGUPFTXd1etNwb_ueGlfD55cE/edit?usp=sharing)
 - [atwiki](https://w.atwiki.jp/megaten5/)
-- [Vengeance General Resource Sheet](https://docs.google.com/spreadsheets/d/12ANu_OBx_OFmme6AS1W0DEXUAF6dkIg5qZ9CkE-JfiE/edit?usp=sharing) by ChampionBeef+Community
-- [Vengeance Testing Mod](https://gamebanana.com/mods/527742) by CTOBN
-- [Formulas and Game Calcs](https://steamcommunity.com/sharedfiles/filedetails/?id=3279836265) by CTOBN

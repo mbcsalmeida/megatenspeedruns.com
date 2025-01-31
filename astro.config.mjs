@@ -24,6 +24,9 @@ export default defineConfig({
               "./src/globals.css",
               "@fontsource/dm-serif-display/400.css"
           ],
+          components: {
+            SocialIcons: './src/components/SocialLinks.astro',
+          },
           social: {
               discord: "https://discord.gg/pwe7yncyHF",
               twitch: "https://www.twitch.tv/team/smtspeedrunning",
