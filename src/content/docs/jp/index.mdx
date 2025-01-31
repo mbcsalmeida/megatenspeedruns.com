@@ -1,45 +1,64 @@
 ---
-title: Megaten Speedrun Resources
-description: Megaten Speedrun Resources website.
+title: メガテンRTA全書
+description: メガテンRTA全書のサイト
 template: splash
-hero:
-  tagline: This website is a collection of references to sources of information and guides on speedrunning Megaten games.
-  actions:
-    - text: Explore Resources
-      link: /guides/example/
-      icon: right-arrow
-    - text: Twitch Team
-      link: https://starlight.astro.build
-      icon: external
+head:
+  - tag: style
+    content: ":root { --sl-content-width: 100% !important; }
+      .content-panel:has(h1#_top:not([data-page-title])) {
+	        display: none;
+        }
+    "
+
 ---
 
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import LandingPageGrid from '/src/components/LandingPageGrid.astro';
+import LandingPageHero from '/src/components/LandingPageHero.astro';
+import smtImage from '/src/assets/landing/smt.png';
+import personaImage from '/src/assets/landing/persona.jpg';
+import dsumImage from '/src/assets/landing/devilsummoner.jpg';
+import ddsImage from '/src/assets/landing/dds.avif';
+import devichilImage from '/src/assets/landing/devilchildren.avif';
+import metaphorImage from '/src/assets/landing/metaphor.jpg';
+import lastbibleImage from '/src/assets/landing/lastbible.jpg';
+import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
+import othersImage from '/src/assets/landing/others.png';
 
-<CardGrid stagger>
-	<LinkCard title="真・女神転生">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</LinkCard>
-	<LinkCard title="Persona">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</LinkCard>
-	<LinkCard title="Devil Summoner">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</LinkCard>
-	<LinkCard title="Digital Devil Saga">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</LinkCard>
-	<LinkCard title="Metaphor: ReFantazio">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</LinkCard>
-	<LinkCard title="Devil Children">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</LinkCard>
-	<LinkCard title="Last Bible">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</LinkCard>
-</CardGrid>
+<div class="not-content">
+  <LandingPageHero altText="Megaten Resources Logo" 
+      description="This website is a collection of references to sources of information and guides on speedrunning Megaten games."
+      buttons={[
+        {
+          title: "チャートへ",
+          url: "/smt"
+        },
+        {
+          title: "イベント",
+          url: "/events"
+        }
+      ]}
+      />
+  <LandingPageGrid>
+    <LinkCardWithBackground title="真・女神転生" href="/smt" imagePath={smtImage} alt="Click here for SMT Resources" />
+    <LinkCardWithBackground title="ペルソナ" href="/persona" imagePath={personaImage} alt="Click here for Persona Resources"/>
+    <LinkCardWithBackground title="デビルサマナー" href="/dsum" imagePath={dsumImage} alt="Click here for Devil Summoner Resources"/>
+    <LinkCardWithBackground title="DIGITAL DEVIL SAGA アバタール・チューナー" href="/dds" imagePath={ddsImage} alt="Click here for DDS Resources"/>
+    <LinkCardWithBackground title="メタファー：リファンタジオ" href="/metaphor/metaphor-re" imagePath={metaphorImage} alt="Click here for Metaphor Resources"/>
+    <LinkCardWithBackground title="デビルチルドレン" href="/dc" imagePath={devichilImage} alt="Click here for Devil Children Resources"/>
+    <LinkCardWithBackground title="ラストバイブル" href="/lb" imagePath={lastbibleImage} alt="Click here for Last Bible Resources"/>
+    <LinkCardWithBackground title="デビルサバイバー" href="/ds" imagePath={survivorImage} alt="Click here for other Resources"/>
+    <LinkCardWithBackground title="他のゲーム" href="/others" imagePath={othersImage} alt="Click here for other Resources"/>
+  </LandingPageGrid>
+</div>
+
+<Card title="サイトについて">
+この書類はメガテンゲームのRTAに関する情報かガイドの集まりとなります。
+</Card>
+
+<Card title="メガテンRTAコミュニティーによって維持">
+編集したい場合、「「ページを編集」のボタンを押して内容を編集することができます。
+</Card>
 
 
-#### Maintained by the Megaten Speedruns Community
-
-If you'd like to contribute, please DM 'sioneus' on Discord.

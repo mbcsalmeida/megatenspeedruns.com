@@ -1,0 +1,24 @@
+---
+title: Devil Children
+description: All Resources for Devil Children
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import psxCover from '/src/assets/covers/devilchildren/redblack.jpg'
+import whiteCover from '/src/assets/covers/devilchildren/white.jpg'
+import fireCover from '/src/assets/covers/devilchildren/fire.jpg'
+import gbaCover from '/src/assets/covers/devilchildren/demikidsdark.jpg'
+import puzzleCover from '/src/assets/covers/devilchildren/puzzle.webp'
+import messiaCover from '/src/assets/covers/devilchildren/messia.webp'
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="Devil Children - Red and Black Book" href="/devilchildren/redblack" imagePath={psxCover} />  
+    <LinkCardWithBackground title="Devil Children - White Book" href="/devilchildren/white" imagePath={whiteCover} />
+    <LinkCardWithBackground title="DemiKids - Light and Dark Version" href="/devilchildren/darklight" imagePath={gbaCover} />        
+    <LinkCardWithBackground title="Devil Children - Fire and Ice Book" href="/devilchildren/icefire" imagePath={fireCover} />  
+    <LinkCardWithBackground title="Devil Children - Puzzle de Call" href="/devilchildren/puzzledecall" imagePath={puzzleCover} />  
+    <LinkCardWithBackground title="Devil Children - Messiah Riser" href="/devilchildren/messia" imagePath={messiaCover} />    
+</CardGrid>

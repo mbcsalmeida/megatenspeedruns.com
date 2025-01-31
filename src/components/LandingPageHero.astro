@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import { LinkButton } from '@astrojs/starlight/components';
+import logo from '/src/assets/logo.png';
+
+type LinkCardButton = {
+  title: string;
+  url: string;
+};
+
+// Props type definition
+interface Props {
+  buttons: LinkCardButton[];
+  title: string;
+  description: string;
+  altText: string;
+}
+
+const {
+    title,
+    description,
+    buttons = [],
+    altText
+} = Astro.props
+---
+
+<div class="responsive-display">
+    <Image 
+        src={logo}
+        alt={altText}
+        class="img-size"
+    />
+    <div class="sl-flex-column" style="align-content: center;">
+        <h3>{description}</h3>
+        {
+            buttons.length > 0 && (
+                <div class="sl-flex actions">
+                    {buttons.map(
+                        ({ title, url}) => (
+                            <LinkButton href={url} variant='primary'>
+                                {title}
+                            </LinkButton>
+                        )
+                    )}
+                </div>
+            )
+        }
+    </div>
+</div>
+
+<style>
+    .img-size{
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+    }
+
+    h3{
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+        color: var(--sl-color-white);
+    }
+
+    .responsive-display{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 50rem) {
+            .responsive-display{
+            display: flex;
+            flex-direction: row;
+        }
+
+            .img-size{
+            max-width: 50%;
+            height: auto;
+            aspect-ratio: auto;
+        }
+    }
+</style>

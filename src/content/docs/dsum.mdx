@@ -1,0 +1,26 @@
+---
+title: Devil Summoner
+description: All Resources for Devil Summoner
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import card from '/src/assets/covers/devilsummoner/cardsummoner.jpg'
+import ds1 from '/src/assets/covers/devilsummoner/ds-ss.png'
+import sh from '/src/assets/covers/devilsummoner/sh-ss.jpg'
+import sh2 from '/src/assets/covers/devilsummoner/sh2.jpg'
+import raidou1 from '/src/assets/covers/devilsummoner/raidou1.jpg'
+import raidou2 from '/src/assets/covers/devilsummoner/raidou2.jpg'
+
+
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="Shin Megami Tensei Devil Summoner - Card Summoner" href="/devilsummoner/cardsummoner" imagePath={card} alt="Click here for Card Summoner" />
+    <LinkCardWithBackground title="Shin Megami Tensei - Devil Summoner" href="/devilsummoner/devilsummoner" imagePath={ds1} alt="Click here for Devil Summoner" />
+    <LinkCardWithBackground title="Shin Megami Tensei Devil Summoner - Soul Hackers" href="/devilsummoner/soulhackers" imagePath={sh} alt="Click here for Soul Hackers" />
+    <LinkCardWithBackground title="Soul Hackers 2" href="/devilsummoner/soulhackers2" imagePath={sh2} alt="Click here for Soul Hackers 2" />
+    <LinkCardWithBackground title="Devil Summoner - Raidou Kuzunoha vs. the Soulless Army" href="/devilsummoner/raidou1" imagePath={raidou1} alt="Click here for Raidou 1" />
+    <LinkCardWithBackground title="Devil Summoner 2 - Raidou Kuzunoha vs. King Abaddon" href="/devilsummoner/raidou2" imagePath={raidou2} alt="Click here for Raidou 2" />
+</CardGrid>

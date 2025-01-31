@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 const {
     content,
@@ -8,7 +9,7 @@ const {
 } = Astro.props
 ---
 
-<div class="sl-flex">
+<div class="sl-flex border">
     <span>
         {content}
     </span>
@@ -16,11 +17,19 @@ const {
         src={srcUrl}
         alt={alt}
         class="imgSize"
-    />
+        />
 </div>
 
 <style>
-    .imgSize{
-        max-width: 30% !important;
+
+    .border{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        position: relative;
     }
+
+    
 </style>

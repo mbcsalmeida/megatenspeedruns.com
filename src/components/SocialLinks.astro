@@ -1,0 +1,18 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+---
+
+<a href="https://docs.google.com/spreadsheets/d/1UsytrGfzAegTsOei8ti84rBE8Vv0pDkDq6NX5xwr0so/edit?gid=0#gid=0"><h4>Spreadsheet</h4></a>
+<Default {...Astro.props}><slot /></Default>
+
+<style>
+    a{
+        text-decoration: none;
+        color: var(--sl-color-white);
+    }
+
+    a:hover{
+        opacity: 0.5;
+    }
+</style>
