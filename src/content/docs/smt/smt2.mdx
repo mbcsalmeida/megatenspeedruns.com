@@ -48,6 +48,62 @@ import cover from '/src/assets/covers/smt/smt2-sfc.jpg'
     <Card title="All Bosses"></Card>
 </CardGrid>
 
+## Glitches & Tricks
+<Tabs>
+    <TabItem label="SNES">
+        <details>
+        <summary>**Elevator Glitch**</summary>
+
+        When entering an elevator, by placing the cursor on the desired floor and pressing B, the player is automatically transported to that floor without watching the elevator animation. 
+        This glitch was patched in the 1.1 version of the game.
+        </details>
+
+        <details>
+        <summary>**Item Duplication**</summary>
+
+
+        There must be an even number of stacks in the inventory. Rearrange the inventory putting the item to duplicate on the bottom right. Sort the inventory twice and the stack will be duplicated.
+        </details>
+
+        <details>
+        <summary>**Item Change**</summary>
+
+
+        The inventory can have 30 different item stacks, which can only hold up to 9 items. In order to execute Item Change, you must load back a save file with a full inventory.
+         When opening the rearrange (ならべかえ) menu, the game copies the data from the inventory (located at 0x000440 - 0x00047F) to a temporary array (located at 0x000638 - 0x000677). The first 32 bytes represent the item IDs and the next 32 bytes represent their quantities. Once the menu is closed, the game copies the data from it back to the inventory.
+        After loading the game with a crammed inventory and trying to rearrange the items will cause the menu to show more than just 15 rows. On the 16th row there will be two Attack Knives (アッタクナイフ) with a blank counter. The 17th to the 31st will be the normal inventory repeated. That goes on until the 64th row.
+        By adjusting the quantities of the items, it is possible to obtain any item in the inventory by switching the ID of the item with its quantity. For example, by moving to the 2nd loop, where quantities are stored, and switching an item of quantitiy 120 with an item in the first loop, where the ID of the items in the inventory are stored, you'll obtain the item of ID 120 in your inventory.
+
+        This glitch is used in the Any% and Any% no ACE categories.
+        Detailed [Item Change guide](https://docs.google.com/document/d/1yBIuZqcZVXKRCkznnXnnBqYO2WQYNAwoaCFEQnwnHlE/edit?tab=t.0) relevant to the Any% no ACE category by Electra.
+        </details>
+
+        <details>
+        <summary>**Traport Wrong Warp**</summary>
+
+        Dungeons are stored adjacently so if there was a simple way to walk through walls it’d be possible to go from one 3D area to another. Fortunately such a trick exists, although not possible to do it everywhere. Using Traesto (トラエスト) while prompting an event (an NPC dialogue or earthquake, for instance) makes you walk back one step, disregarding walls.
+        This allows the player to warp between areas and is used in the Any% and Any% no ACE categories to go from the Valhalla Disco to Yesod, from the Excavation Site to the Jail and from Puck's dungeon to the Center.
+        </details>
+    </TabItem>
+    <TabItem label="GBA">
+        <details>
+        <summary>**Infinite Casino Coins**</summary>
+
+        This can only be executed in Underground Roppongi. 
+        Go to the casino and exchange 10 coins. Then head to BACCARA and bet 1 coin at the banker. Repeat until you win. You will now have a decimal number of coins, as in casino cents.
+        Bet all your coins at the TIE, ending up with only the casino cents remaining. In case you win, continue until you lose all your coins and have only the cents left.
+        Try to bet the remaining cents at any of possibilities and your coins will underflow into the maximum amount possible. Complete the round and exit to have over 4 million coins.
+        </details>
+
+        <details>
+        <summary>**Event door skip**</summary>
+
+        Some doors in the game are classified as events doors. By getting a random encounter while turned away from the door and escaping, it is possible to bypass this event.
+        As of now, it has not been found a way to integrate this into the route.
+        </details>
+    </TabItem>
+</Tabs>
+
 ## Notes
 - [Any% Notes](https://www.speedrun.com//smt2/guides/gq2kv) by Symm
 - [Any% Notes](https://docs.google.com/document/d/1T7fuUMkHGcBnn8KTvZihCexb8ZETJztttrSaThR1e3o/edit) by Liv
