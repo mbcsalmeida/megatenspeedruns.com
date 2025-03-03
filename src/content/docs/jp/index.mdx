@@ -12,7 +12,7 @@ head:
 
 ---
 
-import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
 import LandingPageGrid from '/src/components/LandingPageGrid.astro';
 import LandingPageHero from '/src/components/LandingPageHero.astro';
@@ -27,6 +27,7 @@ import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
 import othersImage from '/src/assets/landing/others.png';
 
 <div class="not-content">
+  <Aside type='danger' title='ペルソナ　リレー 2025'>６月６日ー６月８日、Really Really Longathonのチャンネルにて配信をいたします. スケジュールは[こちら](https://horaro.org/personarelay/2025).</Aside>
   <LandingPageHero altText="Megaten Resources Logo" 
       description="このサイトはメガテンゲームのRTAに関する情報かガイドの集まりとなります。"
       buttons={[
@@ -58,7 +59,7 @@ import othersImage from '/src/assets/landing/others.png';
 </Card>
 
 <Card title="メガテンRTAコミュニティーによって維持">
-編集したい場合、「「ページを編集」のボタンを押して内容を編集することができます。
+編集したい場合、「ページを編集」のボタンを押すによって内容を編集できます。
 </Card>
 
 
