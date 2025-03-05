@@ -1,0 +1,124 @@
+---
+title: 真・女神転生II
+description: All Resources for Shin Megami Tensei II
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/smt/smt2-sfc.jpg'
+
+<DocsHero 
+    content="真・女神転生IIは真・女神転生シリーズの第二ゲームです。バグだらけゲームとされています。"
+    srcUrl={cover}
+    alt="Shin Megami Tensei II Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/smt2" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+## 歴史
+
+<Tabs>
+<TabItem label="NMG - SFC版">
+<Steps>
+1. Shin Megami Tensei II was released in Japan on March 14, 1994.
+2. The oldest available recorded speedrun was done by ドミネーター on 2009/01/20 with a time of [**4:25:21**](https://www.nicovideo.jp/watch/sm5893892)
+3. On 2018/01/01, mizusima40 achieved a time of [**3:27:46**](https://drive.google.com/file/d/0B4KCZvbOlmK2Mld2QW9rQXVHWmM/view)
+4. On 2021/07/08, sioneus achieved a time of [**3:21:48**](https://www.twitch.tv/videos/1080582918)
+</Steps>
+</TabItem>
+
+<TabItem label="Any% - SFC版">
+<Steps>
+1. Shin Megami Tensei II was released in Japan on March 14, 1994.
+2. The oldest available recorded speedrun was done by ドミネーター on 2014/03/31 with a time of [**1:52:23**](https://www.nicovideo.jp/watch/sm23225176). This run used the traesto warp bug and item change to go to Makai early into the game and cut the entirety of the Tokyo Underground section of the game.
+3. On 2020/02/08, lradial beat the world record with a time of [**1:51:34**](https://youtu.be/jvyvaGTwifA)
+4. On 2022/08/08, known glitch hunter and speedrunner masaya published a [video](https://www.youtube.com/watch?v=PCxKqoqmi2E&t=13s) explaining how to access the in-game debug menu. This led to the creation of a new Any% category which completed the game unlocking and accessing this debug menu while still using item change and traesto warp.
+5. On 2022/08/13, Symm completed this new route and achieved a new world record with a time of [37:32](https://youtu.be/nZ0KfUkVnpI)
+6. On 2022/08/18, sioneus improved this world record with a time of [**37:01**](https://youtu.be/nkziYAqT5og)
+7. The current world record is held by Liv with a time of [**36:58**](https://youtu.be/I-IFzuKUzk8)
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Any%">どのバグを使ってもOK.</Card>
+    <Card title="Any%, ACEなし">ACEを除いてどのバグを使ってもOK。</Card>
+    <Card title="NMG"></Card>
+    <Card title="全ボス"></Card>
+</CardGrid>
+
+## Glitches & Tricks
+<Tabs>
+    <TabItem label="SFC版">
+        <details>
+        <summary>**Elevator Glitch**</summary>
+
+        When entering an elevator, by placing the cursor on the desired floor and pressing B, the player is automatically transported to that floor without watching the elevator animation. 
+        This glitch was patched in the 1.1 version of the game.
+        </details>
+
+        <details>
+        <summary>**Item Duplication**</summary>
+
+
+        There must be an even number of stacks in the inventory. Rearrange the inventory putting the item to duplicate on the bottom right. Sort the inventory twice and the stack will be duplicated.
+        </details>
+
+        <details>
+        <summary>**Item Change**</summary>
+
+
+        The inventory can have 30 different item stacks, which can only hold up to 9 items. In order to execute Item Change, you must load back a save file with a full inventory.
+         When opening the rearrange (ならべかえ) menu, the game copies the data from the inventory (located at 0x000440 - 0x00047F) to a temporary array (located at 0x000638 - 0x000677). The first 32 bytes represent the item IDs and the next 32 bytes represent their quantities. Once the menu is closed, the game copies the data from it back to the inventory.
+        After loading the game with a crammed inventory and trying to rearrange the items will cause the menu to show more than just 15 rows. On the 16th row there will be two Attack Knives (アッタクナイフ) with a blank counter. The 17th to the 31st will be the normal inventory repeated. That goes on until the 64th row.
+        By adjusting the quantities of the items, it is possible to obtain any item in the inventory by switching the ID of the item with its quantity. For example, by moving to the 2nd loop, where quantities are stored, and switching an item of quantitiy 120 with an item in the first loop, where the ID of the items in the inventory are stored, you'll obtain the item of ID 120 in your inventory.
+
+        This glitch is used in the Any% and Any% no ACE categories.
+        Detailed [Item Change guide](https://docs.google.com/document/d/1yBIuZqcZVXKRCkznnXnnBqYO2WQYNAwoaCFEQnwnHlE/edit?tab=t.0) relevant to the Any% no ACE category by Electra.
+        </details>
+
+        <details>
+        <summary>**Traport Wrong Warp**</summary>
+
+        Dungeons are stored adjacently so if there was a simple way to walk through walls it’d be possible to go from one 3D area to another. Fortunately such a trick exists, although not possible to do it everywhere. Using Traesto (トラエスト) while prompting an event (an NPC dialogue or earthquake, for instance) makes you walk back one step, disregarding walls.
+        This allows the player to warp between areas and is used in the Any% and Any% no ACE categories to go from the Valhalla Disco to Yesod, from the Excavation Site to the Jail and from Puck's dungeon to the Center.
+        </details>
+    </TabItem>
+    <TabItem label="GBA版">
+        <details>
+        <summary>**カジノのコイン増加**</summary>
+
+        この裏技は旧六本木しか実行されません。
+        カジノでコイン10枚程度と交換する。
+        バカラでBANKERに1枚賭けて、一度勝つまで続ける。（勝つと、所持コインがy.xxと小数点になる）
+        y枚のコインを全てTIEに賭けて負ける。（所持コインが0.xxになる）
+        余った0.xxのコインを賭けようとすると、所持コインがバグった枚数になる。
+        そのまま一回ゲームをしてから終了すると、バグった枚数（90万や4300万など）のコインを入手できる。
+
+        *@atwikiから書き写されました*
+        </details>
+
+        <details>
+        <summary>**イベント扉を回避**</summary>
+
+        イベント扉（金剛神界など）の方向を向かないで、【B】ボタンを押したまま移動する。
+        イベント扉の前で戦闘になった際、そのまま戦闘する。
+        戦闘終了後、イベント扉の方向を向いていると、そのまま通行できる。
+
+        *@atwikiから書き写されました*
+        </details>
+    </TabItem>
+</Tabs>
+
+## チャート
+- [LAW ENDチャート](https://mizusima40.seesaa.net/category/24028314-1.html) - 水島さん
+
+## 他の素材
+- [atwiki SFC版](https://w.atwiki.jp/shinmegamitensei2/pages/8.html)
+- [atwiki PS1版](https://w.atwiki.jp/shinmegamitensei2/pages/422.html)
+- [atwiki GBA版](https://w.atwiki.jp/shinmegamitensei2/pages/378.html)
+
+## TASの動画
+- [真・女神転生II 35:33](https://www.youtube.com/watch?v=Pi9C7Ej_1zw)
+
