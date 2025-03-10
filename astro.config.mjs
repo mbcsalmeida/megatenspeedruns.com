@@ -50,47 +50,75 @@ export default defineConfig({
               {
                   label: "Shin Megami Tensei",
                   autogenerate: {directory: "smt"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': '真・女神転生',
+                  },
               },
               {
                   label: "Persona",
                   autogenerate: {directory: "persona"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'ペルソナ',
+                  },
               },
               {
                   label: "Digital Devil Saga",
                   autogenerate: {directory: "dds"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'DIGITAL DEVIL SAGA アバタール・チューナー',
+                  },
+                  
               },
               {
                   label: "Devil Summoner",
                   autogenerate: {directory: "devilsummoner"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルサマナー',
+                  },
               },
               {
                   label: "Metaphor",
                   autogenerate: {directory: "metaphor"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'メタファー：リファンタジオ',
+                  },
               },
               {
                   label: "Devil Children",
                   autogenerate: {directory: "devilchildren"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルチルドレン',
+                  },
               },
               {
                   label: "Devil Survivor",
                   autogenerate: {directory: "devilsurvivor"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルサバイバー',
+                  },
               },
               {
                   label: "Last Bible",
                   autogenerate: {directory: "lastbible"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'ラスト・バイブル',
+                  },
               },
               {
                   label: "Others",
                   autogenerate: {directory: "others"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': '他のゲーム',
+                  },
               },
           ],
       }),
