@@ -1,5 +1,5 @@
 ---
-title: Digital Devil Story - Megami Tensei II
+title: デジタル・デビル物語女神転生II
 description: All Resources for Digital Devil Story - Megami Tensei II
 ---
 
@@ -8,66 +8,74 @@ import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/others/mt2.png'
 
 <DocsHero 
-    content="Digital Devil Story: Megami Tensei II is the second entry in Atlus's Digital Devil Story: Megami Tensei series. This entry improved on the mechanics of the first game, adding features such as the Auto-Pilot and an overworld to navigate."
+    content="デジタル・デビル物語女神転生IIは女神転生シリーズの２作目。今回はオートパイロットとか２マップといった充実した機能が追加されました。"
     srcUrl={cover}
     alt="Digital Devil Story - Megami Tensei II Cover"
 />
 
-<LinkCard title="Leaderboards" href="https://www.speedrun.com/mt2" description="See all the submitted runs on Speedrun.com"/>
+<LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/mt2" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
 
-## Speedrun History
+## 歴史
 <Tabs>
-    <TabItem label="Glitchless">
+    <TabItem label="バグなし">
         <Steps>
-        1. Digital Devil Story: Megami Tensei II was released in Japan on April 6, 1990.
-        2. The first known recorded run that is still available is by Biim with a time of [**5:22:22**](https://www.nicovideo.jp/watch/sm18620957) set on 2012/08/15
-        3. The current world record is held by akiyabo with a time of [**3:46:26**](https://youtu.be/TnIHEgi3-rs).
+        1. デジタル・デビル物語女神転生IIは1999年04月6日に発売されました。
+        2. Biimさんは2012年08月15日に最初のタイムを完走しました。[**5時間22分22**](https://www.nicovideo.jp/watch/sm18620957)。
+        3. 現在の世界記録は秋やぼさんの[**3時間46分26**](https://youtu.be/TnIHEgi3-rs)。
        </Steps>
     </TabItem>
 
-    <TabItem label="Glitched">
+    <TabItem label="バグあり">
         <Steps>
-        1. Digital Devil Story: Megami Tensei II was released in Japan on April 6, 1990.
-        2. The first recorded run was done by Equi with a time of 2:44:35 set on 2020/10/03
-        3. Symm recorded the first run done on the unofficial english patch with a time of [**2:53:59**](https://youtu.be/wlcupjWzV3Q)
-        4. The record was improved by Akiyabo on 2024/10/11 with a time of[**2:21:58**](https://www.twitch.tv/videos/2273267875).
+        1. デジタル・デビル物語女神転生IIは1999年04月6日に発売されました。
+        2. 2020年10月3日に最初の完走した走りはえくいさんの2時間44分35。
+        3. 最初の英語版の走りはSymmさんの[**2時間53分59**](https://youtu.be/wlcupjWzV3Q)。
+        4. 2024年10月11日に、秋やぼさんは世界記録を更新しました。[**2時間21分58**](https://www.twitch.tv/videos/2273267875)。
         </Steps>
     </TabItem>
 
-     <TabItem label="Glitched (No Auto-Pilot Bug)">
+     <TabItem label="バグあり（オートパイロットバグなし）">
         <Steps>
-        1. Digital Devil Story: Megami Tensei II was released in Japan on April 6, 1990.
-        3. The current world record is held by by Akiyabo with a a time of [**2:58:42**](https://www.twitch.tv/videos/1728841936) set on 2023/02/05.
+        1. デジタル・デビル物語女神転生IIは1999年04月6日に発売されました。
+        3. 現在の世界記録はAkiyaboさんの[**2時間58分42**](https://www.twitch.tv/videos/1728841936)。
         </Steps>
     </TabItem>
 </Tabs>
 
 
-## Categories
+## カテゴリー
 <CardGrid>
-    <Card title="Glitched">Completes the game, getting the good ending by defeating YHVH. Usage of any glitches is allowed.</Card>
-    <Card title="Glitched (No Auto-pilot bug)">Completes the game, getting the good ending by defeating YHVH. Auto-pilot bug is not allowed.</Card>
-    <Card title="Glitchless">Completes the game, getting the good ending by defeating YHVH. No glitches are allowed.</Card>
+    <Card title="バグあり">YHVHを倒してゲームをクリアする。どのバグ使ってもOK.</Card>
+    <Card title="バグあり（オートパイロットバグなし）">YHVHを倒してゲームをクリアする。オートパイロットバグを除いてどのバグ使ってもOK.</Card>
+    <Card title="バグなし">YHVHを倒してゲームをクリアする。バグ禁止。</Card>
 </CardGrid>
 
-## Glitches & Tricks
+## 裏技とバグ
 <details>
-<summary>Astaroth Castle Warp</summary>
-If you meet with Balam in Shibuya with under 7 Wisdom then use Taestro and talk to the receptionist again, you will somehow end up in Astaroth's Castle. This bug causes some issues that need to be worked around. For example, you must have the party filled after killing Astaroth and you must kill Heroine before you leave the castle. 
+<summary>アスタロート城へのワープバグあり</summary>
+主人公の知力7以下でバラムに会い、拝む。
+次にトラエストで入口に戻る。
+それから受付嬢に会うと、アスタロート城の4Fに飛ぶ 				
 </details>
 
 <details>
-<summary>Auto-Pilot Bug</summary>
-If you set an auto-pilot location and then being returning to the location you have the option to cancel it before you reach the initial location. By cancelling it this way you will be able to walk around feely but with no encounters for the entire dungeon. It resets after you leave to the world map. [Video example.](https://x.com/SymmRTA/status/1683684048911097857)
+<summary>オートパイロットバグ</summary>
+オートパイロット使用可能な場所でAをセットする。
+その後、数歩歩いた場所で「Aへいどう」を選び、
+Aをセットした場所へ着く前にBボタンを押して
+オートパイロットを「ちゅうしする」にする。
+
+[例動画](https://x.com/SymmRTA/status/1683684048911097857)
 </details>
 
 <details>
-<summary>Total Annihilation Bug</summary>
-Total Annihilation is the name of a saved game corruption bug that allows you to beat the game in under 10 minutes. It is currently not used or recorded on SRC, you can find an example of it [here](https://www.nicovideo.jp/watch/sm37779525).
+<summary>全滅バグ</summary>
+全滅バグでゲームを１０分うちにクリアできます。
+SRCにこのバグを使ってカテゴリーがありませんが、[こちら](https://www.nicovideo.jp/watch/sm37779525)のRTAに説明されています。
 </details>
 
-## Notes
-- [Glitched](https://docs.google.com/spreadsheets/d/1C3bxaREutq2GqSWsgaF9cZsWi5vet9eKzEDdF6MdttQ/edit#gid=16972868) by Symm
+## チャート
+- [バグあり](https://docs.google.com/spreadsheets/d/1Ap75pBj-84runGguBS60Fq2OPZjRgehi/edit?usp=sharing&ouid=114715154197990836215&rtpof=true&sd=true) - 秋やぼ
 
-## Resources
+## 素材
 - [atwiki](http://dds.opatil.com/dds2/index.html)

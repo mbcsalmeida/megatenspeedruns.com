@@ -1,0 +1,54 @@
+---
+title: ペルソナQ
+description: All Resources for Persona Q
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/pq.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="ペルソナQ』は、『ペルソナ3』、『ペルソナ4』、『ペルソナ5』のキャラクターが登場する『ペルソナ』の外伝作品で、『世界樹の迷宮シリーズ』シリーズに似たゲームプレイが採用ゲーム。"
+    srcUrl={cover}
+    alt="Persona Q Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="投稿されたRTA動画を観るようにSpeedrun.comへ" actions={
+    [
+        {title:"ペルソナQ シャドウ オブ ザ ラビリンス",
+        url:"https://www.speedrun.com/ja-JP/persona_q_shadow_of_the_labyrinth"},
+        {title:"ペルソナQ2 ニュー シネマ ラビリンス",
+        url:"https://www.speedrun.com/ja-JP/persona_q2_new_cinema_labyrinth"}
+    ]
+}/>
+
+## Speedrun History
+<Tabs>
+    <TabItem label="ペルソナQ シャドウ オブ ザ ラビリンス">
+        <Steps>
+            1. ペルソナQ シャドウ オブ ザ ラビリンスは2014年6月5日に発売されました。
+            2. 現在の世界記録はPinkPajamasさんのリスキー難易度の[**8時間37分37**]()
+        </Steps>
+    </TabItem>
+    <TabItem label="ペルソナQ2 ニュー シネマ ラビリンス">
+        <Steps>
+            1. ペルソナQ2 ニュー シネマ ラビリンスは2018年11月29日に発売されました。
+            2. 現在の世界記録はPinkPajamasさんのリスキー難易度の[**9時間58分44**]()
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Any%">ゲームをクリアする、コイン使用は不許可。各難易度のカテゴリーがあります。</Card>
+</CardGrid>
+
+## チャート
+- [PQ - Any% - リスキー - 英語](https://docs.google.com/document/d/1PXUCNG59DiLiK1aEfT17fWBZAdIbO9CAuuR7uScn0N8/edit) - PinkPajamas
+- [PQ2 - Any% - リスキー - 英語](https://docs.google.com/document/d/1-xB_ckHZ6Xxui9R12d7Jp9Lq79T0TyacKV7EDTw7CHE/edit) - PinkPajamas
+
+## 素材
+- [PQ2 スキル一覧　英語](https://docs.google.com/spreadsheets/d/12X88sV7k2R-IpZ0-6pwEL_A-NNcp7KT7ktl1d1qV63s/edit#gid=625594584)
+- [PQ2 敵一覧 英語](https://docs.google.com/spreadsheets/d/1Kjb0pebf_gatrRBz2zU5z-QoltKIZaSHT2EIN1ReeLw/edit#gid=1943148282)
+- [PQ2 宝箱一覧　英語](https://pastebin.com/xSYnRC9J)

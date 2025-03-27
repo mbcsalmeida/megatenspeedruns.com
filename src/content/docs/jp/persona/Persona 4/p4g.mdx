@@ -1,0 +1,61 @@
+---
+title: Persona 4 Golden
+description: All Resources for Persona 4
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p4g.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 4 is the fourth mainline entry in the persona series."
+    srcUrl={cover}
+    alt="Persona 4 Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p4g" description="See all the submitted runs on Speedrun.com"/>
+
+## Speedrun History
+<Tabs syncKey='persona4'>
+    <TabItem label="Hard, Golden Ending - Legacy">
+        <Steps>
+            1. Persona 4: Golden was released in Japan on June 14, 2012.
+            2. The first recorded run was done by mulsqi with a time of [**11:36:08**](https://www.twitch.tv/videos/4252044)
+            3. The current world record holder is mulsqi with a time of [**8:43:25**](https://www.twitch.tv/videos/537323140)
+        </Steps>
+    </TabItem>
+    <TabItem label="Hard, Golden Ending - Remaster">
+        <Steps>
+            1. Persona 4: Golden was remastered and released worldwide on January 19, 2023.
+            2. The current world record holder is asapska with a time of [**8:25:59**](https://www.twitch.tv/videos/1732454331)
+        </Steps>
+    </TabItem>
+    <TabItem label="Hard, Golden Ending - PC">
+        <Steps>
+            1. Persona 4: Golden was remastered and released worldwide on June 13, 2020.
+            2. The first recorded run was done by mulsqi with a time of [**6:21:44**](https://www.twitch.tv/videos/767379402)
+            3. On 2023/07/21, Radu set a new world record with a time of [**6:19:39**](https://youtu.be/kIg3IAYJtMQ)
+            4. On 2024/05/14, mulsqi reclaimed the world record and achieved the first sub 6h run with a time of [**5:56:33**](https://www.twitch.tv/videos/2148997777)
+            5. On 2024/07/24, mulsqi improved the world record with a time of [**5:52:15**](https://www.twitch.tv/videos/2236876035)
+            6. For the first time in over a year, the world record holder changed when on 2025/02/10 Kiitoksia established a new record of [**5:49:54**](https://youtu.be/DqZG-Nab8ns).
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categories
+<CardGrid>
+    <Card title="Hard, Golden Ending"></Card>
+    <Card title="Hard, Golden Ending NMG"></Card>
+    <Card title="Very Hard, Golden Ending"></Card>
+    <Card title="Any%"></Card>
+    <Card title="NG+, Golden Ending"></Card>
+</CardGrid>
+
+## Notes
+- [Vita - Hard, Golden Ending](https://www.speedrun.com/ja-JP/p4g/guides/itd10) by asapaska
+- [PC - Hard, Golden Ending](https://www.speedrun.com/ja-JP/p4g/guides/g2225) by Ford373
+- [Any%](https://pastebin.com/E8dEq0yD) by mulsqi
+
+## Resources
+- [Golden Manip Sheet](https://docs.google.com/spreadsheets/d/1azMTPr7T1naao0vXywZMd1p3SvFHBeCUFKIxmMHif-4/edit#gid=0)

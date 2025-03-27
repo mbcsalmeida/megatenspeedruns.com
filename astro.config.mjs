@@ -57,7 +57,60 @@ export default defineConfig({
               },
               {
                   label: "Persona",
-                  autogenerate: {directory: "persona"},
+                  items: [
+                    {
+                      label: "Persona 1",
+                      slug: "persona/p1",
+                      translations: {
+                        'ja-JP': 'ペルソナ１'
+                      }
+                    },
+                    {
+                      label: "Persona 2: Innocent Sin",
+                      slug: "persona/p2is",
+                      translations: {
+                        'ja-JP': 'ペルソナ２罪'
+                      }
+                    },
+                    {
+                      label: "Persona 2: Eternal Punishment",
+                      slug: "persona/p2ep",
+                      translations: {
+                        'ja-JP': 'ペルソナ２罰'
+                      }
+                    },
+                    {
+                      label: "Persona 3",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 3"},
+                      translations: {
+                        'ja-JP': 'ペルソナ３',
+                      },
+                    },
+                    {
+                      label: "Persona 4",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 4"},
+                      translations: {
+                        'ja-JP': 'ペルソナ４',
+                      },
+                    },
+                    {
+                      label: "Persona 5",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 5"},
+                      translations: {
+                        'ja-JP': 'ペルソナ５',
+                      },
+                    },
+                    {
+                      label: "Persona Q",
+                      slug: "persona/pq",
+                      translations: {
+                        'ja-JP': 'ペルソナQ'
+                      }
+                    },
+                  ],
                   collapsed: true,
                   translations: {
                     'ja-JP': 'ペルソナ',
