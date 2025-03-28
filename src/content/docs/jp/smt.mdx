@@ -1,0 +1,28 @@
+---
+title: 真・女神転生
+description: All Resources for Shin Megami Tensei 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import smt1 from '/src/assets/covers/smt/smt1-sfc.jpg';
+import smt2 from '/src/assets/covers/smt/smt2-sfc.jpg';
+import smt3 from '/src/assets/covers/smt/smt3.jpg';
+import smt4 from '/src/assets/covers/smt/smt4-jp.jpg';
+import smt4a from '/src/assets/covers/smt/smt4a.jpg';
+import smt5 from '/src/assets/covers/smt/smt5.png';
+import smt5v from '/src/assets/covers/smt/smt5v.jpg';
+import smtsj from '/src/assets/covers/smt/smtsj.jpg';
+import smtif from '/src/assets/covers/smt/smtif-sfc.jpg';
+
+<CardGrid>
+    <LinkCardWithBackground title="真・女神転生" href="/jp/smt/smt1" imagePath={smt1} alt="Click here for SMT " />
+    <LinkCardWithBackground title="真・女神転生II" href="/jp/smt/smt2" imagePath={smt2} alt="Click here for SMT 2" />
+    <LinkCardWithBackground title="真・女神転生if..." href="/jp/smt/smtif" imagePath={smtif} alt="Click here for SMT If" />
+    <LinkCardWithBackground title="真・女神転生IV" href="/jp/smt/smtiv" imagePath={smt4} alt="Click here for SMT 4" />
+    <LinkCardWithBackground title="真・女神転生IV　FINAL" href="/jp/smt/smtiva" imagePath={smt4a} alt="Click here for SMT 4A" />
+    <LinkCardWithBackground title="真・女神転生IIIーNOCTURNE" href="/jp/smt/smtnocturne" imagePath={smt3} alt="Click here for SMT 3" /> 
+    <LinkCardWithBackground title="真・女神転生　STRANGE JOURNEY" href="/jp/smt/smtsj" imagePath={smtsj} alt="Click here for SMT SJ" />
+    <LinkCardWithBackground title="真・女神転生V" href="/jp/smt/smtv" imagePath={smt5} alt="Click here for SMT 5" />
+    <LinkCardWithBackground title="真・女神転生V Vengeance" href="/jp/smt/smtvv" imagePath={smt5v} alt="Click here for SMT 5 V" />
+</CardGrid>

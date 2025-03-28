@@ -1,0 +1,21 @@
+---
+title: ラストバイブル
+description: All Resources for Last Bible
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import lb1 from '/src/assets/covers/lastbible/lastbible-gbc.png'
+import lb2 from '/src/assets/covers/lastbible/lb2-gbc.png'
+import lb3 from '/src/assets/covers/lastbible/lastbible3.png'
+import ab from '/src/assets/covers/lastbible/anotherbible.jpg'
+import lbs from '/src/assets/covers/lastbible/special.jpg'
+
+
+<CardGrid>
+    <LinkCardWithBackground title="女神転生外伝 ラストバイブル" href="/jp/lastbible/lb1" imagePath={lb1} alt="Click here for LB" />
+    <LinkCardWithBackground title="女神転生外伝 ラストバイブルII" href="/jp/lastbible/lb2" imagePath={lb2} alt="Click here for LB" />
+    <LinkCardWithBackground title="ラストバイブルIII" href="/jp/lastbible/lb3" imagePath={lb3} alt="Click here for LB3" />
+    <LinkCardWithBackground title="女神転生外伝 ラストバイブルスペシャル" href="/jp/lastbible/lbspecial" imagePath={lbs} alt="Click here for LB Special" />
+    <LinkCardWithBackground title="アナザ・バイブル" href="/jp/lastbible/ab" imagePath={ab} alt="Click here for AB" />
+</CardGrid>

@@ -1,0 +1,26 @@
+---
+title: デビルサマナー
+description: All Resources for Devil Summoner
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import card from '/src/assets/covers/devilsummoner/cardsummoner.jpg'
+import ds1 from '/src/assets/covers/devilsummoner/ds-ss.png'
+import sh from '/src/assets/covers/devilsummoner/sh-ss.jpg'
+import sh2 from '/src/assets/covers/devilsummoner/sh2.jpg'
+import raidou1 from '/src/assets/covers/devilsummoner/raidou1.jpg'
+import raidou2 from '/src/assets/covers/devilsummoner/raidou2.jpg'
+
+
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="真・女神転生トレーディングカード カードサマナー" href="/jp/devilsummoner/cardsummoner" imagePath={card} alt="Click here for Card Summoner" />
+    <LinkCardWithBackground title="真・女神転生デビルサマナー" href="/jp/devilsummoner/devilsummoner" imagePath={ds1} alt="Click here for Devil Summoner" />
+    <LinkCardWithBackground title="デビルサマナー ソウルハッカーズ" href="/jp/devilsummoner/soulhackers" imagePath={sh} alt="Click here for Soul Hackers" />
+    <LinkCardWithBackground title="ソウルハッカーズ2" href="/jp/devilsummoner/soulhackers2" imagePath={sh2} alt="Click here for Soul Hackers 2" />
+    <LinkCardWithBackground title="デビルサマナー 葛葉ライドウ 対 超力兵団" href="/jp/devilsummoner/raidou1" imagePath={raidou1} alt="Click here for Raidou 1" />
+    <LinkCardWithBackground title="デビルサマナー 葛葉ライドウ 対 アバドン王" href="/jp/devilsummoner/raidou2" imagePath={raidou2} alt="Click here for Raidou 2" />
+</CardGrid>

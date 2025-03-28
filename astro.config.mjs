@@ -50,47 +50,128 @@ export default defineConfig({
               {
                   label: "Shin Megami Tensei",
                   autogenerate: {directory: "smt"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': '真・女神転生',
+                  },
               },
               {
                   label: "Persona",
-                  autogenerate: {directory: "persona"},
-                  collapsed: true
+                  items: [
+                    {
+                      label: "Persona 1",
+                      slug: "persona/p1",
+                      translations: {
+                        'ja-JP': 'ペルソナ１'
+                      }
+                    },
+                    {
+                      label: "Persona 2: Innocent Sin",
+                      slug: "persona/p2is",
+                      translations: {
+                        'ja-JP': 'ペルソナ２罪'
+                      }
+                    },
+                    {
+                      label: "Persona 2: Eternal Punishment",
+                      slug: "persona/p2ep",
+                      translations: {
+                        'ja-JP': 'ペルソナ２罰'
+                      }
+                    },
+                    {
+                      label: "Persona 3",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 3"},
+                      translations: {
+                        'ja-JP': 'ペルソナ３',
+                      },
+                    },
+                    {
+                      label: "Persona 4",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 4"},
+                      translations: {
+                        'ja-JP': 'ペルソナ４',
+                      },
+                    },
+                    {
+                      label: "Persona 5",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 5"},
+                      translations: {
+                        'ja-JP': 'ペルソナ５',
+                      },
+                    },
+                    {
+                      label: "Persona Q",
+                      slug: "persona/pq",
+                      translations: {
+                        'ja-JP': 'ペルソナQ'
+                      }
+                    },
+                  ],
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'ペルソナ',
+                  },
               },
               {
                   label: "Digital Devil Saga",
                   autogenerate: {directory: "dds"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'DIGITAL DEVIL SAGA アバタール・チューナー',
+                  },
+                  
               },
               {
                   label: "Devil Summoner",
                   autogenerate: {directory: "devilsummoner"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルサマナー',
+                  },
               },
               {
                   label: "Metaphor",
                   autogenerate: {directory: "metaphor"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'メタファー：リファンタジオ',
+                  },
               },
               {
                   label: "Devil Children",
                   autogenerate: {directory: "devilchildren"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルチルドレン',
+                  },
               },
               {
                   label: "Devil Survivor",
                   autogenerate: {directory: "devilsurvivor"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'デビルサバイバー',
+                  },
               },
               {
                   label: "Last Bible",
                   autogenerate: {directory: "lastbible"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': 'ラスト・バイブル',
+                  },
               },
               {
                   label: "Others",
                   autogenerate: {directory: "others"},
-                  collapsed: true
+                  collapsed: true,
+                  translations: {
+                    'ja-JP': '他のゲーム',
+                  },
               },
           ],
       }),

@@ -1,0 +1,43 @@
+---
+title: デビルチルドレン・メシアライザー
+description: デビルチルドレン・メシアライザー RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import puzzleCover from '/src/assets/covers/devilchildren/puzzle.webp'
+
+<DocsHero 
+    content="デビルチルドレン・パズルdeコール！はデビルチルドレンシリーズの外伝作品です。パズルボーイのようにパズルを解いて最後まで進む。ゲームに五界があります。それにパズルモードもあり、三つの難易度のパズルを解くことができます。"
+    srcUrl={puzzleCover}
+    alt="Devil Children: Puzzle de Call Box Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/puzzledecall" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+## 歴史
+
+<Tabs>
+<TabItem label="ランド編">
+<Steps>
+1. デビルチルドレン・パズルdeコール！は2003年07月27日に発売されました。
+2. 最初のRTAタイムはSymmさんが2021年05月21日に完走したの[**16分31**](https://www.twitch.tv/videos/1031955590)タイム。
+3. 世界記録はSymmさんが2021年05月28日に完走したの[**13分38**](https://youtu.be/4CtD9nrWYSc)タイム。
+</Steps>
+</TabItem>
+
+<TabItem label="ゲイル編">
+1. デビルチルドレン・パズルdeコール！は2003年07月27日に発売されました。
+2. 最初のRTAタイムはsioneusさんが2021年05月29日に完走したの[**33分27**](https://youtu.be/blMPVWNkxso)タイム。
+3. 世界記録はsioneusさんが2024年10月30日に完走したの[**29分03**](https://youtu.be/g0cuw2ji2nY)タイム。
+</TabItem>
+</Tabs>
+
+## カテゴリー
+<CardGrid>
+    <Card title="ストーリモード  - ランド編">ランド編をできるだけ早くクリアする。</Card>
+    <Card title="ストーリモード - ゲイル編">ゲイル編をできるだけ早くクリアする。</Card>
+    <Card title="パズルモード - Easy">全１０ステージをクリアする。</Card>
+    <Card title="パズルモード - Normal">全１０ステージをクリアする。</Card>
+    <Card title="パズルモード - Hard">全１０ステージをクリアする。</Card>
+</CardGrid>

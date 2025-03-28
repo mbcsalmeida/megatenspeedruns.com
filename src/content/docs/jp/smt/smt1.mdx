@@ -1,0 +1,155 @@
+---
+title: 真・女神転生
+description: 真・女神転生 RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/smt/smt1-sfc.jpg'
+
+<DocsHero 
+    content="真・女神転生は真・女神転生シリーズの第一ゲームです。"
+    srcUrl={cover}
+    alt="Shin Megami Tensei Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/smt1" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+## 歴史
+
+<Tabs>
+    <TabItem label="SFC版">
+        <Steps>
+            1. 真・女神転生は10月30日1992年に発売されました。
+            2. ２００７年０５月１２日に初めて録画したRTAはコロスケさんに達成しました。時間間は[**3時間36分17**](https://www.nicovideo.jp/watch/sm285732)、ニュートラルのエンディングでした. 
+            3. ２００９年１０月１３日に０１走者は記録を更新しました。時間間は[**2時間35分41**](https://www.nicovideo.jp/watch/sm8414333)でした。
+            4. ２０１６年１０月１５日に柳雲さんは初めてのカオスエンディングRTAを完走しました。時間間は[**2時間34分54**](https://www.nicovideo.jp/watch/sm29842037)でした。
+            5. ２０１７年１２月４日、Symmさんは初めて英語訳版のRTAを完走しました。時間間は[**3時間00分24**](https://www.youtube.com/watch?v=LiNjD_6y2Tg&feature=youtu.be)でした. 英語訳版が遅いとされていると従ってほとんどのRTAは日本語版に実行されます。
+            6. ２０１８年０１月０１日、水島さんは初めての２時間間切りを達成して記録を更新しました。時間間は[**1時間57分40**]でした。この記録は世界記録として３年間となりました。この頃からロウエンディングは一番走行したカテゴリになりました。
+            7. ２０１８年０８月２日にまさやさんは再現実行でストラディバリアスを手にいれるチャートで[**1:39:17**](https://www.nicovideo.jp/watch/sm33624817)を達成しました。現在にはSpeedrun.comに再現実行の投稿は不許可でなければ、これが世界記録となります.
+            8. ２０２０年に水島さんはチャートを直してトラえすとのスキップとチャームの作戦を含めてチャートを更新しました。このチャートは早くて乱数の事故も少なくなるそうになって現在にも使用されます。
+            9. ２０２０年０９月１１日にて世界記録は水島さんに達成したの[**1時間47分43**](https://www.twitch.tv/videos/738802913).
+        </Steps>
+    </TabItem>
+    <TabItem label="PS版">
+        <Steps>
+        1. 真・女神転生は5月21日2001年に発売されました。
+        2. ２０１６年１１月１３日にCrimさんは初めてPS版のニュートラルのRTAを完走しました。時間間は[**2時間11分20**](https://www.nicovideo.jp/watch/sm30040584)でした。
+        3. ２０２０年０６月１１日に,CliveさんはロウエンディングのRTAを完走しました。 時間間は[**1時間39分03**](https://www.youtube.com/watch?v=cJ7768D-rHI) でした。
+        4. 二ヶ月後, 八月１４日に, えくいさんは世界記録を更新しました。時間間は [**1時間38分20**](www.nicovideo.jp/watch/sm37356462)でした。これは現在の日本語版の世界記録です。
+        5. ２０２２年８月１０日、Romhacking.netに英語訳訳は公開されました。この版は日本語版より速くて結果、英語と日本語が分かれまして海外に英語版は人気になりました。
+        6. ２０２２年１１月１３日に英語版は初めてsioneusに走行されました。時間間は[**1時間45分56**](https://www.twitch.tv/videos/1652072379)でした。
+        7. ２０２４年１０月２８日にて最初の１時間３０分切ったRTAおよび世界記録はSguyさんに達成したの[**1時間29分27**](https://www.youtube.com/watch?v=CJrUu9pecPE)。
+        </Steps>
+    </TabItem>
+    <TabItem label="GBA版">
+        <Steps>
+        1. 真・女神転生は３月２８日2003年に発売されました。
+        2. 世界記録はえくいさんの[**1時間52分57**].
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## カテゴリー
+
+<Tabs>
+    <TabItem label="SFC版">
+        <CardGrid>
+            <Card title="NMG">ACE, 乱数調整、売買バグと言ったバグは禁止。各エンディングのカテゴリがあります。</Card>
+            <Card title="Any%">どのバグを使ってもOK。.</Card>
+            <Card title="全ボス">NMGのルールに沿ってバグは禁止に加えてすべてのボスを倒さなければなりません。従ってニュートラルエンディングが必須です。このカテゴリは現在Miscに入ります。</Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="PS版">
+        <CardGrid>
+            <Card title="Any%">どのバグは許可。</Card>
+            <Card title="バグなし">ゲームをクリアすることで、各エンディングのカテゴリがあります。バグは禁止。</Card>
+            <Card title="全ボス">全部のボスは倒すべきなカテゴリー。バグは禁止。</Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="GBA版">
+        <CardGrid>
+            <Card title="破損ロード">破損ロードをしてゲームをクリアすることです。</Card>
+            <Card title="バグなし">ゲームをクリアすることで、各エンディングのカテゴリがあります。バグは禁止。</Card>
+            <Card title="全ボス">全部のボスは倒すべきなカテゴリー。バグは禁止。</Card>
+        </CardGrid>
+    </TabItem>
+</Tabs>
+
+## バグと裏技
+
+<Tabs>
+    <TabItem label="SFC版">
+        <details>
+        <summary>**魔法の行動順**</summary>
+
+        SFC版真・女神転生では速さに関わらず、魔法が物理攻撃に先手を取れる事が知られている。まさやさんの詳しく説明は[こちら](https://smtlab.web.fc2.com/system.html#magic)。
+        </details>
+
+        <details>
+        <summary>**トラエストでショートカット**</summary>
+
+        銀座大地下道から池袋方面へ向かい雑司が谷口から外に出たら、再度、銀座大地下道へ入り「トラエスト」を使用する。
+        すると、出入り口の北へ出るのでそこから東→北と進むと、カオスヒーローに捕まらないで先へ進める。
+        ちなみに裁判イベントは、大洪水前ならいつでも行える。 
+
+        *@atwikiから書き写されました。*
+        </details>
+
+        <details>
+        <summary>**アイテム売買バグ**</summary>
+
+        どの店でもいいので「かう」を選択して、【Ａ】ボタンを押して決定し、そのまま【Ａ】ボタンを押した状態で商品を表示する。
+        その状態で【Ｂ】ボタンを押してキャンセルすると、その店では売っていないアイテムを売ってくれる。
+        なお、「うる」を選択して同様のことを行うと、持っていないはずの「アタックナイフ」を売ることができる。
+
+        *@atwikiから書き写されました。詳しくは[こちら](https://w.atwiki.jp/shinmegamitensei1/pages/450.html)。*
+        </details>
+    </TabItem>
+    <TabItem label="PS版">
+        <details>
+        <summary>**装備バグ**</summary>
+        装備を変更する際、方向キーの上（または下）と【○】ボタンを同時間に押すと、タイミングによっては上（または下）の装備品を装備できる。
+
+        ※注意点：装備できるアイテムがない場合など、フリーズする可能性がある。
+
+        （例）
+
+        「ガン」を選択した状態で、【上】と【○】ボタンを同時間に押すと、「ガン」に「剣」を装備できる。
+        「ガン」を選択した状態で、【下】と【○】ボタンを同時間に押すと、「ガン」に「ヘルメット」を装備できる。
+
+        *@atwikiから書き写されました*
+
+        「無視」の相性の弾をブーツに装備すると攻撃は不効果になってダメージを受けられないようになります。それにしても呪殺の魔法は有効です。
+        </details>
+
+        <details>
+        <summary>**アイテム売買バグ**</summary>
+        武器や防具を買う際、数量を「01」か「10」にして方向キーの下と【○】ボタンを同時間に押し、数量が「00」（TOTAL「0」魔貨）の状態で買い、「すぐに装備しますか？」に「YES」を選択する。
+        買う際に値段を告げられるが、TOTAL「0」魔貨となっているため、タダで買える。
+        ただし、所持しているアイテムの場合は購入できない。
+
+        *@atwikiから書き写されました*
+        </details>
+    </TabItem>
+</Tabs>
+
+## チャート
+- [SFC版　any％](https://smtlab.web.fc2.com/rta.html#any%) - まさやさん
+- [SFC版 No Major Glitches ロウエンディング](https://smtlab.web.fc2.com/rta.html#law) - まさやさん
+- [SFC版  ヒノカグツチチャート LAW END](https://mizusima40.seesaa.net/category/24028055-1.html) - 水島さん
+- [SFC版 チャームチャート 全ENDルート分岐](https://mizusima40.seesaa.net/article/477627838.html) - 水島さん
+
+- [PS版 Glitchless/バグなし ロウエンディング](http://cliverta.web.fc2.com/chart/shin1-PS-L.html) - Clive
+
+## 他の素材
+- [SFC @ウィキ](https://w.atwiki.jp/shinmegamitensei1/pages/290.html)
+- [真・女神転生1 解析ノート](https://smt1-note.vercel.app/docs)
+- [合体ツール](https://ore-game.com/dds1/verify/unite-rule-2/)
+- [まさやさんの研究所](https://smtlab.web.fc2.com/index.html)
+- [PS1 @ウィキ](https://w.atwiki.jp/shinmegamitensei1/pages/494.html)
+- [GBA @ウィキ](https://w.atwiki.jp/shinmegamitensei1/pages/282.html)
+
+## TASの動画
+- [真・女神転生 SFC版 7:20](https://www.youtube.com/watch?v=PKyXJkBsJaw&feature=youtu.be)

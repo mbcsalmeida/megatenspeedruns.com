@@ -1,0 +1,69 @@
+---
+title: デビルサマナー ソウルハッカーズ
+description: デビルサマナー ソウルハッカーズ RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/devilsummoner/sh-ss.jpg'
+
+<DocsHero 
+    content="デビルサマナー ソウルハッカーズはデビルサマナーシリーズの２作目。"
+    srcUrl={cover}
+    alt="Shin Megami Tensei Devil Summoner - Soul Hackers Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/dsm_soul_hackers" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+## 歴史
+<Tabs>
+<TabItem label="Any% - 3DS">
+<Steps>
+1. デビルサマナー ソウルハッカーズは2013年09月26日に発売されました。
+2. 2022年02月23日に、ToxicTTさんは最初の走りを完走しました。[**2時間53分05**](https://www.twitch.tv/videos/1307789071)
+3. 2023年02月16日に, sioneusさんは記録を更新しました。[**2時間49分57**](https://youtu.be/6A8gE_m3yYo?si=_bJs__IXkaEn6MFe).
+4. 2023年02月25日に, ToxicTTさんは記録を取り返しました。現在の世界記録はToxicTTさんの[**2時間28分16**](https://www.twitch.tv/videos/1748542291), 及びエミュレータ版の世界記録はToxicTTさんの[**2時間26分00**](https://www.twitch.tv/videos/1764017813).
+</Steps>
+</TabItem>
+
+<TabItem label="Any% - PS1">
+<Steps>
+1. デビルサマナー ソウルハッカーズは1999年04月8日に発売されました。
+2. 最初の完走した走りはZAKOさんの[**5時間35分27**](https://www.nicovideo.jp/mylist/49097457?ref=pc_watch_description).
+3. 現在の世界記録はCliveさんの[**4時間47分26**](https://youtu.be/Q9SmV7nO7Lc)。この走りは状況再現を使いました。
+</Steps>
+</TabItem>
+
+<TabItem label="Any% - Sega Saturn">
+<Steps>
+1. デビルサマナー ソウルハッカーズは1997年11月13日に発売されました。
+2. 世界記録はUcchareさんの[**7時間15分54**](https://www.nicozon.net/watch/sm21910086)。
+</Steps>
+</TabItem>
+</Tabs>
+
+## カテゴリー
+<CardGrid>
+    <Card title="New Game Ending">ゲームを新しいセーブからクリアする。ハック機能使用は許可。</Card>
+    <Card title="New Game+ Ending">ゲームをNG＋セーブからクリアする。ハック機能使用は許可。</Card>
+    <Card title="Extra Game">EXダンジョンをクリアする。</Card>
+</CardGrid>
+
+## 裏技とバグ
+<details>
+<summary>**難易度変更**</summary>
+３ds版専属のハックという機能。ゲーム内に難易度を変えることができます。ハードの難易度に設定したら反射ダメージが大きくなります。
+</details>
+
+<details>
+<summary>**PS1版の状況再現**</summary>
+ボス戦の手前にセーブしてゲームを再ロードしたら戦闘は期待通りになります。
+</details>
+
+## Notes
+- [NG - PS版](http://cliverta.web.fc2.com/chart/SoulHackers.html) - Clive
+
+## Resources
+- [3DSデータ](https://szsk.github.io/data/sh/)
+- [PS1ウィキ](https://dssh084.wiki.fc2.com/)
+- [SS教材　英語](https://drive.google.com/drive/folders/1ox4rX0uzFobfmPisGtw62fp9inRVMPzg)

@@ -1,0 +1,17 @@
+---
+title: デビルサバイバー
+description: All Resources for Devil Survivor 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import ds1 from '/src/assets/covers/devilsurvivor/ds.jpg'
+import ds2 from '/src/assets/covers/devilsurvivor/ds2.jpg'
+
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="女神異聞録デビルサバイバー" href="/jp/devilsurvivor/ds1" imagePath={ds1} alt="Click here for DDS1" />
+    <LinkCardWithBackground title="デビルサバイバー2" href="/jp/devilsurvivor/ds2" imagePath={ds2} alt="Click here for DDS2" />
+</CardGrid>

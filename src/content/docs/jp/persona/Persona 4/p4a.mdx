@@ -1,0 +1,42 @@
+---
+title: ペルソナ４アリーナ
+description: ペルソナ４アリーナ RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p4a.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="『ペルソナシリーズ』のアトラスと『BLAZBLUE』のアークシステムワークスの共同開発によって作られている"
+    srcUrl={cover}
+    alt="Persona 4 Arena Cover"
+/>
+
+<LinkCardWithButtons title="ランキング" description="投稿されたRTA動画を観るようにSpeedrun.comへ" actions={
+    [
+        {title:"ペルソナ4 ジ・アルティメット イン マヨナカアリーナ",
+        url:"https://www.speedrun.com/ja-JP/p4a"},
+        {title:"ペルソナ4 ジ・アルティマックス ウルトラスープレックスホールド",
+        url:"https://www.speedrun.com/ja-JP/persona_4_arena_ultimax"}
+    ]
+}/>
+
+## カテゴリー
+
+<Tabs syncKey='persona4'>
+    <TabItem label="マヨナカアリーナ">
+        <CardGrid>
+            <Card title="アーケード"></Card>
+            <Card title="ストーリ (ヨスケ)"></Card>
+            <Card title="ストーリ (ユキコ)"></Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="ウルトラスープレックスホールド">
+        <CardGrid>
+            <Card title="アーケード"></Card>
+            <Card title="ゴールデン"></Card>
+        </CardGrid>
+    </TabItem>
+</Tabs>

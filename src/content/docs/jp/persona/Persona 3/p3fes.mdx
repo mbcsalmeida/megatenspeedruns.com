@@ -1,0 +1,53 @@
+---
+title: ペルソナ３FES
+description: ペルソナ３FES RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p3fes-jp.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="ペルソナ３FESは原作のペルソナ３のリメイク。"
+    srcUrl={cover}
+    alt="Persona 3 FES Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/p3fes" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+
+## 歴史
+<Tabs>
+    <TabItem label="ストーリ">
+        <Steps>
+            1. ペルソナ３FESは2007年4月19日に発売されました。
+            2. 最初の完走した走りはnewby24さんの[**43時間49分01**](https://www.twitch.tv/videos/157810640).
+            3. １年間後, 2018年7月31日に, Darkkefkaさんは記録を更新しました。[**23:12:09**](https://youtu.be/uLJzJFE-MDU)
+            4. 2020年5月24日に, Keeanolookalikeさんは２２時間ギリを達成した。[**21:55:03**](https://www.twitch.tv/videos/630455571)
+            5. 2021年10月23日に, Darkkefkaさんはやっと２０時間を近づいていて記録を更新しました。[**20時間17分44**](https://youtu.be/VPmV0vBxJXs)
+            6. 2022年9月4日に, TatsuyaActさんは２０時間ぎりを達成しました。[**19時間50分47**](https://youtu.be/bxJ3uwRKp9k)
+            7. 2023年2月26日に, Fenr1r79さんは記録を更新しました。[**19:26:33**](https://www.twitch.tv/videos/1749735432)
+            8. 世界記録はDarkkefkaさんの[**19時間23分14**](https://www.twitch.tv/videos/1963205251)
+        </Steps>
+    </TabItem>
+    <TabItem label="Episode Aegis">
+        <Steps>
+            1. ペルソナ３FESは2007年4月19日に発売されました。
+            2. 最初の完走した走りはlilfatkidさんの[**13時間56分24**](https://www.twitch.tv/videos/257118140). 暫くしてまた記録を更新しました。[**9時間9分39**](https://youtu.be/qt9UkUCJ-aM)
+            3. 2019年7月22日に, Flutterさんは世界記録を樹立しました。[**9時間8分15**](https://www.twitch.tv/videos/457225926)
+            4. その24日後、lilfatkidは[**8時間54分42**](https://youtu.be/gNoJi3T9DWE)というタイムで世界記録を塗り替え、2021年11月5日にまで記録を伸ばし、ついに[**7時間54分26**](https://youtu.be/0RKa5ezqGlU)というタイムで初の8時間ぎり走を達成した。
+            5. 2022年9月21日に, Kapさんは史上二日目として８時間ギリを達成しまして、世界記録を更新しました。 [**7時間48分47**](https://youtu.be/cU0C2-jz2dA)
+            2. 世界記録はKapさんの[**7時間21分37**](https://youtu.be/hy9BOzJkwIA)
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## カテゴリー
+ <CardGrid>
+    <Card title="ストーリ, ハード - 大封印">ニュクススキップなし</Card>
+    <Card title="ストーリ, ハード - 真エンド">ニュクススキップあり</Card>
+    <Card title="Episode Aegis"></Card>
+    <Card title="NG+ 真エンド">ニュクススキップあり</Card>
+</CardGrid>
