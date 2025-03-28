@@ -1,0 +1,23 @@
+---
+title: 他のゲーム
+description: All Resources for Others
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import mt1 from '/src/assets/covers/others/mt1.png'
+import mt2 from '/src/assets/covers/others/mt2.png'
+import kmt from '/src/assets/covers/others/kmt.png'
+import jackBrosCover from '/src/assets/covers/others/jackbros.png'
+import syncCover from '/src/assets/covers/others/sync.png'
+import tmsCover from '/src/assets/covers/others/tms.jpg'
+
+
+<CardGrid>
+    <LinkCardWithBackground title="デジタル・デビル物語 女神転生" href="/jp/others/mt1" imagePath={mt1} alt="Click here for MT1" />
+    <LinkCardWithBackground title="デジタル・デビル物語 女神転生II" href="/jp/others/mt2" imagePath={mt2} alt="Click here for MT2" />
+    <LinkCardWithBackground title="旧約・女神転生" href="/jp/others/kmt" imagePath={kmt} alt="Click here for KMT" />
+    <LinkCardWithBackground title="ジャック・ブラザースの迷路でヒーホー!" href="/jp/others/jackbros" imagePath={jackBrosCover} alt="Click here for MT2" />
+    <LinkCardWithBackground title="真・女神転生 SYNCHRONICITY PROLOGUE" href="/jp/others/sync" imagePath={syncCover} alt="Click here for SyncPrologue" />
+    <LinkCardWithBackground title="幻影異聞録♯FE" href="/jp/others/tms" imagePath={tmsCover} alt="Click here for MT2" />
+</CardGrid>

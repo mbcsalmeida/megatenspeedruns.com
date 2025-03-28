@@ -1,0 +1,24 @@
+---
+title: デビルチルドレン
+description: All Resources for Devil Children
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import psxCover from '/src/assets/covers/devilchildren/redblack.jpg'
+import whiteCover from '/src/assets/covers/devilchildren/white.jpg'
+import fireCover from '/src/assets/covers/devilchildren/fire.jpg'
+import gbaCover from '/src/assets/covers/devilchildren/demikidsdark.jpg'
+import puzzleCover from '/src/assets/covers/devilchildren/puzzle.webp'
+import messiaCover from '/src/assets/covers/devilchildren/messia.webp'
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン 黒の書・赤の書" href="/jp/devilchildren/redblack" imagePath={psxCover} />  
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン 白の書" href="/jp/devilchildren/white" imagePath={whiteCover} />
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン 光の書・闇の書" href="/jp/devilchildren/darklight" imagePath={gbaCover} />        
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン 炎の書・氷の書" href="/jp/devilchildren/icefire" imagePath={fireCover} />  
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン パズルdeコール!" href="/jp/devilchildren/puzzledecall" imagePath={puzzleCover} />  
+    <LinkCardWithBackground title="真・女神転生 デビルチルドレン メシアライザー" href="/jp/devilchildren/messia" imagePath={messiaCover} />    
+</CardGrid>

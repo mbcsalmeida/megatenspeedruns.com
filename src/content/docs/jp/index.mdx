@@ -12,7 +12,7 @@ head:
 
 ---
 
-import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
 import LandingPageGrid from '/src/components/LandingPageGrid.astro';
 import LandingPageHero from '/src/components/LandingPageHero.astro';
@@ -27,12 +27,13 @@ import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
 import othersImage from '/src/assets/landing/others.png';
 
 <div class="not-content">
+  <Aside type='danger' title='ペルソナ　リレー 2025'>６月６日ー６月８日、Really Really Longathonのチャンネルにて配信をいたします. スケジュールは[こちら](https://horaro.org/personarelay/2025).</Aside>
   <LandingPageHero altText="Megaten Resources Logo" 
-      description="このサイトはメガテンゲームのRTAに関する情報かガイドの集まりとなります。"
+      description="このサイトはメガテンゲームのRTAに関する情報かガイドの集積サイトとなります。"
       buttons={[
         {
-          title: "チャートへ",
-          url: "/smt"
+          title: "素材へ",
+          url: "/jp/smt"
         },
         {
           title: "イベント",
@@ -47,18 +48,18 @@ import othersImage from '/src/assets/landing/others.png';
     <LinkCardWithBackground title="DIGITAL DEVIL SAGA アバタール・チューナー" href="/jp/dds" imagePath={ddsImage} alt="Click here for DDS Resources"/>
     <LinkCardWithBackground title="メタファー：リファンタジオ" href="/jp/metaphor/metaphor-re" imagePath={metaphorImage} alt="Click here for Metaphor Resources"/>
     <LinkCardWithBackground title="デビルチルドレン" href="/jp/dc" imagePath={devichilImage} alt="Click here for Devil Children Resources"/>
-    <LinkCardWithBackground title="ラストバイブル" href="/jp/lb" imagePath={lastbibleImage} alt="Click here for Last Bible Resources"/>
+    <LinkCardWithBackground title="ラスト・バイブル" href="/jp/lb" imagePath={lastbibleImage} alt="Click here for Last Bible Resources"/>
     <LinkCardWithBackground title="デビルサバイバー" href="/jp/ds" imagePath={survivorImage} alt="Click here for other Resources"/>
     <LinkCardWithBackground title="他のゲーム" href="/jp/others" imagePath={othersImage} alt="Click here for other Resources"/>
   </LandingPageGrid>
 </div>
 
 <Card title="サイトについて">
-
+ここはメガテRTAコミュニティの集積サイトです。ここでは、女神転生シリーズでRTAが行われた全てのゲームに関する情報や、RTAの方法、バグの説明、RTAの歴史に関する資料、注意事項、ガイドを見ることができます。
 </Card>
 
 <Card title="メガテンRTAコミュニティーによって維持">
-編集したい場合、「「ページを編集」のボタンを押して内容を編集することができます。
+編集したい場合、「ページを編集」のボタンを押すによって内容を編集できます。
 </Card>
 
 

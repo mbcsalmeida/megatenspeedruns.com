@@ -1,0 +1,66 @@
+---
+title: 幻影異聞録♯FE
+description: 幻影異聞録♯FE RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import tmsCover from '/src/assets/covers/others/tms-jp.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="『真・女神転生シリーズ』や『ペルソナシリーズ』などを手掛けるアトラスとインテリジェントシステムズの「ファイアーエムブレムシリーズ」のコラボレーションによる完全新作RPG。"
+    srcUrl={tmsCover}
+    alt="Tokyo Mirage Sessions Cover"
+/>
+
+<LinkCardWithButtons title="ランキング" description="投稿されたRTA動画を観るようにSpeedrun.comへ" actions={
+    [
+        {title:"幻影異聞録♯FE",
+        url:"https://www.speedrun.com/ja-JP/tms_fe"},
+        {title:"幻影異聞録♯FE Encore",
+        url:"https://www.speedrun.com/ja-JP/tms_fe_encore"}
+    ]
+}/>
+
+## 歴史
+
+<Tabs>
+<TabItem label="ハード, NG - Wii U">
+<Steps>
+1. 幻影異聞録♯FEは2017年10月16日に発売されました。
+2. 2017年05月3日に最初の走りがO-denに完走されました。[**11:12:55**](https://www.nicovideo.jp/watch/sm31141771)。
+3. 2018年04月29日に、legrandgrandさんがHeroMysticさんのチャートを充実して世界記録を更新しました。 [**11時間15分36**](https://www.youtube.com/watch?v=OVC-2SQk8iM)
+4. 2018年05月6日に,　HeroMysticさんは記録を取り返した。[**10時間30分45**](https://www.twitch.tv/videos/258238938)。
+5. 2018年05月9日に,　legrandgrandさんはまた記録を更新しました。[**9時間12分15](https://youtu.be/noBNKezb4TI)。
+6. 現在の世界記録はlegrandgrandさんの[**8時間52分42**](https://youtu.be/HIhQ-qu3Oi8)。
+</Steps>
+</TabItem>
+
+<TabItem label="ハード, NG - スィッチ">
+<Steps>
+1. 幻影異聞録♯FE Encoreは2020年01月17日に発売されました。
+2. 最初の完走したタイムはlegrandgrandさんの[**8時間29分58**](https://www.youtube.com/watch?v=qwoLPWnImPg).
+3. 現在の世界記録はlegrandgrandさんの[**7時間17分21**](https://www.youtube.com/watch?v=GkbBXwmth0w).
+</Steps>
+</TabItem>
+</Tabs>
+
+## カテゴリー
+<CardGrid>
+    <Card title="ハード, NG"></Card>
+    <Card title="イージー, NG"></Card>
+    <Card title="ノーマル, NG+"></Card>
+    <Card title="ルナティック, NG (ベストEND)">新しいセーブからルナティック難易度でゲームをクリアする樹の全部の衣装を獲得します。</Card>
+</CardGrid>
+
+## チャート
+- [Wii U - ハード, NG](https://seesaawiki.jp/dsoctxt/d/RTA%a5%c1%a5%e3%a1%bc%a5%c8%a1%ca%b8%b8%b1%c6%b0%db%ca%b9%cf%bf%a1%cb) - o-den
+- [Wii U - ハード, NG　英語](https://pastebin.com/GebFxpgk) - legrandgrand
+- [Wii U - イージー, NG　英語](https://emilybrooks.github.io/tms/) - emilybrooks
+- [スィッチ - ハード, NG　英語](https://pastebin.com/umeHrwTs) - legrandgrand
+- [スィッチ - イージー, NG+](https://pastebin.com/2GvCaYCf) - emilybrooks
+
+
+## 素材
+- [データ一覧　英語](https://docs.google.com/spreadsheets/d/1LSA0F4c_j0e_xB9Kya5Rl43bWEsGD9NGIAJS9rYwfQk/edit#gid=0)

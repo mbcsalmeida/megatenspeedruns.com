@@ -1,0 +1,58 @@
+---
+title: ペルソナ3 ポータブル
+description: ペルソナ3 ポータブル RTA 歴史、教材、カテゴリー
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p3-psp.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="ペルソナ3 ポータブルはペルソナ３のPSP移植版。"
+    srcUrl={cover}
+    alt="Persona 3 Cover"
+/>
+
+<LinkCard title="ランキング" href="https://www.speedrun.com/p3p" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>
+
+## 歴史
+<Tabs>
+    <TabItem label="ノーマル、新エンド - PSP版">
+        <Steps>
+            1. ペルソナ3 ポータブルは2009年11月1日に発売されました。
+            2. 最初の完走した走りはmulsqiさんは[**10時間2分58**](https://www.twitch.tv/videos/48151315)
+            3. 世界記録はmulsqiさん[**8時間28分33**](https://www.twitch.tv/videos/439927246)
+        </Steps>
+    </TabItem>
+    <TabItem label="ノーマル、新エンド - リマスター">
+        <Steps>
+            1. ペルソナ3 ポータブル　リマスターは2023年1月19日に発売されました。
+            2. 最初の完走した走りmulsqiさんの**8時間3分44**](https://www.twitch.tv/videos/1721399058)
+            3. 世界記録はmulsqiさんの[**6時間54分01**](https://www.twitch.tv/videos/1957432560)
+        </Steps>
+    </TabItem>
+    <TabItem label="ノーマル、新エンド - PC版">
+        <Steps>
+            1. ペルソナ3 ポータブルは2023年1月19日に発売されました。
+            2. 最初の完走した走りはhoxiさんの[**9時間00分36**](https://www.twitch.tv/videos/1714459376)
+            3. 2023年1月23日に, TatsuyaActさんは記録を樹立しました。 [**8時間18分15**](https://www.twitch.tv/videos/1716034336)
+            4. 世界記録はmulsqiさんの[**7時間25分13**](https://www.twitch.tv/videos/1747810807)
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## カテゴリー
+<CardGrid>
+    <Card title="ハード, 真エンド"></Card>
+    <Card title="ノーマル, 真エンド"></Card>
+    <Card title="Any%"></Card>
+    <Card title="NG+, 真エンド"></Card>
+</CardGrid>
+
+## チャート
+- [PC - Any%　英語](https://docs.google.com/spreadsheets/d/1KlPKCcPtpFDVtuWHYqvTqVOTGL4trV_hMOTQ6jh1cXM/edit#gid=884597558) - ToxicTT
+- [PSP - Any%　英語](https://docs.google.com/spreadsheets/d/1cQnuVqcGNxO-McmPRCmlZZzE-3QHIyW0bTlPCZkEFaE/edit#gid=884597558) - ToxicTT
+- [NG+ 真エンド　英語](https://drive.google.com/file/d/10iJStPLaaFtsfXVyRT-UTCSnfoYnPcwY/view?usp=sharing) - ToxicTT
+- [ノーマル, 真エンド　英語](https://pastebin.com/SCiDpsfw) - mulsqi
