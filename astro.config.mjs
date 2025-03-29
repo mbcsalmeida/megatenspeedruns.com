@@ -166,6 +166,14 @@ export default defineConfig({
                   },
               },
               {
+                label: "Majin Tensei",
+                autogenerate: {directory: "majin"},
+                collapsed: true,
+                translations: {
+                  'ja-JP': '魔神転生',
+                },
+            },
+              {
                   label: "Others",
                   autogenerate: {directory: "others"},
                   collapsed: true,
