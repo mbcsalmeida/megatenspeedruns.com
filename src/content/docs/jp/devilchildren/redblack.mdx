@@ -1,17 +1,34 @@
 ---
-title: デビルチルドレン・メシアライザー
-description: デビルチルドレン・メシアライザー RTA 歴史、教材、カテゴリー
+title: デビルチルドレン赤の書・黒の書
+description: デビルチルドレン赤の書・黒の書 RTA 歴史、教材、カテゴリー
 ---
 
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import psxCover from '/src/assets/covers/devilchildren/redblack.jpg'
+import redCover from '/src/assets/covers/devilchildren/red-gbc.png'
+import blackCover from '/src/assets/covers/devilchildren/black-gbc.png'
 
 
 <DocsHero 
     content="デビルチルドレン赤の書・黒の書はデビルチルドレンの第一作品です。"
-    srcUrl={psxCover}
-    alt="Devil Children: Red/Black Book Box Cover"
+    images = {[
+        {
+            title: "PS版",
+            altText: "PS版",
+            imagePath: psxCover
+        },
+        {
+            title: "赤の書",
+            altText: "赤の書",
+            imagePath: redCover
+        },
+        {
+            title: "黒の書",
+            altText: "黒の書",
+            imagePath: blackCover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/smtdcbbrb" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

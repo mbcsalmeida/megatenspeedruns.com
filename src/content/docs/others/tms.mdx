@@ -6,11 +6,23 @@ description: All Resources for Tokyo Mirage Sessions
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import tmsCover from '/src/assets/covers/others/tms.jpg'
+import encoreCover from '/src/assets/covers/others/tms-encore.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 
 <DocsHero 
     content="Tokyo Mirage Sessions ♯FE is a crossover between Atlus' Shin Megami Tensei franchise and Nintendo's Fire Emblem series, despite showing no particular features of either series, other than spell names."
-    srcUrl={tmsCover}
+    images = {[
+        {
+            title: "OG",
+            altText: "OG",
+            imagePath: tmsCover
+        },
+        {
+            title: "Encore",
+            altText: "Encore",
+            imagePath: encoreCover
+        },
+    ]}
     alt="Tokyo Mirage Sessions Cover"
 />
 

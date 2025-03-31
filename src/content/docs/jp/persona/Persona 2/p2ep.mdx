@@ -7,11 +7,23 @@ import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/persona/p2ep-jp.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p2ep-psp.jpg'
+
 
 <DocsHero 
     content="ペルソナ２罰はペルソナ２罪の続き作品。"
-    srcUrl={cover}
-    alt="Persona 2 - Eternal Punishment Cover"
+    images = {[
+        {
+            title: "PS1版",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP版",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/p2ep" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

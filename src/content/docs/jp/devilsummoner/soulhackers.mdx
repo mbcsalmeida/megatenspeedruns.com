@@ -6,11 +6,28 @@ description: デビルサマナー ソウルハッカーズ RTA 歴史、教材�
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsummoner/sh-ss.jpg'
+import ps1cover from '/src/assets/covers/devilsummoner/sh-ps1.jpg'
+import dscover from '/src/assets/covers/devilsummoner/sh3ds-jp.jpg'
 
 <DocsHero 
     content="デビルサマナー ソウルハッカーズはデビルサマナーシリーズの２作目。"
-    srcUrl={cover}
-    alt="Shin Megami Tensei Devil Summoner - Soul Hackers Cover"
+    images = {[
+        {
+            title: "SS版",
+            altText: "SS版",
+            imagePath: cover
+        },
+        {
+            title: "PS1版",
+            altText: "PS1版",
+            imagePath: ps1cover
+        },
+        {
+            title: "3DS版",
+            altText: "3DS版",
+            imagePath: dscover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/dsm_soul_hackers" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

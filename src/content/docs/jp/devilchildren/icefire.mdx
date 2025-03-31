@@ -6,11 +6,22 @@ description: デビルチルドレン炎の書・氷の書 RTA 歴史、教材�
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import fireCover from '/src/assets/covers/devilchildren/fire.jpg'
+import iceCover from '/src/assets/covers/devilchildren/ice.jpg'
 
 <DocsHero 
     content="デビルチルドレン炎の書・氷の書はデビルチルドレン光の書・闇の書の続き作品です。この作品はチップの代わりにカードを導入します。そのカードは プレイヤー が各戦闘の最初に使うことができるアイテムです。"
-    srcUrl={fireCover}
-    alt="Devil Children: Fire and Ice Book Box Cover"
+    images = {[
+        {
+            title: "炎の書",
+            altText: "炎の書",
+            imagePath: fireCover
+        },
+        {
+            title: "氷の書",
+            altText: "氷の書",
+            imagePath: iceCover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/dcfi" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

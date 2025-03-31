@@ -7,11 +7,22 @@ description: 真・女神転生デビルサマナー RTA 歴史、教材、カ�
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsummoner/ds-ss.png'
+import pspcover from '/src/assets/covers/devilsummoner/ds-psp.jpg'
 
 <DocsHero 
     content="真・女神転生デビルサマナーはデビルサマナーの１作目。"
-    srcUrl={cover}
-    alt="Shin Megami Tensei Devil Summoner Cover"
+    images = {[
+        {
+            title: "SS版",
+            altText: "SS",
+            imagePath: cover
+        },
+        {
+            title: "PSP版",
+            altText: "PSP",
+            imagePath: pspcover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/dsm" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

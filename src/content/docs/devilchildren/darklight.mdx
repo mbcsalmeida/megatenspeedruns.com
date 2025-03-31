@@ -6,13 +6,24 @@ description: All Resources for DemiKids Light and Dark Version
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import gbaCover from '/src/assets/covers/devilchildren/demikidsdark.jpg'
-
+import lightCover from '/src/assets/covers/devilchildren/demikidslight.jpg'
 
 <DocsHero 
     content="DemiKids Dark and Light versions were the first of the Devil Children games localized in English and released in NA. These are the second generation of Devil Children, with new protagonists and new mechanics, such as Relic Fusion and three-demon parties."
-    srcUrl={gbaCover}
-    alt="Devil Children: Dark Version Box Cover"
+    images = {[
+        {
+            title: "Dark",
+            altText: "Dark",
+            imagePath: gbaCover
+        },
+        {
+            title: "Light",
+            altText: "Light",
+            imagePath: lightCover
+        },
+    ]}
 />
+
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/demikids_light_version_and_dark_version" description="See all the submitted runs on Speedrun.com"/>
 

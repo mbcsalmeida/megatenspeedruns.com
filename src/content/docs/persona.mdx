@@ -6,6 +6,7 @@ description: All Resources for Persona
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
 import p1 from '/src/assets/covers/persona/p1-ps1.jpg'
+import p1itou from '/src/assets/covers/persona/p1itou.jpg'
 import p2is from '/src/assets/covers/persona/p2is-ps1.jpg'
 import p2ep from '/src/assets/covers/persona/p2ep-psp.jpg'
 import p3 from '/src/assets/covers/persona/p3.jpg'
@@ -27,9 +28,10 @@ import pq from '/src/assets/covers/persona/pq.jpg'
 
 
 <CardGrid>
-    <LinkCardWithBackground title="Persona 1" href="/persona/p1" imagePath={p1} />
-    <LinkCardWithBackground title="Persona 2 - Innocent Sin" href="/persona/p2is" imagePath={p2is} />
-    <LinkCardWithBackground title="Persona 2 - Eternal Punishment" href="/persona/p2ep" imagePath={p2ep} />
+    <LinkCardWithBackground title="Persona 1" href="/persona/persona-1/p1" imagePath={p1} />
+    <LinkCardWithBackground title="Persona 1 - Ikuu no Tou" href="/jp/persona/persona-1/p1itou" imagePath={p1itou} />
+    <LinkCardWithBackground title="Persona 2 - Innocent Sin" href="/persona/persona-2/p2is" imagePath={p2is} />
+    <LinkCardWithBackground title="Persona 2 - Eternal Punishment" href="/persona/persona-2/p2ep" imagePath={p2ep} />
     <LinkCardWithBackground title="Shin Megami Tensei - Persona 3" href="/persona/persona-3/p3" imagePath={p3} />
     <LinkCardWithBackground title="Persona 3 FES" href="/persona/persona-3/p3fes" imagePath={p3fes} />
     <LinkCardWithBackground title="Persona 3 Aegis - The First Mission" href="/persona/persona-3/p3aegis" imagePath={p3aegis} />

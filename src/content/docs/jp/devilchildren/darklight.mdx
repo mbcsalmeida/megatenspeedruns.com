@@ -6,12 +6,22 @@ description: デビルチルドレン光の書・闇の書 RTA 歴史、教材�
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import gbaCover from '/src/assets/covers/devilchildren/demikidsdark-jp.jpg'
-
+import lightCover from '/src/assets/covers/devilchildren/demikidslight-jp.jpg'
 
 <DocsHero 
     content="デビルチルドレン光の書・闇の書はデビルチルドレンシリーズの第二世代ゲームで、新しい主人公達や三体の悪魔バトルか化石合体といった新しい仕組みが導入されました。"
-    srcUrl={gbaCover}
-    alt="Devil Children: Dark Version Box Cover"
+    images = {[
+        {
+            title: "闇の書",
+            altText: "闇の書",
+            imagePath: gbaCover
+        },
+        {
+            title: "光の書",
+            altText: "光の書",
+            imagePath: lightCover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/demikids_light_version_and_dark_version" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

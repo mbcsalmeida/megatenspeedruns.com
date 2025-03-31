@@ -6,11 +6,28 @@ description: All Resources for Shin Megami Tensei Devil Summoner - Soul Hackers
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsummoner/sh-ss.jpg'
+import ps1cover from '/src/assets/covers/devilsummoner/sh-ps1.jpg'
+import dscover from '/src/assets/covers/devilsummoner/sh3ds.jpg'
 
 <DocsHero 
     content="Shin Megami Tensei: Devil Summoner - Soul Hackers is the second entry in the Devil Summoner series."
-    srcUrl={cover}
-    alt="Shin Megami Tensei Devil Summoner - Soul Hackers Cover"
+    images = {[
+        {
+            title: "SS",
+            altText: "SS",
+            imagePath: cover
+        },
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: ps1cover
+        },
+        {
+            title: "3DS",
+            altText: "3DS",
+            imagePath: dscover
+        },
+    ]}
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/dsm_soul_hackers" description="See all the submitted runs on Speedrun.com"/>

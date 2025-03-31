@@ -2,33 +2,82 @@
 import { Image } from 'astro:assets';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+type Covers = {
+    title: string;
+    altText: string;
+    imagePath: ImageMetadata;
+}
+
+interface Props {
+    content: string;
+    images: Covers[];
+    srcUrl: ImageMetadata;
+    alt: string;
+    key: string;
+}
+
 const {
     content,
+    images = [],
     srcUrl,
     alt
-} = Astro.props
+}: Props = Astro.props
 ---
 
-<div class="sl-flex border">
-    <span>
+<div class="border">
+    <span class="paragraph">
         {content}
     </span>
-    <Image 
+    {
+        srcUrl != null ?
+        <Image 
         src={srcUrl}
         alt={alt}
-        class="imgSize"
+        class="cover"
         />
+        :
+        <Tabs>
+            {images.map(({title, altText, imagePath}) => (
+                <TabItem label={title}>
+                    <Image 
+                        src={imagePath}
+                        alt={altText}
+                        class="cover"
+                        />
+                </TabItem>
+            ))}
+        </Tabs>
+    }
 </div>
 
 <style>
 
+    .paragraph{
+        margin: 1rem;
+    }
+
+    .cover{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .border{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 0.5rem;
-        border-radius: 0.5rem;
-        padding: 2rem;
-        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: 50rem) {
+        .border{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            position: relative;
+        }
     }
 
     

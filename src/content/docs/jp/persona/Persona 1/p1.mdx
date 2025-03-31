@@ -7,11 +7,23 @@ import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/persona/p1-ps1-jp.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p1-psp-jp.jpg'
+
 
 <DocsHero 
     content="ペルソナ1』は『ペルソナ』シリーズの第1作で、悪魔をパーティメンバーとして使うという従来のSMTのゲームプレイから逸脱し、ペルソナと呼ばれる特定の悪魔を持つ人間キャラクターでパーティを構成する。主人公は最初にペルソナを持ち、そこから他のペルソナを手に入れたり、合体させたりすることができる。"
-    srcUrl={cover}
-    alt="Persona 1 Cover"
+    images = {[
+        {
+            title: "PS1版",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP版",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
 />
 
 <LinkCardWithButtons title="ランキング" description="投稿されたRTA動画を観るようにSpeedrun.comへ" actions={

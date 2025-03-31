@@ -60,24 +60,19 @@ export default defineConfig({
                   items: [
                     {
                       label: "Persona 1",
-                      slug: "persona/p1",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 1"},
                       translations: {
-                        'ja-JP': 'ペルソナ１'
-                      }
+                        'ja-JP': 'ペルソナ１',
+                      },
                     },
                     {
-                      label: "Persona 2: Innocent Sin",
-                      slug: "persona/p2is",
+                      label: "Persona 2",
+                      collapsed: true,
+                      autogenerate: {directory: "persona/Persona 2"},
                       translations: {
-                        'ja-JP': 'ペルソナ２罪'
-                      }
-                    },
-                    {
-                      label: "Persona 2: Eternal Punishment",
-                      slug: "persona/p2ep",
-                      translations: {
-                        'ja-JP': 'ペルソナ２罰'
-                      }
+                        'ja-JP': 'ペルソナ２',
+                      },
                     },
                     {
                       label: "Persona 3",

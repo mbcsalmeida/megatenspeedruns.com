@@ -6,11 +6,22 @@ description: All Resources for Devil Children - Fire and Ice Book
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import fireCover from '/src/assets/covers/devilchildren/fire.jpg'
+import iceCover from '/src/assets/covers/devilchildren/ice.jpg'
 
 <DocsHero 
     content="Devil Children Fire and Ice Book is the sequel to Devil Children - Dark and Light Book. This version removes chips from the summoning comps and introduces cards, an item the player can use at the beginning of the fight without taking any actions from the demons themselves."
-    srcUrl={fireCover}
-    alt="Devil Children: Fire and Ice Book Box Cover"
+    images = {[
+        {
+            title: "Fire Book",
+            altText: "炎の書",
+            imagePath: fireCover
+        },
+        {
+            title: "Ice Book",
+            altText: "Ice Book",
+            imagePath: iceCover
+        },
+    ]}
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/dcfi" description="See all the submitted runs on Speedrun.com"/>

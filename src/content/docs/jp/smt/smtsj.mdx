@@ -6,10 +6,23 @@ description: 真・女神転生STRANGE JOURNEY RTA歴史、教材、カテゴリ
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smtsj-jp.jpg'
+import coverRedux from '/src/assets/covers/smt/smtsj3ds-jp.jpg'
+
 
 <DocsHero 
     content="真・女神転生STRANGE JOURNEYはナンバリングタイトルではない『真・女神転生シリーズ』のゲームです。"
-    srcUrl={cover}
+    images = {[
+        {
+            title: "初期版",
+            altText: "初期版",
+            imagePath: cover
+        },
+        {
+            title: "DEEP版",
+            altText: "DEEP版",
+            imagePath: coverRedux
+        },
+    ]}
     alt="Shin Megami Tensei: Strange Journey Cover"
 />
 

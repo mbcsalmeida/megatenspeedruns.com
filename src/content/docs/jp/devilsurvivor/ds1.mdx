@@ -6,10 +6,22 @@ description: 女神異聞録デビルサバイバー RTA 歴史、教材、カ�
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsurvivor/ds-jp.jpg'
+import dscover from '/src/assets/covers/devilsurvivor/ds3ds-jp.jpg'
 
 <DocsHero 
     content="女神異聞録デビルサバイバーは魔神転生のようにシミュレーションRPGでデビルサバイバーの１作目。"
-    srcUrl={cover}
+    images = {[
+        {
+            title: "DS版",
+            altText: "DS版",
+            imagePath: cover
+        },
+        {
+            title: "3DS版",
+            altText: "3DS版",
+            imagePath: dscover
+        },
+    ]}
     alt="Shin Megami Tensei - Devil Survivor Cover"
 />
 
@@ -18,7 +30,7 @@ import cover from '/src/assets/covers/devilsurvivor/ds-jp.jpg'
 ## 歴史
 
 <Tabs>
-<TabItem label="ナオヤEND - 3DS">
+<TabItem label="ナオヤEND - 3DS版">
 <Steps> 
 1. デビルサバイバー オーバークロックは２０１５年１２月３日に日本に発売されました。
 2. 世界記録保持者はKoolzoさん. ２０１９年１２月２７日に[**9時間49分18**](https://www.twitch.tv/videos/527290869)のタイムを達成することを成功しました。

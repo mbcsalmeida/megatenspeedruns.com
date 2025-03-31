@@ -6,10 +6,22 @@ description: All Resources for Shin Megami Tensei Nocturne
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smt3.jpg'
+import hdCover from '/src/assets/covers/smt/smt3hd.png'
 
 <DocsHero 
     content="Shin Megami Tensei: Nocturne exists and is a speedrunnable game. The community for this game is very active and passionate and times are highly competitive."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "OG",
+            altText: "OG",
+            imagePath: cover
+        },
+        {
+            title: "HD",
+            altText: "HD",
+            imagePath: hdCover
+        },
+    ]}
     alt="Shin Megami Tensei Nocturne... Cover"
 />
 

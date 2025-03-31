@@ -6,13 +6,26 @@ description: All Resources for Persona Q
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/persona/pq.jpg'
+import pq2cover from '/src/assets/covers/persona/pq2.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 
 <DocsHero 
     content="Persona Q is a duology of Persona spin-offs featuring the characters from Persona 3, Persona 4 and Persona 5 and a gameplay similar to the Etrian Odyssey series."
-    srcUrl={cover}
-    alt="Persona Q Cover"
+    images = {[
+        {
+            title: "PQ",
+            altText: "PQ",
+            imagePath: cover
+        },
+        {
+            title: "PQ2",
+            altText: "PQ2",
+            imagePath: pq2cover
+        },
+    ]}
+    alt="Shin Megami Tensei - Devil Survivor Cover"
 />
+
 
 <LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
     [

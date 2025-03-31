@@ -5,11 +5,23 @@ description: 真・女神転生if... RTA 歴史、教材、カテゴリー
 
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/smt/smtif-sfc.jpg'
+import sfcCover from '/src/assets/covers/smt/smtif-sfc.jpg'
+import psxCover from '/src/assets/covers/smt/smtif-ps1.png'
 
 <DocsHero 
     content="真・女神転生If...』は『真・女神転生』シリーズの3作目で、『SMT2』エンジンを拡張して開発され、学園舞台や、エンディングで人間のパートナーを選べることなどから、『ペルソナ』シリーズの前身とされている。"
-    srcUrl={cover}
+    images = {[
+        {
+            title: "SFC版",
+            altText: "SNES",
+            imagePath: sfcCover
+        },
+        {
+            title: "PS版",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+    ]}
     alt="Shin Megami Tensei If... Cover"
 />
 
