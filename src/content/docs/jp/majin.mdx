@@ -1,0 +1,19 @@
+---
+title: 魔神転生
+description: All Resources for Majin Tensei 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import mt1 from '/src/assets/covers/majin/majin1.png'
+import mt2 from '/src/assets/covers/majin/majin2.png'
+import r from '/src/assets/covers/majin/ronde.png'
+import blind from '/src/assets/covers/majin/majinblind.jpg'
+
+
+<CardGrid>
+    <LinkCardWithBackground title="魔神転生" href="/jp/majin/mt1" imagePath={mt1} alt="魔神転生はこちら" />
+    <LinkCardWithBackground title="魔神転生II" href="/jp/majin/mt2" imagePath={mt2} alt="魔神転生IIはこちら" />
+    <LinkCardWithBackground title="RONDE ～輪舞曲～" href="/jp/majin/ronde" imagePath={r} alt="RONDE ～輪舞曲～はこちら" />
+    <LinkCardWithBackground title="魔神転生 blind thinker" href="/jp/majin/mtblind" imagePath={blind} alt="魔神転生 blind thinkerはこちら" />
+</CardGrid>

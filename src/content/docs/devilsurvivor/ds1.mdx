@@ -5,11 +5,23 @@ description: All Resources for Shin Megami Tensei - Devil Survivor
 
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/devilsurvivor/ds.jpg'
+import cover from '/src/assets/covers/devilsurvivor/ds-jp.jpg'
+import dscover from '/src/assets/covers/devilsurvivor/ds3ds-jp.jpg'
 
 <DocsHero 
     content="Shin Megami Tensei - Devil Survivor is a grid-based tactical RPG similar to Majin Tensei and the first of the Devil Survivor series."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "DS",
+            altText: "DS",
+            imagePath: cover
+        },
+        {
+            title: "3DS",
+            altText: "3DS",
+            imagePath: dscover
+        },
+    ]}
     alt="Shin Megami Tensei - Devil Survivor Cover"
 />
 

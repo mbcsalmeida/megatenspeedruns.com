@@ -7,11 +7,23 @@ import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/persona/p2is-ps1.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p2is-psp-jp.jpg'
+
 
 <DocsHero 
     content="ペルソナ2罪はペルソナ１の続き作品。世界は同じものの、ストーリーが繋がっていません。"
-    srcUrl={cover}
-    alt="Persona 2 - Innocent Sin Cover"
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/p2is" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

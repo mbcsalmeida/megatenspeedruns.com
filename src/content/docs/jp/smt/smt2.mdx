@@ -5,11 +5,29 @@ description: 真・女神転生II RTA 歴史、教材、カテゴリー
 
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/smt/smt2-sfc.jpg'
+import sfcCover from '/src/assets/covers/smt/smt2-sfc.jpg'
+import gbaCover from '/src/assets/covers/smt/smt2-gba.jpg'
+import psxCover from '/src/assets/covers/smt/smt2-ps1.jpg'
 
 <DocsHero 
     content="真・女神転生IIは真・女神転生シリーズの第二ゲームです。バグだらけゲームとされています。"
-    srcUrl={cover}
+    images = {[
+        {
+            title: "SFC版",
+            altText: "SNES",
+            imagePath: sfcCover
+        },
+        {
+            title: "PS1版",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+        {
+            title: "GBA版",
+            altText: "GBA",
+            imagePath: gbaCover
+        },
+    ]}
     alt="Shin Megami Tensei II Cover"
 />
 

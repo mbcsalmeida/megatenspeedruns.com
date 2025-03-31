@@ -6,12 +6,29 @@ description: All Resources for Devil Children - Red and Black Book
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import psxCover from '/src/assets/covers/devilchildren/redblack.jpg'
+import redCover from '/src/assets/covers/devilchildren/red-gbc.png'
+import blackCover from '/src/assets/covers/devilchildren/black-gbc.png'
 
 
 <DocsHero 
     content="Devil Children Black Book & Red Book are the first two games in the Devil Children series."
-    srcUrl={psxCover}
-    alt="Devil Children: Red/Black Book Box Cover"
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+        {
+            title: "Red Book",
+            altText: "Red",
+            imagePath: redCover
+        },
+        {
+            title: "Black Book",
+            altText: "Black",
+            imagePath: blackCover
+        },
+    ]}
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/smtdcbbrb" description="See all the submitted runs on Speedrun.com"/>

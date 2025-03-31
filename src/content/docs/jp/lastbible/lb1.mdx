@@ -6,11 +6,30 @@ description: 女神転生外伝・ラストバイブル RTA 歴史、教材、�
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/lastbible/lastbible-gbc.png'
+import gbCover from '/src/assets/covers/lastbible/lb-gb.jpg'
+import ggCover from '/src/assets/covers/lastbible/lb-gg.jpg'
+
 
 <DocsHero 
     content="女神転生外伝・ラストバイブルは真・女神転生シリーズの外伝作品です。バトルシステムははファイナルファンタジーに似てます。"
-    srcUrl={cover}
-    alt="Megami Tensei Gaiden - Last Bible Cover"
+    images = {[
+        {
+            title: "GB",
+            altText: "GB",
+            imagePath: gbCover
+        },
+        {
+            title: "GBC",
+            altText: "GBC",
+            imagePath: cover
+        },
+        {
+            title: "GG",
+            altText: "GG",
+            imagePath: ggCover
+        },
+    ]}
+    alt="Megami Tensei Gaiden - Last Bible 2 Cover"
 />
 
 <LinkCard title="ランキング" href="https://www.speedrun.com/ja-JP/mtglb1" description="投稿されたRTA動画を観るようにSpeedrun.comへ"/>

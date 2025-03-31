@@ -5,13 +5,25 @@ description: All Resources for Persona 2 - Eternal Punishment
 
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/persona/p2ep-psp.jpg'
+import cover from '/src/assets/covers/persona/p2ep.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p2ep-psp.jpg'
+
 
 <DocsHero 
     content="Persona 2 - Eternal Punishment is a direct sequel to the story of Innocent Sin."
-    srcUrl={cover}
-    alt="Persona 2 - Eternal Punishment Cover"
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/p2ep" description="See all the submitted runs on Speedrun.com"/>
@@ -63,3 +75,4 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 ## Resources
 - [atwiki](https://w.atwiki.jp/persona2batsu/)
 - [Speedrun data](https://docs.google.com/spreadsheets/d/14uVaFiGWlRgJdBk-D6kumzwC4oGzV64Qvz-8awi80eM/edit?usp=sharing)
+- [PSP Speedrun Boss Summary](https://drive.google.com/file/d/1Ad55eaZQ3osbrTsOlhX-Akbf4YpAaUjL/view?usp=sharing)
