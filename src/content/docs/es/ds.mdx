@@ -1,0 +1,17 @@
+---
+title: Devil Survivor 
+description: All Recursos for Devil Survivor 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import ds1 from '/src/assets/covers/devilsurvivor/ds.jpg'
+import ds2 from '/src/assets/covers/devilsurvivor/ds2.jpg'
+
+
+
+
+<CardGrid>
+    <LinkCardWithBackground title="Shin Megami Tensei - Devil Survivor " href="/es/devilsurvivor/ds1" imagePath={ds1} alt="Click here for DDS1" />
+    <LinkCardWithBackground title="Shin Megami Tensei - Devil Survivor 2" href="/es/devilsurvivor/ds2" imagePath={ds2} alt="Click here for DDS2" />
+</CardGrid>

@@ -1,0 +1,77 @@
+---
+title: DemiKids - Light and Dark Version
+description: Todos los recursos para DemiKids Light and Dark Version
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import gbaCover from '/src/assets/covers/devilchildren/demikidsdark.jpg'
+import lightCover from '/src/assets/covers/devilchildren/demikidslight.jpg'
+
+<DocsHero 
+    content="DemiKids Dark and Light versions fueron los primeros juegos de Devil Children en ser localizados al inglés y lanzados en Norte América. Estos son la segunda generación de Devil Children, con nuevos protagonistas y nuevas mecánicas tales como Relic Fusion y party de 3 demonios."
+    images = {[
+        {
+            title: "Dark",
+            altText: "Dark",
+            imagePath: gbaCover
+        },
+        {
+            title: "Light",
+            altText: "Light",
+            imagePath: lightCover
+        },
+    ]}
+/>
+
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/demikids_light_version_and_dark_version" description="Ver todas las runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="Light">
+    <Steps>
+        1. DemiKids: Light Version fue lanzado en Japón el 15 de Noviembre de 2002.
+    2. La primera run fue realizada por fatkid el 17/10/2018 en un tiempo de [**3:38:02**](https://youtu.be/YhqT_mjBneA).
+    3. El 17/03/2019, fatkid mejoró el world record a un tiempo de [**2:39:52**](https://youtu.be/qeppO2Ah5T4) con mejoras en la ruta.
+    4. El 24/02/2022, sioneus mejoró el tiempo por 44 segundos logrando un tiempo de [**2:39:18**](https://youtu.be/zeJI_wgg53g).
+    5. Con una nueva ruta que evitaba tener que grindear y reclutar demonios, el 18/08/2024 sioneus mejoró el world record con un tiempo de [**2:07:14**](https://youtu.be/axto7qjlPhk).
+    </Steps>
+    </TabItem>
+    <TabItem label="Dark">
+    <Steps>
+        1. DemiKids: Dark Version fue lanzado en Japón el 15 de Noviembre de 2002.
+        2. La primera run fue realizada por fatkid el 21/09/2017 en un tiempo de [**2:54:33**](https://youtu.be/OOFp4j9Ti_8?si=JN2vIF99586moqk1).
+        3. El 22/11/2019, el runner nope_bms logró un tiempo de [**1:51:03**](https://youtu.be/XMExaVC3vM4?si=6JA_ukDYbeaF6Auy) con algunas mejoras en la ruta y con suerte en los reclutamientos. Este tiempo sería el world record por 4 años.
+        4. El 12/03/2024, el runner sioneus logró un nuevo world record de [**1:41:41**](https://youtu.be/CKJktQ7Y4Lg) con una ruta que evitaba reclutar ciertos demonios.
+        5. El actual world record le pertenece a sioneus con un tiempo de [**1:36:24**](https://youtu.be/cp-_HLaqo1Y).
+    </Steps>
+    </TabItem>
+</Tabs>
+
+## Categorías
+<CardGrid>
+    <Card title="Dark Version">Llegar a los créditos de Dark Version lo más rápido posible. Skips pueden ser utilizados.</Card>
+    <Card title="Light Version">Llegar a los créditos de Light Version lo más rápido posible. Skips pueden ser utilizados.</Card>
+    </CardGrid>
+
+## Glitches y Trucos
+<details>
+<summary>**Guard Skip**</summary>
+
+El guardia que bloquea la salida a Avalon puede ser atravezado al moverse diagonalmente a traves de él. Esto puede hacerse en ambas versiones del juego y permite al jugador acceder a items del late game mucho mas temprano de lo posible. También es posible hacer el final boss desde aquí en cualquier momento.
+</details>
+
+<details>
+<summary>**Encounter despawn**</summary>
+
+Al apretar el botón select para abrir el mapa, el contador interno de random encounters se resetea a 0. Al hacerlo en determinado ritmo, se puede evitar todos los random encounters.
+</details>
+
+## Guías
+- [Dark Version](https://sioneus.me/notes/dark) - sioneus
+- [Dark Version](https://pastebin.com/n04ZmGMp) - lilfatkid
+- [Light Version](https://sioneus.me/notes/light) - sioneus
+
+## Recursos
+- [atwiki](https://w.atwiki.jp/devilchildren_ld/pages/189.html) 

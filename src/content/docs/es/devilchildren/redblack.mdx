@@ -1,0 +1,85 @@
+---
+title: Devil Children - Red and Black Book
+description: Todos los recursos para Devil Children - Red and Black Book
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import psxCover from '/src/assets/covers/devilchildren/redblack.jpg'
+import redCover from '/src/assets/covers/devilchildren/red-gbc.png'
+import blackCover from '/src/assets/covers/devilchildren/black-gbc.png'
+
+
+<DocsHero 
+    content="Devil Children Black Book & Red Book son los primeros dos juegos en la saga de Devil Children."
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+        {
+            title: "Red Book",
+            altText: "Red",
+            imagePath: redCover
+        },
+        {
+            title: "Black Book",
+            altText: "Black",
+            imagePath: blackCover
+        },
+    ]}
+/>
+
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/smtdcbbrb" description="ver mas runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="Red Book - GBC">
+    <Steps>
+        1. Devil Children: Red Book and Black Book fueron lanzados en Japón el 17 de  Noviembre de 2000.
+    2. El actual record mundial le pertenece a  ゲームサーファー subido el 12/06/2019 con un tiempo de [**2:40:33**](https://youtu.be/ODbfbK9SZtw?si=P35ft-b3QRnGOIw_).
+    </Steps>
+    </TabItem>
+    <TabItem label="Red Book - PS1">
+    <Steps>
+        1. Devil Children: Red Book and Black Book fueron lanzados en Japón el 28 de marzo de 2002.
+        2. El primer speedrun de Red Book fue hecho por otogitune el 16/09/2019 con un tiempo de  [**1:43:51**](https://youtu.be/NZXX_Cfn3gA?si=Q5s9EXD5xJr_ppkQ).
+        3. El record mundial actual le pertenece a otogitune con un tiempo de [**1:30:26**](https://youtu.be/NrvHU95O0T8?si=FxhlP9T7D7Oiqluk).
+    </Steps>
+    </TabItem>
+    <TabItem label="Black Book - GBC">
+    <Steps>
+        1. Devil Children: Red Book and Black Book fueron lanzados en Japón el 17 de  Noviembre de 2000.
+    </Steps>
+    </TabItem>
+    <TabItem label="Black Book - PS1">
+    <Steps>
+        1. Devil Children: Red Book and Black Book fueron lanzados en Japón el 28 de marzo de 2002.
+        2. El actual record mundial lo tiene sioneus con un tiempo de [**1:53:55**](https://youtu.be/3wZGYE1d-AQ) subido el 25/08/2021.
+    </Steps>
+    </TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Red Book(GBC)">Completar cualquier ending de la versión GBC de DC: Red Book tan rápido como sea posible. Las funciones para 2 jugadores a través del cable GameBoy Link están prohibidas.</Card>
+    <Card title="Black Book(GBC">Completar cualquier ending de la versión de GBC de DC: Black Book tan rápido como sea posible. Las funciones para 2 jugadores a través del cable GameBoy Link están prohibidas.</Card>
+    <Card title="Red Book(PSX)">Completar cualquier ending de la versión de PSX de DC: Red Book tan rápido como sea posible. Casino manip está permitido.</Card>
+    <Card title="Black Book(PSX)">Completar cualquier ending de la versión de PSX de DC: Black Book tan rápido como sea posible. Casino manip está permitido.</Card>
+</CardGrid>
+
+## Glitches y Trucos
+<details>
+<summary>**Casino Manip**</summary>
+Se descubrió que el Casino se puede manipular en la versión de PS1. Al guardar frente del contador  para *Grande o Pequeño* y recargar, la secuencia de números reproducida siempre seráas la misma. Esto también se ha probado en la versión descargable disponible en la PlayStation Store. La secuencia ganadora es "pequeño, pequeño, grande, grande, pequeño, grande, grande, grande, pequeño, grande, pequeño, pequeño, grande"; esto otorgará monedas de sobra para la ronda.
+</details>
+
+## Notas
+- [Red Book - PSX](https://sioneus.me/notes/red) - sioneus
+- [Black Book - PSX](https://sioneus.me/notes/black) - sioneus
+
+## Recursos
+- [atwiki - GBC Page](https://w.atwiki.jp/devilchildren_br/pages/8.html) - japanese GBC wiki page.
+- [atwiki - PSX Page](https://w.atwiki.jp/devilchildren_br/pages/343.html) - japanese PSX wiki page.

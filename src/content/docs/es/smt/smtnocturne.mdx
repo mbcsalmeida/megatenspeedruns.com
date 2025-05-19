@@ -1,0 +1,83 @@
+---
+title: Shin Megami Tensei Nocturne
+description: Todos los recursos para Shin Megami Tensei Nocturne
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/smt/smt3.jpg'
+import hdCover from '/src/assets/covers/smt/smt3hd.png'
+
+<DocsHero 
+    content="Shin Megami Tensei: Nocturne existe y es un juego runeable. La comunidad para este juego es bastante activa y apasionada, incluso, a veces bastante competitiva."
+    images = {[
+        {
+            title: "OG",
+            altText: "OG",
+            imagePath: cover
+        },
+        {
+            title: "HD",
+            altText: "HD",
+            imagePath: hdCover
+        },
+    ]}
+    alt="Shin Megami Tensei Nocturne... Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/smtnocturne" description="Ver mas runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="Normal - Any%">
+        <Steps>
+            1. Shin Megami Tensei: Nocturne salió el 20 de Febrero de 2003.
+            2. La primera run fue hecha por PinkPajamas con un tiempo de [**8:49:35**](https://secure.twitch.tv/pinkpajamas/v/78386098). El mantuvo el record y lo mejoró a [**7:29:54**](https://www.twitch.tv/videos/221672763)
+            3. 3 años después, ShinerCCC reclamaria el world record logrando un tiempo de [**7:28:41**](https://www.twitch.tv/videos/926292393) el cual, más tarde, bajaria a [**7:07:46**](https://www.twitch.tv/videos/1023318379)
+            4. El actual world record lo tiene Jonperi23 con un tiempo de [**6:56:45**](https://youtu.be/L1V4qZILLUM)
+        </Steps>
+    </TabItem>
+    <TabItem label="Hard - True Demon Ending">
+        <Steps>
+        1. Shin Megami Tensei: Nocturne salió el 20 de Febrero de 2003.
+        2. La primera run fue hecha por tobira el 06 de Mayo con un tiempo de [**15:35:33**](https://www.twitch.tv/videos/44841268)
+        3. El 19 de Junio de 2016, PinkPajamas hizo su primera run con su propia ruta y logro un world record con un tiempo de [**15:26:29**](https://www.twitch.tv/videos/73284508) la cual, mejoró una semana más tarde con un tiempo de [**13:46:02**](https://www.twitch.tv/videos/97952335)
+        4. El 15 de Enero de 2017, mizusima40 reclamó el world record con un tiempo de [**13:20:19**](https://drive.google.com/file/d/0B4KCZvbOlmK2ckVEb2ZWRE5qdHc/view)
+        5. 2 meses después, PinkPajamas reclamó nuevamente el world record con un tiempo de [**13:11:19**](https://www.twitch.tv/videos/134465834)
+        6. 2 meses después, *again*, mizusima40 dramaticamente reclamó (una vez mas) el world record con un tiempo de [**12:50:29**](https://drive.google.com/file/d/0B4KCZvbOlmK2dFpZT1NiOUtZbXc/edit)
+        7. PinkPajamas luchó duramente y 9 meses mas tarde reclamó el world record con un tiempo de [**12:40:18**](https://www.twitch.tv/videos/250716238)
+        8. El 19 de Mayo de 2018, mizusima40 logró un record que duraria por un año, con un tiempo de [**12:13:42**](https://www.twitch.tv/videos/263271085). El 20 de Agosto de 2022/08/20, él lo mejoró a un tiempo de [**11:15:44**](https://www.twitch.tv/videos/1567450872)
+        9. En un día soleado y caluroso de Mayo, Jonperi23 fue la primera persona en robarle el world record a mizusima en 6 años y ser el primero en lograr una run en menos de 11 horas con un tiempo de [**10:58:32**](https://www.twitch.tv/videos/2153786416)
+        10. 16 días después, en un dramático giro de acontecimientos, mizusima40 conquistó nuevamente el world record con un tiempo de [**10:49:55**](https://www.twitch.tv/videos/2167663903)
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categorías
+
+<CardGrid>
+    <Card title="True Demon Ending"></Card>
+    <Card title="Any%"></Card>
+    <Card title="NG+"></Card>
+    <Card title="PC Glitched"></Card>
+</CardGrid>
+
+## Glitches y Trucos
+- [Dismiss Demi-fiend (PC Exclusive)](https://pastebin.com/GtzT8M8r) by Brotodile
+
+## Guías
+- [Hard - TDE - Wu Kong route](https://docs.google.com/document/d/1HABq2RiEBtNhQLuFUzwqnLL92K7cKMmFHCpf1hsG2lY/edit#heading=h.6vgc10s44qkq) by mizusima40 and ShinerCCC
+- [Hard - TDE - Mothman route](https://docs.google.com/document/d/1c_l2RfSlwGjJO_srwnBY-eE2r6azOPTf-JeMD50evKQ/edit) by PinkPajamas
+- [Hard - Any%](https://pastebin.com/1HTNLSgA) by ShinerCCC
+- [Normal - Any%](https://docs.google.com/document/d/1JTgb-NuALEK0l8x1pgJ2mF8FDsdvG_ZZyo4Ta4vTCQU/edit) by ShinerCCC
+- [Merciful - TDE](https://pastebin.com/05ZJ9C8B)
+- [Merciful - Any% - Maniax Chronicles](https://drive.google.com/file/d/1HB_ojpCnU3FzMA7xYSwy1iJXRWzFrFin/view?usp=sharing) by ToxicTT
+- [Merciful - TDE - Maniax Chronicles](https://drive.google.com/file/d/1ZZhBVrT9hKuMgJr6VnafoXp-We9Uf_lw/view?usp=sharing) by ToxicTT
+- [NG+ - Hard - TDE](https://docs.google.com/document/d/1owek6eT2a_ilDMSUldz8eEuBPZrNWyyd/edit) by day_nava
+- [PC Glitched - Merciful - TDE](https://pastebin.com/xrpHe9VV) by Brotodile
+- [Hard 100% (Based on an older TDE Route)](https://docs.google.com/document/d/1SFNiXJRhCUarB89NDp95ZfRxmp6Qi5E1pd6CDrkjxnM/edit?usp=sharing) by ChampionBeef
+
+## Recursos
+- [Safari Guide](https://controlc.com/2215e887) by ShinerCCC
+- [Skill Inherintance](https://docs.google.com/spreadsheets/d/1G5YnlCxamxeRxT4rLWMWwP0Lz3dCFyeltL6aQMqOG4M/edit?usp=sharing)
+- [Kalpa Tunnel Guide](https://www.youtube.com/watch?v=U34iCj_bAi8) by day_nava

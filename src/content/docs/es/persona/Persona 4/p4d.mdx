@@ -1,0 +1,31 @@
+---
+title: Persona 4 - Dancing All Night 
+description: Todos los recursos para Persona 4 - Dancing All Night 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p4d.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 4: Dancing All Night es un juego de ritmo de baile spin-off de la saga Persona."
+    srcUrl={cover}
+    alt="Persona 4: Dancing All Night cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p4d" description="See all the submitted runs on Speedrun.com"/>
+
+## Historial de Speedruns
+<Steps>
+    1. Persona 4: Dancing All Night se lanzó en Japón el 25 de junio de 2015.
+    2. La primera run fue hecha por Ceidian en un tiempo de [**2:04:39**](https://youtu.be/9IcrQTQ3Oxo)
+    3. El 19/04/2021, Lonne superó el record mundial con un tiempo de [**2:02:32**](https://youtu.be/ARjXE-RSYns) que luego mejoró a [**2:01:37**](https://youtu.be/t65XfmhAXwc) 
+    2. El actual world record le pertenece a asapaska con un tiempo de [**2:01:16**](https://www.twitch.tv/videos/1669409818?t=2h26m6s)
+</Steps>
+
+## Categorias
+<CardGrid>
+    <Card title="Any%"></Card>
+    <Card title="Platinum Trophy"></Card>
+</CardGrid>

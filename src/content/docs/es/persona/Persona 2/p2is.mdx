@@ -1,0 +1,60 @@
+---
+title: Persona 2 - Innocent Sin
+description: Todos los recursos para Persona 2 Innocent Sin
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p2is-ps1.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p2is-psp.png'
+
+
+<DocsHero 
+    content="Persona 2 - Innocent Sin es la secuela de Persona 1. Las historias están en el mismo universo pero no están directamente correlacionadas."
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p2is" description="Ver más runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="PSP">
+        <Steps>
+            1. Shin Megami Tensei: Persona 2: Innocent Sin se lanzó en Japón el 14 de abril de 2011.
+            2. La primera run fue realizada por mulsqi el 23/05/2017 con un tiempo de [**6:49:28**](https://www.twitch.tv/videos/146668690)
+            2. El actual récord mundial le pertenece a mulsqi con un tiempo de [**5:47:02**](https://www.twitch.tv/videos/1036726877)
+        </Steps>
+    </TabItem>
+    <TabItem label="PS1">
+        <Steps>
+            1. Persona 2: Innocent Sin se estrenó en Japón el 24 de junio de 1999.
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Any%">Completa el juego sin ninguna restricción.</Card>
+</CardGrid>
+
+## Glitches y Trucos
+- [Glitched EXP Explanation](https://docs.google.com/document/d/1EraC4XNMV2EEhTwnO7OevX_hHRjDuTxsrwY8VAexSzY/edit?usp=sharing)
+
+## Notas
+- [Any% Notes](https://pastebin.com/fHAtkUnd) by mulsqi
+- [Any% Notes](https://github.com/ToxicTT/P2IS-Notes/blob/main/P2IS_Speedrun_Notes.pdf) by ToxicTT
+
+## Recursos
+- [atwiki](https://w.atwiki.jp/persona2tsumi)

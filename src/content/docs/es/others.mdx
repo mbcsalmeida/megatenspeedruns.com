@@ -1,0 +1,23 @@
+---
+title: Others
+description: All Recursos for Others
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import mt1 from '/src/assets/covers/others/mt1.png'
+import mt2 from '/src/assets/covers/others/mt2.png'
+import kmt from '/src/assets/covers/others/kmt.png'
+import jackBrosCover from '/src/assets/covers/others/jackbros.png'
+import syncCover from '/src/assets/covers/others/sync.png'
+import tmsCover from '/src/assets/covers/others/tms.jpg'
+
+
+<CardGrid>
+    <LinkCardWithBackground title="Digital Devil Story - Megami Tensei" href="/es/others/mt1" imagePath={mt1} alt="Click here for MT1" />
+    <LinkCardWithBackground title="Digital Devil Story - Megami Tensei 2" href="/es/others/mt2" imagePath={mt2} alt="Click here for MT2" />
+    <LinkCardWithBackground title="Kyuuyaku Megami Tensei" href="/es/others/kmt" imagePath={kmt} alt="Click here for KMT" />
+    <LinkCardWithBackground title="Jack Bros." href="/es/others/jackbros" imagePath={jackBrosCover} alt="Click here for MT2" />
+    <LinkCardWithBackground title="Shin Megami Tensei - Synchronicity Prologue" href="/es/others/sync" imagePath={syncCover} alt="Click here for SyncPrologue" />
+    <LinkCardWithBackground title="Tokyo Mirage Sessions" href="/es/others/tms" imagePath={tmsCover} alt="Click here for MT2" />
+</CardGrid>

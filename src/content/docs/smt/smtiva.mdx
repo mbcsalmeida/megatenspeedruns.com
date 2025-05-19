@@ -3,7 +3,7 @@ title: Shin Megami Tensei IV Apocalypse
 description: All Resources for Shin Megami Tensei IV Apocalypse
 ---
 
-import { LinkCard,Card, CardGrid, Steps } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smt4a.jpg'
 
@@ -16,12 +16,24 @@ import cover from '/src/assets/covers/smt/smt4a.jpg'
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/shin_megami_tensei_iv_apocalypse" description="See all the submitted runs on Speedrun.com"/>
 
 ## Speedrun History
-<Steps>
-1. Shin Megami Tensei IV Apocalypse released worldwide by December 9. 2016.
-2. The first available recorded run was done by ChampionBeef on 2017/09/03 with a time of [**10:54:46**](https://youtu.be/SaqQ3u_mOaE)
-3. 7 months later, fellow speedrunner and router Koolzo achieved a new world record with a time of [**9:53:50**](https://www.twitch.tv/videos/254592733) that he would later improve to an almost sub 7 time of [**7:09:42**](https://www.twitch.tv/videos/1024295352) on 2021/05/16, showcasing the potential of this run.
-2. The current world record is held by Freedom_Pulse with a time of [**7:05:06**](https://www.twitch.tv/videos/1499712873). The potential for a sub 7h run is still up for grabs.
-</Steps>
+<Tabs>
+    <TabItem label="Conflict">
+        <Steps>
+        1. Shin Megami Tensei IV Apocalypse released worldwide by December 9. 2016.
+        2. The first available recorded run was done by ChampionBeef on 2017/09/03 with a time of [**10:54:46**](https://youtu.be/SaqQ3u_mOaE)
+        3. 7 months later, fellow speedrunner and router Koolzo achieved a new world record with a time of [**9:53:50**](https://www.twitch.tv/videos/254592733) that he would later improve to an almost sub 7 time of [**7:09:42**](https://www.twitch.tv/videos/1024295352) on 2021/05/16, showcasing the potential of this run.
+        4. The current world record is held by Freedom_Pulse with a time of [**7:05:06**](https://www.twitch.tv/videos/1499712873). The potential for a sub 7h run is still up for grabs.
+        </Steps>
+    </TabItem>
+    <TabItem label="Apocalypse">
+        <Steps>
+        1. Shin Megami Tensei IV Apocalypse released worldwide by December 9. 2016.
+        2. The first available recorded run was done by PinkPajamas on 2019/01/06 with a time of [**12:25:34**](https://www.twitch.tv/videos/359698934).
+        3. 4 years later, on 2025/03/10, shaggy improved the route and achieved a time of [**9:05:43**](https://youtu.be/3NL1PZoHFjk).
+        4. The current world record is held by shaggy3311 with a time of [**8:02:14**](https://youtu.be/R3ODreYRVhg?si=Hhm-Fc5lFV2oSkT9). This new route makes use of the Skill Swap glitch found earlier in the year.
+        </Steps>
+    </TabItem>
+</Tabs>
 
 ## Categories
 <CardGrid>

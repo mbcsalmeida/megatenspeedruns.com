@@ -1,0 +1,54 @@
+---
+title: Persona Q
+description: Todos los recursos para Persona Q
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/pq.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona Q es una duología de spin-offs de Persona que presenta a los personajes de Persona 3, Persona 4 y Persona 5 con una jugabilidad similar a la serie Etrian Odyssey."
+    srcUrl={cover}
+    alt="Persona Q Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="Ver más runs en Speedrun.com" actions={
+    [
+        {title:"Persona Q: Shadow of the Labyrinth",
+        url:"https://www.speedrun.com/persona_q_shadow_of_the_labyrinth"},
+        {title:"Persona Q2: New Cinema Labyrinth",
+        url:"https://www.speedrun.com/persona_q2_new_cinema_labyrinth"}
+    ]
+}/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="Persona Q: Shadow of the Labyrinth">
+        <Steps>
+            1. Persona Q: Shadow of the Labyrinth se lanzó en Japón el 5 de junio de 2014.
+            2. El actual récord mundial le pertenece a PinkPajamas, con una carrera completada en dificultad Risky, con un tiempo de [**8:37:37**]()
+        </Steps>
+    </TabItem>
+    <TabItem label="Persona Q2: New Cinema Labyrinth">
+        <Steps>
+            1. Persona Q2: New Cinema Labyrinth se lanzó en Japón el 29 de noviembre de 2018.
+            2. El actual récord mundial le pertenece a PinkPajamas, con una carrera completada en dificultad Risky, con un tiempo de [**9:58:44**]()
+        </Steps>
+    </TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Any%">Completa el juego. Está prohibido usar monedas de juego. Hay una subcategoría para cada dificultad.</Card>
+</CardGrid>
+
+## Notas
+- [PQ - Any% - Risky](https://docs.google.com/document/d/1PXUCNG59DiLiK1aEfT17fWBZAdIbO9CAuuR7uScn0N8/edit) by PinkPajamas
+- [PQ2 - Any% - Risky](https://docs.google.com/document/d/1-xB_ckHZ6Xxui9R12d7Jp9Lq79T0TyacKV7EDTw7CHE/edit) by PinkPajamas
+
+## Recursos
+- [PQ2 Skill Table](https://docs.google.com/spreadsheets/d/12X88sV7k2R-IpZ0-6pwEL_A-NNcp7KT7ktl1d1qV63s/edit#gid=625594584)
+- [PQ2 Enemy Table](https://docs.google.com/spreadsheets/d/1Kjb0pebf_gatrRBz2zU5z-QoltKIZaSHT2EIN1ReeLw/edit#gid=1943148282)
+- [PQ2 Chest List](https://pastebin.com/xSYnRC9J)

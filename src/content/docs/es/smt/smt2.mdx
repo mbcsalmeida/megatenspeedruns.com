@@ -1,0 +1,85 @@
+---
+title: Shin Megami Tensei II
+description: Todos los recursos para Shin Megami Tensei II
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import sfcCover from '/src/assets/covers/smt/smt2-sfc.jpg'
+import gbaCover from '/src/assets/covers/smt/smt2-gba.jpg'
+import psxCover from '/src/assets/covers/smt/smt2-ps1.jpg'
+
+<DocsHero 
+    content="Shin Megami Tensei II es la secuela del primer juego de Shin megami tensei. Juego con muchos bugs notables."
+    images = {[
+        {
+            title: "SNES",
+            altText: "SNES",
+            imagePath: sfcCover
+        },
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+        {
+            title: "GBA",
+            altText: "GBA",
+            imagePath: gbaCover
+        },
+    ]}
+    alt="Shin Megami Tensei II Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/smt2" description="Ver runs en Speedrun.com"/>
+
+## Historial de Speedruns
+
+<Tabs>
+<TabItem label="No Major Glitches - SNES">
+<Steps>
+1. Shin Megami Tensei II salió el 14 de Marzo de 1994.
+2. El speedrun mas viejo y grabado fue hecho por ドミネーター el 20 de Enero de 2009 en un tiempo de [**4:25:21**](https://www.nicovideo.jp/watch/sm5893892)
+3. El 1 de Enero de 2018, mizusima40 logró un tiempo de[**3:27:46**](https://drive.google.com/file/d/0B4KCZvbOlmK2Mld2QW9rQXVHWmM/view)
+4. El 8 de Julio de 2021, sioneus logró un tiempo de [**3:21:48**](https://www.twitch.tv/videos/1080582918)
+</Steps>
+</TabItem>
+
+<TabItem label="Any% - SNES">
+<Steps>
+1. Shin Megami Tensei II salió en Japón el 14 de Marzo de 1994.
+2. El speedrun mas viejo y grabado fue hecho por ドミネーター el 31 de Marzo de 2014 en un tiempo de[**1:52:23**](https://www.nicovideo.jp/watch/sm23225176). Esta run usaba el bug de traesto y el cambio de item para ir al Makai temprano en el juego y saltearse de manera entera la sección del Tokyo Underground.
+3. El 08 de Febrero de 2020, lradial obtuvo el World Record con un tiempo de [**1:51:34**](https://youtu.be/jvyvaGTwifA)
+4. El 8 de Agosto de 2022, known glitch hunter y el speedrunner masaya publicaron un [video](https://www.youtube.com/watch?v=PCxKqoqmi2E&t=13s) explicando como acceder al menu debug del juego. Esto llevó a la creación de una nueva categoría Any% que completó el desbloqueando el juego y el acceso a este menú de depuración mientras se seguía usando el cambio de elementos y el traesto warp.
+5. El 13 de Agosto de 2022, Symm completó esta nueva ruta y logró un World record con un tiempo de [37:32](https://youtu.be/nZ0KfUkVnpI)
+6. El 18 de Agosto de 2022, sioneus mejoró este World record con un tiempo de [**37:01**](https://youtu.be/nkziYAqT5og)
+7. El record actual pertenece a Liv con un tiempo de [**36:58**](https://youtu.be/I-IFzuKUzk8)
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categorías
+<CardGrid>
+    <Card title="Any%">Todos los glitches permitidos.</Card>
+    <Card title="Any%, no ACE">Vieja cateogria de Any% . No permite la ejecución de código arbitrario ni el uso del menú de depuración.</Card>
+    <Card title="No Major Glitches"></Card>
+    <Card title="Todos los bosses"></Card>
+</CardGrid>
+
+## Guías
+- [Any% Notes](https://www.speedrun.com//smt2/guides/gq2kv) by Symm
+- [Any% Notes](https://docs.google.com/document/d/1T7fuUMkHGcBnn8KTvZihCexb8ZETJztttrSaThR1e3o/edit) by Liv
+- [NMG Law Ending](https://sioneus.me/notes/smt2law) by sioneus
+- [NMG Chaos Ending](https://sioneus.me/notes/smt2chaos) by sioneus
+- [NMG Neutral Ending](https://sioneus.me/notes/smt2neutral) by sioneus
+- [NMG All Bosses](https://sioneus.me/notes/smt2bosses) by sioneus
+
+## Recursos
+- [Resource Directory](https://drive.google.com/drive/folders/1Gs6uivj5UgV6K-STOxApPajkhkj2Tc3H)
+- [atwiki SNES](https://w.atwiki.jp/shinmegamitensei2/pages/8.html)
+- [atwiki PS1](https://w.atwiki.jp/shinmegamitensei2/pages/422.html)
+- [atwiki GBA](https://w.atwiki.jp/shinmegamitensei2/pages/378.html)
+
+## Lista de vídeos de TAS
+- [Shin Megami Tensei II by masaya in 35:33](https://www.youtube.com/watch?v=Pi9C7Ej_1zw)
+

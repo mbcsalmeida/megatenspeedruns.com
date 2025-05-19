@@ -1,0 +1,72 @@
+---
+title: Shin Megami Tensei Devil Summoner 
+description: Todos los recursos para Shin Megami Tensei Devil Summoner
+---
+
+
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/devilsummoner/ds-ss.png'
+import pspcover from '/src/assets/covers/devilsummoner/ds-psp.jpg'
+
+<DocsHero 
+    content="Shin Megami Tensei: Devil Summoner es la primera entrega de la saga de Devil Summoner."
+    images = {[
+        {
+            title: "SS",
+            altText: "SS",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspcover
+        },
+    ]}
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/dsm" description="Ver todas las runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+<TabItem label="Any% - PSP">
+<Steps>
+1. Devil Summoner fue lanzado en Japón el 25 de Diciembre de 1995.
+2. El primer speedrun grabado fue hecho por sioneus el 25/08/2021 en un tiempo de **3:10:57** que luego mejoró a [**2:39:09**](https://www.twitch.tv/videos/1129250187)
+3. El 22/12/2023, ToxicTT exhibió una nueva ruta manipulada y obtuvo un tiempo de [**1:4912**](https://www.twitch.tv/videos/2011224710)
+4. El actual world record le pertenece a ToxicTT hecha el 12/06/2024 en un tiempo de [**1:22:09**](https://www.twitch.tv/videos/2170411533)
+</Steps>
+</TabItem>
+
+<TabItem label="Any% - Sega Saturn">
+<Steps>
+1. Devil Summoner fue lanzado en Japón el 22 de Diciembre 2005.
+2. Hay detalles de una run de Sega Saturn hecha por [hirosue_peer](http://blog.livedoor.jp/hirosue_peer/archives/51923552.html#more) con un supuesto tiempo de **** pero no está grabada.
+3. El actual world record parece ser de [**5:00:44**](https://youtu.be/mSqw5wxS4kg?si=D1GYFKgOmtiZCjWv) por Ucchare.
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Any% - PSP">Completar el juego tan rápido como sea posible. Manipular los pasos está permitido.</Card>
+    <Card title="Any% - Sega Saturn">Completar el juego tan rápido como sea posible.</Card>
+</CardGrid>
+
+## Glitches y Trucos
+<details>
+<summary>**One-way door skip**</summary>
+
+Si guardas frente a una puerta de un solo sentido y recargas el juego, puedes atravesarla. 
+</details>
+
+## Notas
+- [Reflection Route - Sega Saturn](http://blog.livedoor.jp/hirosue_peer/archives/51920261.html) by hirosue_peer
+- [Any% - Manipless notes - PSP](https://sioneus.me/notes/devsum) by sioneus
+- [Any% - Maniped notes - PSP](https://drive.google.com/file/d/1usmiIcoktgdbDrXDjk9DKvuGJsvwwahS/view?usp=sharing) by ToxicTT
+
+## Recursos
+- [atwiki - Sega Saturn](https://w.atwiki.jp/devilsummoner/pages/8.html)
+- [atwiki - PSP](https://w.atwiki.jp/devilsummoner/pages/401.html)
+- [PSP - Manip Research](https://docs.google.com/document/d/1MR4vNeT9zWdZGytsVQ7VpFI4NeRKdDpL1O-SC1c5TIE/edit?usp=sharing)
+- [PSP - Speedrun data](https://docs.google.com/spreadsheets/d/1wQD9vwD8gQpxl1ZmbyizgbarcfeeiH9ssTWOG_Z4o2w/edit?usp=sharing)
