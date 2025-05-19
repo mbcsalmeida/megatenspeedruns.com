@@ -1,0 +1,48 @@
+---
+title: Kyuuyaku Megami Tensei
+description: Todos los recursos para Kyuuyaku Megami Tensei
+---
+
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/others/kmt.png'
+
+<DocsHero 
+    content="Kyuuyaku Megami Tensei es un port remasterizado de Megami Tensei I y Megami Tensei II del SNES con gráficos mejorados y algunas características de calidad de vida añadidas."
+    srcUrl={cover}
+    alt="Kyuuyaku Megami Tensei Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/kmt" description="Ver todas las runs en Speedrun.com"/>
+
+## Historial de Speedruns
+
+<Tabs>
+<TabItem label="Megami Tensei">
+<Steps>
+1. Kyuuyaku Megami Tensei fue lanzado en Japón el 31 de Marzo de 1995.
+2. El primer speedrun registrado y disponible fue realizado por めし太郎 el 11/08/2013 con un tiempo de [**4:05:29**](https://www.nicovideo.jp/watch/sm21565155).
+3. El 01/01/2018, Darko subió una run con un tiempo de [**2:11:44**](https://www.twitch.tv/videos/293976962), bastante cerca de reducir a la mitad el tiempo del récord anterior.
+4. El 11/01/2018, diez días después, equi completó una run con su ruta arriesgada y logró el tiempo de [**1:28:23**](https://www.nicovideo.jp/watch/sm32565606). Este tiempo se mantuvo como récord mundial durante 4 años.
+5. El 13/11/2022, el experto speedrunner mulsqi logró un nuevo world record en un tiempo de [**1:19:27**](https://www.twitch.tv/videos/1651625734).
+6. El actual world record le pertenece a mulsqi con un tiempo de [**1:05:06**](https://www.twitch.tv/videos/1918650004).
+</Steps>
+</TabItem>
+
+<TabItem label="Megami Tensei II">
+<Steps>
+1. Kyuuyaku Megami Tensei fue lanzado en Japón el 31 de Marzo de 1995.
+2. El actual world record le pertenece a めし太郎, subido el 22/06/2013 con un tiempo de [**7:58:22**](https://www.nicovideo.jp/watch/sm21176718)
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Megami Tensei">Completa el juego derrotando a Lucifer. Se permite el uso de cualquier glitch.</Card>
+    <Card title="Megami Tensei II">Completa el juego obteniendo el final bueno al derrotar a YHVH.</Card>
+</CardGrid>
+
+## Recursos
+- [atwiki KMT](http://dds.opatil.com/kmt1/index.html)
+- [atwiki KMT2](http://dds.opatil.com/kmt2/index.html)

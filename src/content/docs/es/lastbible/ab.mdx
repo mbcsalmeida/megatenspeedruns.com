@@ -1,0 +1,39 @@
+---
+title: Another Bible
+description: Todos los recursos para Another Bible
+---
+
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/lastbible/anotherbible.jpg'
+
+<DocsHero 
+    content="Another Bible es un spin-off de la saga Last Bible. Es un juego de rol táctico muy simple y con poca conexión con el resto de la serie."
+    srcUrl={cover}
+    alt="Another Bible Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/ab" description="ver todas las runs en Speedrun.com"/>
+
+## Historial de Speedruns
+
+<Tabs>
+<TabItem label="Any%">
+<Steps> 
+1. Another Bible fue lanzado en Japón el 2 de marzo de 1995.
+2. El actual world record le pertenece a ArcSedna con un tiempo de [**1:50:39**](https://www.nicovideo.jp/watch/sm23808247) hecho el 18/06/2014.
+</Steps>
+</TabItem>
+</Tabs>
+
+## Categorias
+<CardGrid>
+    <Card title="Any%">Completar el juego tan rápido como sea posible.</Card>
+    <Card title="True Ending">Completa el juego lo más rápido posible mientras obtienes el Final Verdadero, que requiere de reclutar a todos los personajes.</Card>
+</CardGrid>
+
+## Notas
+- [Any% Notes](https://sioneus.me/notes/ab) by sioneus
+
+## Recursos
+- [Guide](http://mugi.parfe.jp/ab/abtop.html)

@@ -1,0 +1,65 @@
+---
+title: Guia de recursos para Speedruns de Megaten
+description: Página Web de recursos de speedrun de Megaten
+template: splash
+head:
+  - tag: style
+    content: ":root { --sl-content-width: 100% !important; }
+      .content-panel:has(h1#_top:not([data-page-title])) {
+	        display: none;
+        }
+    "
+
+---
+
+import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import LandingPageGrid from '/src/components/LandingPageGrid.astro';
+import LandingPageHero from '/src/components/LandingPageHero.astro';
+import smtImage from '/src/assets/landing/smt.png';
+import personaImage from '/src/assets/landing/persona.jpg';
+import dsumImage from '/src/assets/landing/devilsummoner.jpg';
+import ddsImage from '/src/assets/landing/dds.avif';
+import devichilImage from '/src/assets/landing/devilchildren.avif';
+import metaphorImage from '/src/assets/landing/metaphor.jpg';
+import lastbibleImage from '/src/assets/landing/lastbible.jpg';
+import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
+import othersImage from '/src/assets/landing/others.png';
+
+<div class="not-content">
+  <LandingPageHero altText="Logo de recursos de Megaten" 
+      description="Este sitio web es una colección de fuentes de referencias sobre recursos de información y guias para speedrunear juegos de Megaten."
+      buttons={[
+        {
+          title: "Ver recursos",
+          url: "/es/smt"
+        },
+        {
+          title: "Eventos",
+          url: "/events"
+        }
+      ]}
+      />
+  <LandingPageGrid>
+    <LinkCardWithBackground title="Shin Megami Tensei" href="/es/smt" imagePath={smtImage} alt="Click aquí para recursos de SMT " />
+    <LinkCardWithBackground title="Persona" href="/es/persona" imagePath={personaImage} alt="Click aquí para recursos de Persona "/>
+    <LinkCardWithBackground title="Devil Summoner" href="/es/dsum" imagePath={dsumImage} alt="Click aquí para recursos de Devil Summoner "/>
+    <LinkCardWithBackground title="Digital Devil Saga" href="/es/dds" imagePath={ddsImage} alt="Click aquí para recursos de DDS "/>
+    <LinkCardWithBackground title="Metaphor: ReFantazio" href="/es/metaphor/metaphor-re" imagePath={metaphorImage} alt="Click aquí para recursos de Metaphor "/>
+    <LinkCardWithBackground title="Devil Children" href="/es/dc" imagePath={devichilImage} alt="Click aquí para recursos de Devil Children "/>
+    <LinkCardWithBackground title="Last Bible" href="/es/lb" imagePath={lastbibleImage} alt="Click aquí para recursos de Last Bible "/>
+    <LinkCardWithBackground title="Devil Survivor" href="/es/ds" imagePath={survivorImage} alt="Click aquí para ver más R"/>
+    <LinkCardWithBackground title="Others" href="/es/others" imagePath={othersImage} alt="Click aquí para ver mas
+	"/>
+  </LandingPageGrid>
+</div>
+
+<Card title="Acerca de">
+Este es el centro de recursos para la comunidad de speedrun de Megaten. Aquí encontraras acerca de cada juego que ha sido speedruneado de Megami tensei series, como también los recursos, herramientas, notas y guias sobre como hacer speedrun de dichos juegos, incluyendo explicaciones de glitches y detalles sobre la historia del speedrun de cada juego.
+</Card>
+
+<Card title="Mantenido por la comunidad de speedrun de Megaten">
+Si quieres contribuir, por favor unite al server de Discord o hace click en el botón *Editar Pagina* al final de la página.
+</Card>
+
+

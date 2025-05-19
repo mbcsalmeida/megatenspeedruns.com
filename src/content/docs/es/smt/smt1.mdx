@@ -1,0 +1,172 @@
+---
+title: Shin Megami Tensei
+description: Todos los recursos para Shin Megami Tensei I
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import sfcCover from '/src/assets/covers/smt/smt1-sfc.jpg'
+import gbaCover from '/src/assets/covers/smt/smt1-gba.jpg'
+import mcdCover from '/src/assets/covers/smt/smt1-mcd.jpg'
+import tbcdCover from '/src/assets/covers/smt/smt1-tbcd.jpg'
+import psxCover from '/src/assets/covers/smt/smt1-psx.jpg'
+
+<DocsHero 
+    content="Shin Megami Tensei I es la primera entrega de la serie de juegos de Shin Megami tensei."
+    images = {[
+        {
+            title: "SNES",
+            altText: "SNES",
+            imagePath: sfcCover
+        },
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+        {
+            title: "GBA",
+            altText: "GBA",
+            imagePath: gbaCover
+        },
+        {
+            title: "MCD",
+            altText: "MEGA CD",
+            imagePath: mcdCover
+        },
+        {
+            title: "PCE",
+            altText: "PCE",
+            imagePath: tbcdCover
+        }
+    ]}
+    alt="Shin Megami Tensei Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/smt1" description="Ver runs en Speedrun.com"/>
+
+## Historial de Speedruns
+
+<Tabs>
+    <TabItem label="SNES">
+        <Steps>
+            1. Shin Megami Tensei salió en Japón el 30 de Octubre de 1992.
+            2. El primer speedrun en haber sido grabado fue el 12 de Mayo del by korosuke, completando la ruta neutral con un tiempo de [**3:36:17**](https://www.nicovideo.jp/watch/sm285732). En ese entonces, en la comunidad japonesa, el Neutral ending fue el ending preferido ya que era considerado como el más completo para ser cannon.
+            3. El 13 de Octubre de 2009, runner 01 mejoró el record mundial del neutral ending, completando el juego en menos de 3 horas, siendo el tiempo nuevo de [**2:35:41**](https://www.nicovideo.jp/watch/sm8414333)
+            4. El 15 de Octubre de 2016, runner 柳雲 completó la  primera run del Chaos Ending con un tiempo de [**2:34:54**](https://www.nicovideo.jp/watch/sm29842037)
+            5. El 04 de Diciembre del 2017 Symm habría completado la primera run usando el parche al Inglés, haciendo de [**3:00:24**](https://www.youtube.com/watch?v=LiNjD_6y2Tg&feature=youtu.be). El parche al inglés mas tarde sería confirmado como "terriblemente lento" en comparación con la versión japonesa, por lo tanto, la mayoria de las runs en la tabla de clasificación se hacen en la versión original.
+            6. El 01 de Enero de 2018 el speedruner de megaten mizusima40 popularizó el Law ending como el ending por default y logró la primera run en menos de 2 horas con un tiempo de [**1:57:40**]. Este logro duraria por tres años como Record mundial.
+            7. El 02 de Agosto de 2018, el speedrunner masaya habría completado una run manipulando el RNG para obtener un Stradivarius, logrando un tiempo de [**1:39:17**](https://www.nicovideo.jp/watch/sm33624817). Las tablas de clasificación, hasta este año 2025, no permiten la manipulación del RNG del juego, sino éste seria el World Record.
+            8. En 2020, mizusima40 re hizo su ruta para incluir el uso del skip de la skill "Traesto", lo que fue permitido en las reglas del speedrun, como también no fusionar mas al demonio Hinokagutsuchi para usar estrategias con skills de Encanto y la vara de Lotus en su lugar. Esto fue un cambio mayor al rehacer la ruta y que se utiliza hasta el día de hoy.
+            9. El world record actual lo tiene mizusima40, logrado el 11 de Septiembre de 2020 con un tiempo de  [**1:47:43**](https://www.twitch.tv/videos/738802913).
+        </Steps>
+    </TabItem>
+    <TabItem label="PS1">
+        <Steps>
+        1. Shin Megami Tensei salió en Japón el 21 de Mayo de 2001.
+        2. La primera run grabada de la versión de PS1 de SMT1 fue hecha el 13 de Noviembre de 2016 por el runner Crim, completando la ruta neutral en un tiempo de [**2:11:20**](https://www.nicovideo.jp/watch/sm30040584)
+        3. El 11 de Junio de 2020 el runner Clive logró un tiempo de [**1:39:03**](https://www.youtube.com/watch?v=cJ7768D-rHI) completando la actual ruta del Law ending.
+        4. 2 meses después, el 14 de Agosto, el runner equi logró un nuevo world record de [**1:38:20**](www.nicovideo.jp/watch/sm37356462), el cual sigue siendo el World record japonés.
+        5. El 10 de Agosto de 2022, la traducción de un fan de la versión de PS1 salió en la página Romhacking.net. Esta versión probaría ser viable para las runs, siendo incluso mas rápida que su contraparte japonesa, lo cual conllevó a que se creara una nueva categoria y se haría popular entre los hablantes del inglés.
+        6. La primera run grabada de la versión al inglés fue hecha por sioneus el 13 de Noviembre de 2022 con un tiempo de [**1:45:56**](https://www.twitch.tv/videos/1652072379)
+        7. El record mundial actual le pertenece a by S_Guy_420 quien logró completar el juego en menos de 1 hora y 30 minutos el 28 de Octubre de 2024 en un tiempo de [**1:29:27**](https://www.youtube.com/watch?v=CJrUu9pecPE)
+        </Steps>
+    </TabItem>
+    <TabItem label="GBA">
+        <Steps>
+        1. Shin Megami Tensei salió en Japón el 21 de Mayo 28 de 2003.
+        2. El World record actual lo tiene equi con un tiempo de [**1:52:57**]
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## Categorías
+
+<Tabs>
+    <TabItem label="SNES">
+        <CardGrid>
+            <Card title="No Major Glitches">Categoria principal que no permite glitches que rompan el juego tales como ACE, Memory Manipulation, salirse de los limites, etc. La categoria tambien prohíbe manipular los encuentros con demonios. Los 3 endings son categorías separadas.</Card>
+            <Card title="Any%">No hay restricción en los glitches o en la manipulación. Las categorias separadas de endings  no están disponibles. El ending que sea más rapido será el ending de la run.</Card>
+            <Card title="All Bosses">No Major Glitchless excepto que esta vez, peleas contra todos los jefes del juego. Esto requiere del Neutral ending. La categoria actualmente está bajo revisión.</Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="PS1">
+        <CardGrid>
+            <Card title="Any%">Completar el juego. Todos los glitches están permitidos.</Card>
+            <Card title="Glitchless">Una vez completado el juego, hay una sub-categoria para cada ending. No se permiten glitches.</Card>
+            <Card title="All Bosses">Vencer a cada boss. No se permiten glitches .</Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="GBA">
+        <CardGrid>
+            <Card title="Corrupted Load">Cargar un save corrompido y completar el juego.</Card>
+            <Card title="Glitchless">Una vez completado el juego, hay una sub-categoria para cada ending. No se permiten glitches.</Card>
+            <Card title="All Bosses">Vencer a cada boss. No se permiten glitches.</Card>
+        </CardGrid>
+    </TabItem>
+</Tabs>
+
+## Glitches y Trucos
+
+<Tabs>
+    <TabItem label="SNES">
+        <details>
+        <summary>**Magic Preemption**</summary>
+
+        Debido a un error en el código, la magia siempre será lo primero que suceda en un turno sobre cualquier otra cosa, independientemente de los valores de velocidad. Esto se activa al asegurarte de que Magia sea la última acción que selecciones que no sea atacar o defender.
+        Puedes desactivar esto abriendo y cerrando el menú de elementos con el último miembro del grupo. Esto es muy útil para asegurarse skills como zio/bufu que son los primeros en salir contra enemigos con ataques poderosos que no son mágicos. 
+        </details>
+
+        <details>
+        <summary>**Traesto Sequence Breaking**</summary>
+
+        Al salir del paso subterráneo de Ginza (Ir a Ikebukuro), si vuelves a entrar antes de que se active el evento Yami, puedes usar Traesto, te teletransportará y te permitirá evitar el activador del evento por completo.  
+        </details>
+
+        <details>
+        <summary>**Sell Glitch**</summary>
+
+        Presione el botón B al entrar al menú de venta. Presione A mientras mantiene presionado B y estará detrás de la venta de un cuchillo de ataque (incluso si no tiene uno).
+        Podes hacer esto todas las veces que quieras. Esto también funciona con el menú de compras y dependiendo del negocio, podrás comprar una amplia variedad de items.
+        </details>
+    </TabItem>
+    <TabItem label="PS1">
+        <details>
+        <summary>**Equiment Glitch**</summary>
+        Al presionar una dirección y confirmar en el mismo frame en el menú de equipamiento, puedes equipar items en un slot equivocado. Algunas variaciones de este glitch pueden crashear el juego, tener cuidado. 
+        Una aplicación de esto para correr rápido es equipar una espada como balas para crear un arma poderosa. Sin embargo, lo peor que puedes hacer con este gltich es equipar balas en el slot. 
+        Si las balas ignoran la compatibilidad(Nerve Bullets, Charm Bullets, etc) vas a evitar todo el daño venidero haciendote indestructible. Sin embargo, aún puedes recibir ataques de muerte instantánea y ataques de drenaje de energía.
+        </details>
+
+        <details>
+        <summary>**Shop Glitch**</summary>
+        Esto se realiza de la misma manera que el glitch del equipo. Siempre que tenga el dinero para el item inicialmente: seleccione 01x del artículo, luego confirme la hora y baje en el mismo frame. El juego quiere que compres 0 del item.
+        Asegúrate de decir que sí para equiparlo inmediatamente, aunque el artículo se pierda. Esto es ,esencialmente, un glitch de dinero infinito.
+        </details>
+    </TabItem>
+</Tabs>
+
+## Guías
+- [SFC Any% Notes](https://docs.google.com/document/d/1okJDob0Y8oxvGBN-h_pZFzsghVxcKXBdwnRLbG2kTqI/edit?usp=sharing) by Symm
+- [SFC Any% Video Guide](https://youtu.be/pwNJS4_cOj8) by sioneus
+- [SFC NMG Law Ending](https://sioneus.me/notes/smt1) by sioneus
+- [SFC NMG Chaos Ending](https://drive.google.com/file/d/1xaYVgcIIuaIsuSBGfqF9vZReU55w5Cql/view?usp=sharing) by sioneus
+- [SFC NMG Neutral Ending](https://drive.google.com/file/d/1x8SZWog_do8EgtLreqLkyy2JAXdZ8dYl/view?usp=sharing) by sioneus
+- [SFC All Bosses](https://docs.google.com/document/d/12wXTYPmQzJWpXTDJKBBXfOOnOUafkcmKOIQOzQ0GCvQ/edit) by Xano
+
+- [PSX Glitchless Law Ending](https://sioneus.me/notes/smt1psx) by sioneus
+- [PSX All Bosses](https://sioneus.me/notes/smt1psxbosses) by sioneus
+- [PSX Any%](https://sioneus.me/notes/smt1psxany) by sioneus
+
+- [GBA Glitchless Law Ending](https://sioneus.me/notes/smt1gbal) by sioneus
+
+## Recursos
+- [SFC atwiki](https://w.atwiki.jp/shinmegamitensei1/pages/290.html)
+- [Fusion calculator](https://ore-game.com/dds1/verify/unite-rule-2/)
+- [Masaya's research lab](https://smtlab.web.fc2.com/index.html)
+- [PS1 atwiki](https://w.atwiki.jp/shinmegamitensei1/pages/494.html)
+- [GBA atwiki](https://w.atwiki.jp/shinmegamitensei1/pages/282.html)
+
+## Lista de vídeos de TAS
+- [Shin Megami Tensei (SFC) by masaya in 7:20](https://www.youtube.com/watch?v=PKyXJkBsJaw&feature=youtu.be)

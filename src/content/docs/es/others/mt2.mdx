@@ -1,0 +1,73 @@
+---
+title: Digital Devil Story - Megami Tensei II
+description: Todos los recursos para Digital Devil Story - Megami Tensei II
+---
+
+import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/others/mt2.png'
+
+<DocsHero 
+    content="Digital Devil Story: Megami Tensei II es la segunda entrega de la serie Digital Devil Story: Megami Tensei de Atlus. Esta entrega mejoró la mecánica del primer juego, añadiendo características como el piloto automático y un mundo exterior para navegar."
+    srcUrl={cover}
+    alt="Digital Devil Story - Megami Tensei II Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/mt2" description="Ver todas las runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="Glitchless">
+        <Steps>
+        1. Digital Devil Story: Megami Tensei II fue lanzado en Japón el 6 de Abril de 1990.
+        2. La primera run registrada y conocida, todavía está disponible y le pertenece al runner Biim con un tiempo de [**5:22:22**](https://www.nicovideo.jp/watch/sm18620957) establecido el 15/08/2012
+        3. El récord mundial actual le pertenece a akiyabo con un tiempo de [**3:46:26**](https://youtu.be/TnIHEgi3-rs).
+       </Steps>
+    </TabItem>
+
+    <TabItem label="Glitched">
+        <Steps>
+        1. Digital Devil Story: Megami Tensei II se lanzó en Japón el 6 de abril de 1990.
+        2. La primera run registrada fue realizada por Equi con un tiempo de 2:44:35 establecido el 03/10/2020.
+        3. Symm Grabó la primera run con el parche traducido al inglés no oficial, logrando un tiempo de [**2:53:59**](https://youtu.be/wlcupjWzV3Q)
+        4. El tiempo fue mejorado por Akiyabo el 11/10/2024 en un tiempo de[**2:21:58**](https://www.twitch.tv/videos/2273267875).
+        </Steps>
+    </TabItem>
+
+     <TabItem label="Glitched (No Auto-Pilot Bug)">
+        <Steps>
+        1. Digital Devil Story: Megami Tensei II se lanzó en Japón el 6 de abril de 1990.
+        3. El actual world record le pertenece a Akiyabo con un tiempo de [**2:58:42**](https://www.twitch.tv/videos/1728841936) establecido el 05/02/2023.
+        </Steps>
+    </TabItem>
+</Tabs>
+
+
+## Categorias
+<CardGrid>
+    <Card title="Glitched">Completa el juego y consigue el final bueno al derrotar a YHVH. Se permite el uso de cualquier bug.</Card>
+    <Card title="Glitched (No Auto-pilot bug)">Completa el juego y consigue el final bueno al derrotar a YHVH. Auto-pilot bug no está permitido.</Card>
+    <Card title="Glitchless">Completes the game, getting the good ending by defeating YHVH. No glitches are allowed.</Card>
+</CardGrid>
+
+## Glitches y Trucos
+<details>
+<summary>Astaroth Castle Warp</summary>
+Si te encuentras con Balam en Shibuya con menos de 7 de Sabiduría, usas a Taestro y vuelves a hablar con la recepcionista, acabarás en el Castillo de Astaroth. Este error causa algunos problemas que deben solucionarse. Por ejemplo, debes completar el grupo tras matar a Astaroth y matar a la Heroína antes de salir del castillo.
+</details>
+
+<details>
+<summary>Auto-Pilot Bug</summary>
+Si configuras una ubicación con piloto automático y regresas a ella, puedes cancelarla antes de llegar a la ubicación inicial. Al cancelarla, podrás moverte con tranquilidad, pero sin encuentros en toda la mazmorra. Se reinicia al salir al mapa del mundo. [Video ejemplo.](https://x.com/SymmRTA/status/1683684048911097857)
+</details>
+
+<details>
+<summary>Total Annihilation Bug</summary>
+Aniquilación Total es el nombre de un error de corrupción de partidas guardadas que permite completar el juego en menos de 10 minutos. Actualmente no se usa ni se registra en SRC; puedes encontrar un ejemplo. [aquí](https://www.nicovideo.jp/watch/sm37779525).
+</details>
+
+## Notas
+- [Glitched](https://docs.google.com/spreadsheets/d/1C3bxaREutq2GqSWsgaF9cZsWi5vet9eKzEDdF6MdttQ/edit#gid=16972868) by Symm
+
+## Recursos
+- [atwiki](http://dds.opatil.com/dds2/index.html)
