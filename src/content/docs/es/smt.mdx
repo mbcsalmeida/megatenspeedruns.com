@@ -1,0 +1,28 @@
+---
+title: Shin Megami Tensei
+description: All Recursos for Shin Megami Tensei 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import smt1 from '/src/assets/covers/smt/smt1-sfc.jpg';
+import smt2 from '/src/assets/covers/smt/smt2-sfc.jpg';
+import smt3 from '/src/assets/covers/smt/smt3.jpg';
+import smt4 from '/src/assets/covers/smt/smt4-jp.jpg';
+import smt4a from '/src/assets/covers/smt/smt4a.jpg';
+import smt5 from '/src/assets/covers/smt/smt5.png';
+import smt5v from '/src/assets/covers/smt/smt5v.jpg';
+import smtsj from '/src/assets/covers/smt/smtsj.jpg';
+import smtif from '/src/assets/covers/smt/smtif-sfc.jpg';
+
+<CardGrid>
+    <LinkCardWithBackground title="Shin Megami Tensei" href="/es/smt/smt1" imagePath={smt1} alt="Click here for SMT " />
+    <LinkCardWithBackground title="Shin Megami Tensei II" href="/es/smt/smt2" imagePath={smt2} alt="Click here for SMT 2" />
+    <LinkCardWithBackground title="Shin Megami Tensei If..." href="/es/smt/smtif" imagePath={smtif} alt="Click here for SMT If" />
+    <LinkCardWithBackground title="Shin Megami Tensei IV" href="/es/smt/smtiv" imagePath={smt4} alt="Click here for SMT 4" />
+    <LinkCardWithBackground title="Shin Megami Tensei IV: Apocalypse" href="/es/smt/smtiva" imagePath={smt4a} alt="Click here for SMT 4A" />
+    <LinkCardWithBackground title="Shin Megami Tensei: Nocturne" href="/es/smt/smtnocturne" imagePath={smt3} alt="Click here for SMT 3" /> 
+    <LinkCardWithBackground title="Shin Megami Tensei: Strange Journey" href="/es/smt/smtsj" imagePath={smtsj} alt="Click here for SMT SJ" />
+    <LinkCardWithBackground title="Shin Megami Tensei V" href="/es/smt/smtv" imagePath={smt5} alt="Click here for SMT 5" />
+    <LinkCardWithBackground title="Shin Megami Tensei V: Vengeance" href="/es/smt/smtvv" imagePath={smt5v} alt="Click here for SMT 5 V" />
+</CardGrid>

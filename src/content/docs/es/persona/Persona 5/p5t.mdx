@@ -1,0 +1,31 @@
+---
+title: Persona 5 Tactica
+description: Todos los recursos para Persona 5 Tactica
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p5t.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 5 Tactica es un spin-off de Persona 5. Es un juego de rol táctico."
+    srcUrl={cover}
+    alt="Persona 5 Tactica Cover"
+/>
+
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/p5t" description="Ver más runs en Speedrun.com"/>
+
+## Historial de Speedruns
+<Steps>
+    1. Persona 5 Tactica se lanzó mundialmente el 17 de noviembre de 2023.
+    2. La actual poseedora del récord mundial es Liv con un tiempo de [**4:47:05**]()
+</Steps>
+
+## Categorias
+<CardGrid>
+    <Card title="Any%"></Card>
+</CardGrid>
+
+## Notas
+- [Any% - Merciless](https://docs.google.com/document/d/1tOXYAdOtg4wVvmCRiHhaKwGbNrynK97MkN05jV7JONM/edit) by Liv

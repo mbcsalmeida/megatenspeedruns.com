@@ -1,0 +1,81 @@
+---
+title: Persona 1
+description: Todos los recursos para Persona 1
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import DocsHero from '/src/components/DocsHero.astro'
+import cover from '/src/assets/covers/persona/p1-ps1.jpg'
+import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+
+<DocsHero 
+    content="Persona 1 Es la primera entrega de la saga de Persona, que se desvía del juego tradicional de SMT y que usa demonios como miembros del grupo, y en su lugar, se usa a un grupo de personajes humanos, cada uno con un demonio específico conocido como persona. El personaje principal tiene una persona inicial y, a partir de ella, puede obtener y fusionar otras."
+    srcUrl={cover}
+    alt="Persona 1 Cover"
+/>
+
+<LinkCardWithButtons title="Leaderboards" description="Ver todas las runs en Speedrun.com" actions={
+    [
+        {title:"Revelations: Persona",
+        url:"https://www.speedrun.com/revelations_persona"},
+        {title:"Shin Megami Tensei: Persona",
+        url:"https://www.speedrun.com/smtp"}
+    ]
+}/>
+
+## Historial de Speedruns
+<Tabs>
+    <TabItem label="PS1 - SEBEC">
+        <Steps>
+            1. Relevations: Persona Fue lanzado en Japón el 20 de septiembre de 1996.
+            2. El actual récord mundial le pertenece a Supergamer57 con un tiempo de [**8:12:35**](https://www.twitch.tv/videos/42673047)
+        </Steps>
+    </TabItem>
+    <TabItem label="PS1 - Snow Queen Quest">
+        <Steps>
+            1. Relevations: Persona Fue lanzado en Japón el 20 de septiembre de 1996.
+            2. El actual récord mundial le pertenece a Tick_Show con un tiempo de [**4:15:24**](https://nico.ms/sm35227898?ref=thumb_watch)
+        </Steps>
+    </TabItem>
+    <TabItem label="PSP - SEBEC">
+        <Steps>
+            1. Shin Megami Tensei: Persona se lanzó en Japón el 29 de abril de 2009.
+            2. La primera run registrada fue realizada por Liv basándose en la ruta PS1 SEBEC de Supergamer57, que logró un tiempo de [**6:05:32**](https://youtu.be/7OyKC3M5TRs)
+            3. El 12/06/2019, Tick_Show desarrolló la ruta Mabufu Stone y logró un tiempo de [**3:59:53**](www.nicovideo.jp/watch/sm35250359)
+            4. El 26/07/2019, el speedrunner escaroon logró la primera run sub 3h con un tiempo de [**2:54:13**](https://youtu.be/VXMjtP7fWMo)
+            5. El actual récord mundial de consola le pertenece a Tick_Show con un tiempo de [**2:51:05**](https://youtu.be/HWlsj6S-7Xw) y el tiempo más bajo jamás alcanzado, que se hizo en el emulador, lo tiene Fenr1r74 con un tiempo de [**2:44:48**](https://www.twitch.tv/videos/1825596953)
+        </Steps>
+    </TabItem>
+    <TabItem label="PSP - Snow Queen Quest">
+        <Steps>
+            1. Shin Megami Tensei: Persona se lanzó en Japón el 29 de abril de 2009.
+            2. La primera run registrada fue realizada por escargoon el 24/12/2013, completando el True Ending, con un tiempo de [**1:56:33**](https://youtu.be/ijDyyVHEmro). True Ending es la categoría menos popular y su tiempo más rápido ahora lo tiene Tick_Show con un tiempo de [**1:48:27**](www.nicovideo.jp/watch/sm35246032)
+            3. La primera run registrada del Bad Ending fue realizada por Symm el 5/03/2016 con un tiempo de [**1:30:50**](https://www.twitch.tv/videos/52507639)
+            4. El 29/08/2017, mulsqi mejoró el récord mundial con un tiempo de [**1:27:49**](https://www.twitch.tv/videos/170696554)
+            5. El récord mundial actual lo tiene Tick_Show con un tiempo de [**1:14:29**](www.nicovideo.jp/watch/sm35243230)
+            </Steps>
+    </TabItem>
+    
+</Tabs>
+
+
+## Categorias
+<CardGrid>
+    <Card title="SEBEC"></Card>
+    <Card title="Snow Queen Quest"></Card>
+</CardGrid>
+
+## Glitches y Trucos
+- [Explicación de la **Resurrección Latente**](https://docs.google.com/document/d/1kTg6F_4B4_KlQRtoJTnOHh7EltJZE96BOOVgs71YRaI/edit?usp=sharing)
+- [Vídeo tutorial sobre cómo manipular RNG para la versión de PSP](https://www.youtube.com/watch?v=XbeCnspdEtw)
+
+## Notas
+- [PSX - SQQ Bad Ending](https://docs.google.com/document/d/1r72GQq2kGc8mkSHD6bxKtGBw8nPl5kOj/edit?usp=sharing) by ToxicTT
+- [PSP - SEBEC RNG Manip Notes](https://docs.google.com/document/d/1wpqpY8Txhs3VinAd5Q361gkvQDpR6WhLEUsGA6fKp_c/edit?usp=sharing) by Worldie
+- [PSP - SQQ Good Ending Notes](https://docs.google.com/document/d/1-07b4bMfO0mvx16YeJopYE0TNm3F5_LG6gH0nEpExgQ/edit?usp=sharing) by jojo07
+- [PSP - SQQ Bad Ending Notes](https://docs.google.com/document/d/1RbL2I2R3N77hSb4fFA1mEFEHaCSAplOKwuXPuToRwhA/edit?usp=sharing) by Lonne
+- [PSP - SEBEC Notes](https://pastebin.com/0Wf7rGW3) by Mauve
+
+## Recursos
+- [atwiki](https://w.atwiki.jp/persona1/)
+- [wikidot](http://persona1.wikidot.com/)
