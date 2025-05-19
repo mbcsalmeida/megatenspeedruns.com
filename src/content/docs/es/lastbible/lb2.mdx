@@ -5,11 +5,23 @@ description: Todos los recursos para Megami Tensei Gaiden - Last Bible 2
 
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
+import gbCover from '/src/assets/covers/lastbible/lb2-gb.jpg'
 import cover from '/src/assets/covers/lastbible/lb2-gbc.png'
 
 <DocsHero 
     content="Megami Tensei Gaiden - Last Bible 2 es la secuela de Last Bible 1, mejorando el gameplay de la entrega anterior con diferentes mecanicas para la negociación y nuevas caracteristicas del ciclo de la luna."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "GB",
+            altText: "GB",
+            imagePath: gbCover
+        },
+        {
+            title: "GBC",
+            altText: "GBC",
+            imagePath: cover
+        },
+    ]}
     alt="Megami Tensei Gaiden - Last Bible 2 Cover"
 />
 

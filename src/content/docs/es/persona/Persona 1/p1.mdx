@@ -7,11 +7,23 @@ import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/persona/p1-ps1.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
+import pspCover from '/src/assets/covers/persona/p1-psp.jpg'
+
 
 <DocsHero 
     content="Persona 1 Es la primera entrega de la saga de Persona, que se desvía del juego tradicional de SMT y que usa demonios como miembros del grupo, y en su lugar, se usa a un grupo de personajes humanos, cada uno con un demonio específico conocido como persona. El personaje principal tiene una persona inicial y, a partir de ella, puede obtener y fusionar otras."
-    srcUrl={cover}
-    alt="Persona 1 Cover"
+    images = {[
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspCover
+        },
+    ]}
 />
 
 <LinkCardWithButtons title="Leaderboards" description="Ver todas las runs en Speedrun.com" actions={

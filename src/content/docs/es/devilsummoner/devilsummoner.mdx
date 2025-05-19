@@ -7,11 +7,22 @@ description: Todos los recursos para Shin Megami Tensei Devil Summoner
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsummoner/ds-ss.png'
+import pspcover from '/src/assets/covers/devilsummoner/ds-psp.jpg'
 
 <DocsHero 
     content="Shin Megami Tensei: Devil Summoner es la primera entrega de la saga de Devil Summoner."
-    srcUrl={cover}
-    alt="Shin Megami Tensei Devil Summoner Cover"
+    images = {[
+        {
+            title: "SS",
+            altText: "SS",
+            imagePath: cover
+        },
+        {
+            title: "PSP",
+            altText: "PSP",
+            imagePath: pspcover
+        },
+    ]}
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/dsm" description="Ver todas las runs en Speedrun.com"/>

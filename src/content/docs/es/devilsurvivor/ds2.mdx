@@ -5,11 +5,23 @@ description: Todos los recursos para Shin Megami Tensei - Devil Survivor 2
 
 import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/devilsurvivor/ds2.jpg'
+import cover from '/src/assets/covers/devilsurvivor/ds2-jp.png'
+import dscover from '/src/assets/covers/devilsurvivor/ds23ds-jp.png'
 
 <DocsHero 
     content="Shin Megami Tensei - Devil Survivor 2 es la secuela al primer devil survivor."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "DS",
+            altText: "DS",
+            imagePath: cover
+        },
+        {
+            title: "3DS",
+            altText: "3DS",
+            imagePath: dscover
+        },
+    ]}
     alt="Shin Megami Tensei - Devil Survivor 2 Cover"
 />
 

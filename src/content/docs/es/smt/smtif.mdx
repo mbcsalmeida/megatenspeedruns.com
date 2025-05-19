@@ -5,11 +5,23 @@ description: Todos los recursos para Shin Megami Tensei If...
 
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
-import cover from '/src/assets/covers/smt/smtif-sfc.jpg'
+import sfcCover from '/src/assets/covers/smt/smtif-sfc.jpg'
+import psxCover from '/src/assets/covers/smt/smtif-ps1.png'
 
 <DocsHero 
     content="Shin Megami Tensei If... es la tercera entrega de los juegos de Shin Megami Tensei, desarrollado con una extensión del motor de SMT2 y considerado por los fans como el predecesor de la saga Persona debido a la ambientación escolar y la posibilidad de elegir un compañero humano lo cual, conlleva a un ending distinto."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "SNES",
+            altText: "SNES",
+            imagePath: sfcCover
+        },
+        {
+            title: "PS1",
+            altText: "PS1",
+            imagePath: psxCover
+        },
+    ]}
     alt="Shin Megami Tensei If... Cover"
 />
 

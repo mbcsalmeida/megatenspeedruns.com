@@ -6,10 +6,23 @@ description: Todos los recursos para Shin Megami Tensei Strange Journey
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smtsj.jpg'
+import coverRedux from '/src/assets/covers/smt/smtsj3ds.jpg'
+
 
 <DocsHero 
     content="Shin Megami Tensei: Strange Journey es uno de los mejores juegos."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "OG",
+            altText: "OG",
+            imagePath: cover
+        },
+        {
+            title: "Redux",
+            altText: "Redux",
+            imagePath: coverRedux
+        },
+    ]}
     alt="Shin Megami Tensei: Strange Journey Cover"
 />
 

@@ -6,10 +6,22 @@ description: Todos los recursos para Shin Megami Tensei Nocturne
 import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smt3.jpg'
+import hdCover from '/src/assets/covers/smt/smt3hd.png'
 
 <DocsHero 
     content="Shin Megami Tensei: Nocturne existe y es un juego runeable. La comunidad para este juego es bastante activa y apasionada, incluso, a veces bastante competitiva."
-    srcUrl={cover}
+    images = {[
+        {
+            title: "OG",
+            altText: "OG",
+            imagePath: cover
+        },
+        {
+            title: "HD",
+            altText: "HD",
+            imagePath: hdCover
+        },
+    ]}
     alt="Shin Megami Tensei Nocturne... Cover"
 />
 
