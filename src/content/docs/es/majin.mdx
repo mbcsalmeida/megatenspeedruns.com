@@ -1,0 +1,19 @@
+---
+title: Majin Tensei
+description: All Resources for Majin Tensei 
+---
+
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
+import mt1 from '/src/assets/covers/majin/majin1.png'
+import mt2 from '/src/assets/covers/majin/majin2.png'
+import r from '/src/assets/covers/majin/ronde.png'
+import blind from '/src/assets/covers/majin/majinblind.jpg'
+
+
+<CardGrid>
+    <LinkCardWithBackground title="Majin Tensei" href="/es/majin/mt1" imagePath={mt1} alt="Click here for Majin Tensei I" />
+    <LinkCardWithBackground title="Majin Tensei II" href="/es/majin/mt2" imagePath={mt2} alt="Click here for Majin Tensei II" />
+    <LinkCardWithBackground title="Ronde" href="/es/majin/ronde" imagePath={r} alt="Click here for Ronde" />
+    <LinkCardWithBackground title="Majin Tensei - Blind Thinker" href="/es/majin/mtblind" imagePath={blind} alt="Click here for Majin Tensei: Blind Thinker" />
+</CardGrid>

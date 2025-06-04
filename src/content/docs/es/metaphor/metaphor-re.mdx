@@ -3,7 +3,7 @@ title: Metaphor - ReFantazio
 description: Todos los recursos para Metaphor:ReFantazio
 ---
 
-import { LinkCard,Card, CardGrid, Steps } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 
@@ -16,12 +16,26 @@ import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/Metaphor" description="Ver todas las runs e información más detallada en Speedrun.com"/>
 
 ## Historial de Speedruns
-<Steps>
-1. Metaphor:ReFantazio fue lazando mundialmente el 11 de Octubre de 2024.
-2. El primer speedrun grabado fue hecho el 16/11/2024 por mulsqi en un tiempo de **7:34:49**.
-3. El 14/12/2024 mulsqi mejoró el tiempo a [**6:30:18**](https://www.twitch.tv/videos/2334634021). 
-4. El world record actual en PC le pertenece a ChampionBeef con un tiempo de [**5:49:57**](https://www.twitch.tv/videos/2342342200). El world record actual en consola le pertenece a Liv con un tiempo de [**7:09:33**](https://youtu.be/kPbSN6pBWsk?si=jNS29uClFxlTrrWA).
+<Tabs>
+    <TabItem label="Hard, True Ending - PC">
+        <Steps>
+        1. Metaphor: ReFantazio se lanzó mundialmente el 11 de octubre de 2024.
+2. La primera carrera registrada la realizó mulsqi el 16/11/2024 con un tiempo de [**7:45:29**](https://www.twitch.tv/videos/2304147076)
+3. El 25/11/2024, Neviutz mejoró el récord a [**7:00:32**](https://www.youtube.com/watch?v=UxnFYN7ZtMI)
+4. El 14/12/2024, mulsqi mejoró el récord a [**6:30:18**](https://www.twitch.tv/videos/2334634021)
+5. El 21/12/2024, ChampionBeef mejoró el récord a [**6:16:18**](https://www.twitch.tv/videos/2335013593)
+6. El récord mundial actual en PC lo ostenta LeftBishop con un tiempo de [**5:50:46**](https://youtu.be/rZTeMKJf-w0), establecido el 6/3/2025.
 </Steps>
+    </TabItem>
+    <TabItem label="Hard, True Ending - Console">
+        <Steps>
+        1. La primera carrera registrada la realizó LillieZora el 24/11/2024 con un tiempo de [**9:35:13**](https://www.twitch.tv/videos/2309601807)
+2. El 3/12/2024, Liv mejoró su tiempo a [**7:46:35**](https://www.youtube.com/watch?v=9jo5N_IOeXs)
+3. El 27/12/2024, generic_worm batió un nuevo récord por 1 segundo con [**7:46:34**](https://www.twitch.tv/videos/2337181456)
+4. El récord mundial actual en consolas lo ostenta Liv con un tiempo de [**7:09:33**](https://www.youtube.com/watch?v=kPbSN6pBWsk), ambientada el 8/1/2025
+</Steps>
+    </TabItem>
+</Tabs>
 
 ## Categorias
 <CardGrid>
@@ -29,12 +43,12 @@ import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 </CardGrid>
 
 ## Notas
-- [Hard, True Ending](https://pastebin.com/bNAjWfd1) by mulsqi
-- [Hard, True Ending](https://docs.google.com/spreadsheets/d/1B40jf104DRUxjcRHwcoSmlf_lYqKaBFs0DMH0TTateY/edit?usp=sharing) by ChampionBeef (reformat of mulsqi's notes)
+- [Hard, True Ending](https://pastebin.com/bNAjWfd1) de mulsqi
+- [Hard, True Ending](https://docs.google.com/spreadsheets/d/1B40jf104DRUxjcRHwcoSmlf_lYqKaBFs0DMH0TTateY/edit?usp=sharing) de ChampionBeef (reformat of mulsqi's notes)
 
 ## Recursos
-- [Resource Database](https://docs.google.com/spreadsheets/d/19Qd2Bvv-KAhUidRycswX6EJkXmL19RmjO2sj7ctn1qk/edit?usp=sharing) by ChampionBeef
-- [Maps](https://imgur.com/a/PKRZx9o) by ChampionBeef
-- [Damage Number Formulas](https://steamcommunity.com/sharedfiles/filedetails/?id=3349878187) by CTNOB
+- [Resource Database](https://docs.google.com/spreadsheets/d/19Qd2Bvv-KAhUidRycswX6EJkXmL19RmjO2sj7ctn1qk/edit?usp=sharing) de ChampionBeef
+- [Maps](https://imgur.com/a/PKRZx9o) de ChampionBeef
+- [Damage Number Formulas](https://steamcommunity.com/sharedfiles/filedetails/?id=3349878187) de CTNOB
 - [MetaphorFix](https://github.com/Lyall/MetaphorFix/releases)
 - [SpecialK](https://www.special-k.info/)

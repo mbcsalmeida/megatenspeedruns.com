@@ -3,7 +3,7 @@ title: Shin Megami Tensei IV Apocalypse
 description: Todos los recursos para Shin Megami Tensei IV Apocalypse
 ---
 
-import { LinkCard,Card, CardGrid, Steps } from '@astrojs/starlight/components';
+import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smt4a.jpg'
 
@@ -16,12 +16,24 @@ import cover from '/src/assets/covers/smt/smt4a.jpg'
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/shin_megami_tensei_iv_apocalypse" description="Ver mas runs en Speedrun.com"/>
 
 ## Historial de Speedruns
-<Steps>
-1. Shin Megami Tensei IV Apocalypse salió a nivel global el 9 de Diciembre de 2016.
-2. La primera run subida fue hecha por ChampionBeef el 03 de Septiembre de 2017 con un tiempo de [**10:54:46**](https://youtu.be/SaqQ3u_mOaE)
-3. 7 meses después, el conocido speedrunner Koolzo logró un nuevo record mundial en un tiempo de [**9:53:50**](https://www.twitch.tv/videos/254592733) la cual, luego mejoraria hasta casi una run de menos de 7 horas en [**7:09:42**](https://www.twitch.tv/videos/1024295352) el 16 de Mayo de 2021, demostrando así el potencial del speedrun.
-2. El actual world record lo tiene Freedom_Pulse with con un tiempo de [**7:05:06**](https://www.twitch.tv/videos/1499712873). Existe potencialmente la posibilidad del speedrun de menos de 7 horas hasta el día de hoy.
-</Steps>
+<Tabs>
+    <TabItem label="Conflict">
+            <Steps>
+            1. Shin Megami Tensei IV Apocalypse salió a nivel global el 9 de Diciembre de 2016.
+            2. La primera run subida fue hecha por ChampionBeef el 03 de Septiembre de 2017 con un tiempo de [**10:54:46**](https://youtu.be/SaqQ3u_mOaE)
+            3. 7 meses después, el conocido speedrunner Koolzo logró un nuevo record mundial en un tiempo de [**9:53:50**](https://www.twitch.tv/videos/254592733) la cual, luego mejoraria hasta casi una run de menos de 7 horas en [**7:09:42**](https://www.twitch.tv/videos/1024295352) el 16 de Mayo de 2021, demostrando así el potencial del speedrun.
+            2. El actual world record lo tiene Freedom_Pulse with con un tiempo de [**7:05:06**](https://www.twitch.tv/videos/1499712873). Existe potencialmente la posibilidad del speedrun de menos de 7 horas hasta el día de hoy.
+            </Steps>
+        </TabItem>
+        <TabItem label="Apocalypse">
+            <Steps>
+            1. Shin Megami Tensei IV Apocalypse salió a nivel global el 9 de Diciembre de 2016.
+            2. La primera run registrada disponible fue realizada por PinkPajamas el 6 de enero de 2019 con un tiempo de [**12:25:34**](https://www.twitch.tv/videos/359698934).
+            3. Cuatro años después, el 10 de marzo de 2025, shaggy mejoró la ruta y logró un tiempo de [**9:05:43**](https://youtu.be/3NL1PZoHFjk).
+            4. El récord mundial actual lo tiene shaggy3311 con un tiempo de [**8:02:14**](https://youtu.be/R3ODreYRVhg?si=Hhm-Fc5lFV2oSkT9). Esta nueva ruta aprovecha el truco de Skill Swap detectado a principios de año.
+            </Steps>
+    </TabItem>
+</Tabs>
 
 ## Categorías
 <CardGrid>
@@ -29,7 +41,18 @@ import cover from '/src/assets/covers/smt/smt4a.jpg'
         <Card title="Apocalypse"></Card>
 </CardGrid>
 
+## Glitches & Trucos
+
+<details>
+<summary>**Skill Swap**</summary>
+El fallo solo es posible con el MC, Nanashi. Abre la pantalla de estado del grupo en un demonio adyacente a MC y pulsa R para activar sus habilidades. Pulsa rápidamente izquierda/derecha en el pad direccional e Y en breves sucesiones; las habilidades del demonio deberían aparecer en MC. Confirma que MC tiene todas las habilidades de ese demonio, incluso si no tiene suficientes ranuras. Las habilidades ocultas se pueden usar aunque sean visibles, ya que siguen activas, pero solo aparecen en combate y no se pueden mejorar sus potenciales con susurros, así que es mejor colocar habilidades pasivas en las últimas ranuras.
+
+Las habilidades posiblemente intercambiadas incluyen habilidades pasivas que MC normalmente no puede obtener. Se ha descubierto que algunas no funcionan (habilidades que aumentan la XP), pero todos los Pleromas parecen hacerlo. Además, cuando Nanashi copia una habilidad que no tiene potencial negativo, la obtiene, pero con un potencial menos. Si la habilidad tiene un potencial negativo, la afinidad se muestra erróneamente como +9, a pesar de ser +0 y no es mejorable.
+
+Si Nanashi copia habilidades que normalmente no puede obtener, como *Tara de Combate* o *Tos*, las mantendrá en +0 y no podrá aumentar su potencial.
+</details>
+
 ## Guías
-- [Conflict Notes](https://docs.google.com/document/d/1JNsvUBYJtusZL-dHeoJwhoC5D8T40okv7BXMrOQLVu8/edit?usp=sharing) by Koolzo and Freedom_Pulse
+- [Conflict](https://docs.google.com/document/d/1JNsvUBYJtusZL-dHeoJwhoC5D8T40okv7BXMrOQLVu8/edit?usp=sharing) by Koolzo and Freedom_Pulse
 - [Apocalypse](https://docs.google.com/document/d/16WK4UA59cV94tNJj3QJHqvyv5BSQqcbzhUd38CBCqsQ/edit?usp=sharing) by PinkPajamas
-- [Apocalypse - Bonds Edits](https://docs.google.com/document/d/1cjlJ5P5uAnwvaWMdTHBD4hNVtdX93mm2H5OHZVFGavg/edit?usp=sharing) by PinkPajamas and Flutter
+- [Apocalypse - Bonds](https://docs.google.com/document/d/1cjlJ5P5uAnwvaWMdTHBD4hNVtdX93mm2H5OHZVFGavg/edit?usp=sharing) by PinkPajamas and Flutter
