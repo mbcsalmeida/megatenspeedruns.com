@@ -26,7 +26,14 @@ import coverRedux from '/src/assets/covers/smt/smtsj3ds.jpg'
     alt="Shin Megami Tensei: Strange Journey Cover"
 />
 
-<LinkCard title="Leaderboards" href="https://www.speedrun.com/smtsjr" description="Ver más runs en Speedrun.com"/>
+<LinkCardWithButtons title="Leaderboards" description="Ver más runs en Speedrun.com" actions={
+    [
+        {title:"Shin Megami Tensei Strange Journey",
+        url:"https://www.speedrun.com/smtsj"},
+        {title:"Shin Megami Tensei Strange Journey Redux",
+        url:"https://www.speedrun.com/smtsjr"}
+    ]
+}/>
 
 ## Historial de Speedruns
 <Tabs>
