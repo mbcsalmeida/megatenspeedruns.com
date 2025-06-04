@@ -27,10 +27,10 @@ export default defineConfig({
           components: {
             SocialIcons: './src/components/SocialLinks.astro',
           },
-          social: {
-              discord: "https://discord.gg/pwe7yncyHF",
-              twitch: "https://www.twitch.tv/team/smtspeedrunning",
-          },
+          social: [
+            { icon: 'discord', label: 'Discord', href: 'https://discord.gg/pwe7yncyHF' },
+            { icon: 'twitch', label: 'Twitch', href: 'https://www.twitch.tv/team/smtspeedrunningF' },
+          ],
           defaultLocale: "root",
           locales: {
               root: {

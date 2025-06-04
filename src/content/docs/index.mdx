@@ -16,6 +16,7 @@ import { LinkCard, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 import  LinkCardWithBackground  from '/src/components/LinkCardWithBackground.astro';
 import LandingPageGrid from '/src/components/LandingPageGrid.astro';
 import LandingPageHero from '/src/components/LandingPageHero.astro';
+import MarathonHero from '/src/components/MarathonHero.astro';
 import smtImage from '/src/assets/landing/smt.png';
 import personaImage from '/src/assets/landing/persona.jpg';
 import dsumImage from '/src/assets/landing/devilsummoner.jpg';
@@ -26,9 +27,10 @@ import lastbibleImage from '/src/assets/landing/lastbible.jpg';
 import survivorImage from '/src/assets/landing/devilsurvivor.jpg';
 import majinImage from '/src/assets/landing/majintensei.jpg';
 import othersImage from '/src/assets/landing/others.png';
+import personarelay from '/src/assets/landing/persona-relay.png';
 
 <div class="not-content">
-  <Aside type='danger' title='Persona Relay 2025'>6th - 8th June live on Really Really Longathon. Schedule is [here](https://horaro.org/personarelay/2025).</Aside>
+  <MarathonHero title='Persona Relay 2025' imagePath={personarelay}>6th - 8th June live on Really Really Longathon. Schedule is [here](https://horaro.org/personarelay/2025).</MarathonHero>
   <LandingPageHero altText="Megaten Resources Logo" 
       description="This website is a collection of references to sources of information and guides on speedrunning Megaten games."
       buttons={[
