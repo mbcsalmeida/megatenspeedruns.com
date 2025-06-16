@@ -29,7 +29,7 @@ export default defineConfig({
           },
           social: [
             { icon: 'discord', label: 'Discord', href: 'https://discord.gg/pwe7yncyHF' },
-            { icon: 'twitch', label: 'Twitch', href: 'https://www.twitch.tv/team/smtspeedrunningF' },
+            { icon: 'twitch', label: 'Twitch', href: 'https://www.twitch.tv/team/smtspeedrunning' },
           ],
           defaultLocale: "root",
           locales: {
