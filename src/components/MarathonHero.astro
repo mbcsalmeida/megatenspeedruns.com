@@ -1,31 +1,27 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
+import { LinkButton } from "@astrojs/starlight/components";
 
 const {
     title,
     imagePath,
-    alt = 'Background Image', 
+    url,
+    alt = "Background Image",
     ...attributes
-  } = Astro.props;
-
+} = Astro.props;
 ---
 
 <div class="hero">
-    <Image
-     src={imagePath},
-     alt={alt},
-     class="background"
-    />
+    <Image src={imagePath} , alt={alt} , class="background" />
     <div class="content">
-	    <h1>{title}</h1>
-        <h3>
-          <slot style="text-decoration: none;" />
-        </h3>
+        <h1>{title}</h1>
+        <LinkButton href={url} variant="primary">
+            <slot />
+        </LinkButton>
     </div>
 </div>
 
 <style>
-
     .hero {
         width: 100%;
         height: 10%;
@@ -38,7 +34,7 @@ const {
         color: white;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
@@ -64,14 +60,12 @@ const {
         color: white;
     }
 
-
-
     .content {
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.5rem;
         text-align: center;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     }
 </style>

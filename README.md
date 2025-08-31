@@ -10,4 +10,4 @@ Contributions in the form of corrections, information or translations are welcom
 
 Install [Node.JS](https://nodejs.org/en) on your machine and run `npm i` to install all dependencies.
 
-Run `npm run dev` to deploy a local server and open `http://localhost:4321/` to observer live changes.
+Run `npm run dev` to deploy a local server and open `http://localhost:6666/` to observer live changes.
