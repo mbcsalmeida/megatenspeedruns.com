@@ -10,44 +10,74 @@ import coverRedux from '/src/assets/covers/smt/smtsj3ds.jpg'
 import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 
 
-<DocsHero 
-    content="Shin Megami Tensei: Strange Journey is one of the cool Shin Megami Tensei games."
-    images = {[
-        {
-            title: "OG",
-            altText: "OG",
-            imagePath: cover
-        },
-        {
-            title: "Redux",
-            altText: "Redux",
-            imagePath: coverRedux
-        },
-    ]}
-    alt="Shin Megami Tensei: Strange Journey Cover"
-    key="sj"
+<DocsHero
+content="Shin Megami Tensei: Strange Journey was released in Japan on October 8, 2009 with its remake, Shin Megami Tensei: Strange Journey Redux, released worldwide by May 18, 2018. Despite being considered one of the best megaten games of all time, both are relatively difficult and RNG heavy runs and are still awaiting their time in the limelight."
+images = {[
+{
+title: "OG",
+altText: "OG",
+imagePath: cover
+},
+{
+title: "Redux",
+altText: "Redux",
+imagePath: coverRedux
+},
+]}
+alt="Shin Megami Tensei: Strange Journey Cover"
+key="sj"
 />
 
 <LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
-    [
-        {title:"Shin Megami Tensei Strange Journey",
-        url:"https://www.speedrun.com/smtsj"},
-        {title:"Shin Megami Tensei Strange Journey Redux",
-        url:"https://www.speedrun.com/smtsjr"}
-    ]
+[
+{title:"Shin Megami Tensei Strange Journey",
+url:"https://www.speedrun.com/smtsj"},
+{title:"Shin Megami Tensei Strange Journey Redux",
+url:"https://www.speedrun.com/smtsjr"}
+]
 }/>
+
+## About
+
+### Shin Megami Tensei: Strange Journey
+
+There isn't much to report on SMT:SJ as most runs were done by the japanese megaten speedrunning community. In 2025, runner [Jonperi23](https://www.twitch.tv/jonperi23) picked up the run and created the first accessible notes in english for the Chaos route, opening the door for more runners to try out this challenging run.
+
+We are aware of manipping possibilities for this game, but no runs have been completed, as far as we know, that utilize any manipulation.
+
+### Shin Megami Tensei: Strange Journey Redux
+
+The Redux speedrun utilizes manipulation for recruitments.
+
 ## Speedrun History
 <Tabs syncKey='sj'>
     <TabItem label="Original">
-        <Steps>
-            1. Shin Megami Tensei: Strange Journey was released in Japan on October 8, 2009.
-            2. The current world record is held by なかじま with a time of [**4:52:13**](https://youtu.be/kAb0fF8Pd8k?si=cbbp7DHeGV0Gzq5a)
-        </Steps>
+        <details>
+            <summary>Chaos</summary>
+            <Steps>
+                1. The current world record is held by なかじま with a time of [**4:52:13**](https://youtu.be/kAb0fF8Pd8k?si=cbbp7DHeGV0Gzq5a)
+            </Steps>
+        </details>
+
+        <details>
+            <summary>Neutral</summary>
+            <Steps>
+                1. The current world record is held by なかじま with a time of [**6:06:45**](https://youtu.be/PTRT6ozZqR4)
+            </Steps>
+        </details>
+
+        <details>
+            <summary>Law</summary>
+            <Steps>
+                1. As of now, there are no recorded times for Law Ending.
+            </Steps>
+        </details>
+
     </TabItem>
     <TabItem label="Redux">
         <Steps>
-        1. Shin Megami Tensei: Strange Journey Redux was released worldwide by May 18, 2018.
-        2. The current world record is held by なかじま with a time of [**7:27:38**](https://www.twitch.tv/videos/1046560829)
+            1. Shin Megami Tensei: Strange Journey Redux was released worldwide by May 18, 2018.
+            2. The current world record is held by なかじま with a time of [**7:27:38**](https://www.twitch.tv/videos/1046560829)
         </Steps>
     </TabItem>
 </Tabs>
@@ -70,9 +100,9 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 
 
 ## Notes
-- [Strange Journey - Chaos Notes](SMT Strange Journey Chaos - https://docs.google.com/spreadsheets/d/1CCtA60WxjEqd8rmGdKFtBbIATUAgxT6zYiny421l1RM/edit?gid=0#gid=0) by Jonperi23
-- [Expert Neutral+ Notes](https://docs.google.com/spreadsheets/d/1s8jE1kcHVaTPeCjYoka4rKa1xESNSQQnw0mNspkKoBU/edit?usp=sharing) by nkjm
-- [Expert Neutral+ Notes](https://drive.google.com/file/d/1Sopo69ISlacmGml5iJK-J-SwRcwN5PFF/view) by Koolzo
+- [Strange Journey - Chaos Notes](https://docs.google.com/spreadsheets/d/1CCtA60WxjEqd8rmGdKFtBbIATUAgxT6zYiny421l1RM/edit?gid=0#gid=0) by Jonperi23
+- [Redux - Expert Neutral+ Notes](https://docs.google.com/spreadsheets/d/1s8jE1kcHVaTPeCjYoka4rKa1xESNSQQnw0mNspkKoBU/edit?usp=sharing) by nkjm
+- [Redux - Expert Neutral+ Notes](https://drive.google.com/file/d/1Sopo69ISlacmGml5iJK-J-SwRcwN5PFF/view) by Koolzo
 
 ## Resources
 - [atwiki](https://w.atwiki.jp/megamitenseisj/)
