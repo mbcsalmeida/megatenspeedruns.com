@@ -3,7 +3,7 @@ title: Shin Megami Tensei Strange Journey
 description: All Resources for Shin Megami Tensei Strange Journey
 ---
 
-import { LinkCard,Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/smt/smtsj.jpg'
 import coverRedux from '/src/assets/covers/smt/smtsj3ds.jpg'
@@ -25,6 +25,7 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
         },
     ]}
     alt="Shin Megami Tensei: Strange Journey Cover"
+    key="sj"
 />
 
 <LinkCardWithButtons title="Leaderboards" description="See all the submitted runs on Speedrun.com" actions={
@@ -36,7 +37,7 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
     ]
 }/>
 ## Speedrun History
-<Tabs>
+<Tabs syncKey='sj'>
     <TabItem label="Original">
         <Steps>
             1. Shin Megami Tensei: Strange Journey was released in Japan on October 8, 2009.
@@ -52,11 +53,24 @@ import LinkCardWithButtons from '/src/components/LinkCardWithButtons.astro'
 </Tabs>
 
 ## Categories
-<CardGrid>
-        <Card title="Expert Neutral+"></Card>
-</CardGrid>
+<Tabs syncKey='sj'>
+    <TabItem label="Original">
+        <CardGrid>
+            <Card title="Chaos"></Card>
+            <Card title="Neutral"></Card>
+            <Card title="Law"></Card>
+        </CardGrid>
+    </TabItem>
+    <TabItem label="Redux">
+        <CardGrid>
+            <Card title="Expert Neutral+"></Card>
+        </CardGrid>
+    </TabItem>
+</Tabs>
+
 
 ## Notes
+- [Strange Journey - Chaos Notes](SMT Strange Journey Chaos - https://docs.google.com/spreadsheets/d/1CCtA60WxjEqd8rmGdKFtBbIATUAgxT6zYiny421l1RM/edit?gid=0#gid=0) by Jonperi23
 - [Expert Neutral+ Notes](https://docs.google.com/spreadsheets/d/1s8jE1kcHVaTPeCjYoka4rKa1xESNSQQnw0mNspkKoBU/edit?usp=sharing) by nkjm
 - [Expert Neutral+ Notes](https://drive.google.com/file/d/1Sopo69ISlacmGml5iJK-J-SwRcwN5PFF/view) by Koolzo
 
