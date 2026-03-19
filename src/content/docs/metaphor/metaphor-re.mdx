@@ -7,32 +7,80 @@ import { LinkCard,Card, CardGrid, Steps, TabItem, Tabs } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 
-<DocsHero 
-    content="Metaphor:ReFantazio is a game not connected to the Persona and Shin Megami Tensei universes, but which shares many of their core gameplay mechanics."
-    srcUrl={metaphorCover}
-    alt="Metaphor:ReFantazio Box Cover"
+<DocsHero
+content="Metaphor:ReFantazio is a game not connected to the Persona and Shin Megami Tensei universes, but which shares many of their core gameplay mechanics."
+srcUrl={metaphorCover}
+alt="Metaphor:ReFantazio Box Cover"
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/Metaphor" description="See all the submitted runs and more detailed information on Speedrun.com"/>
+
+## About
+
+The rules below are taken from speedrun.com for centralizing information here.
+
+### *True Ending Definition*
+
+Similar to some other games, namely P5R, this game introduces another ending adjustment based on progression of certain objectives throughout the game. The definition of "True Ending" has always been to be the best achievable ending, therefore requiring these quests to be completed throughout the run to expand the ending sequence. The following objectives have to be completed:
+
+    The Quest "Trial of the Dragon: Mad Mischief"
+    The Quest "Trial of the Dragon: Heroes' Rest"
+    The Quest "Trial of the Dragon: Bygone Legacy"
+    The quest "Trial of the Dragon: Essence of Power" which is unlocked by completing the previous three Trial of the Dragon quests.
+    Defeat "Destroyer Charadrius" in the Tyrant's Star in either full power or weakened form.
+
+### *DLC*
+
+The idea is that, as long as DLC doesn't provide any advantage and is purely cosmetic, it should be fine to be allowed. However that entirely depends on how they're packaged and their ability to be enabled/disabled individually. Unlike prior Atlus' games, this one gives decent control at enabling and disabling individual DLC, therefore not putting us in the position where straight up disallowing every DLC is necessary.
+
+### *PC Mods*
+
+We've decided to take a look at allowing certain third party software to help improve performance in the game and level the playing ground for runners, seeing as in its current state the game is plagued by incredibly poor optimization. Special K has a performance fix to alleviate that problem.
+
+In addition to that, Vsync off forces 60 FPS menus, whereas Vsync ON gives full FPS menus according to current refresh rate. Metaphorfix allows us to bypass this, along with fixing the PC version's 8-directional analog inputs.
+
+Unfortunately, the fix itself comes bundled with a ton of other options that we do not want to allow so we're requiring runners to follow very specific settings outside of select few that are up to runner's choice.
+
+Metaphorfix download: https://github.com/Lyall/MetaphorFix
+
+Version 0.8.4 settings: https://pastebin.com/B7MfePg3
+
+Copy the settings and paste them into your Metaphorfix.ini - The following settings will require the user to input either true or false.
+
+- [Disable Menu FPS Cap]
+- [Fix Analog Movement]
+- [Game Window]
+
+The remaining options may not be changed under any circumstances.
+
+The settings file will be updated whenever a new version releases.
+
+### *Special K*
+
+Special K has a built-in performance fix for Metaphor that should help with its current optimization struggle on most systems. Runners are free to enable said fix, along with being allowed to change most other options, such as FPS limiters and more.
+
+Metaphorfix may be added as a plug-in to Special K but no other plugins may be added or enabled.
 
 ## Speedrun History
 <Tabs>
     <TabItem label="Hard, True Ending - PC">
         <Steps>
-        1. Metaphor:ReFantazio was released worldwide on October 11th, 2024.
-        2. The first ever recorded run was done on 2024/11/16 by mulsqi with a time of [**7:45:29**](https://www.twitch.tv/videos/2304147076)
-        3. On 2024/11/25, Neviutz improved the record to [**7:00:32**](https://www.youtube.com/watch?v=UxnFYN7ZtMI)
-        4. On 2024/12/14, mulsqi improved the record to [**6:30:18**](https://www.twitch.tv/videos/2334634021) 
-        5. On 2024/12/21, ChampionBeef improved the record to [**6:16:18**](https://www.twitch.tv/videos/2335013593)
-        6. The current world record on PC is held by LeftBishop with a time of [**5:50:46**](https://youtu.be/rZTeMKJf-w0), set on 2025/3/6
+            1. Metaphor:ReFantazio was released worldwide on October 11th, 2024.
+            2. The first ever recorded run was done on 2024/11/16 by mulsqi with a time of [**7:45:29**](https://www.twitch.tv/videos/2304147076).
+            3. On 2024/11/25, Neviutz improved the record to [**7:00:32**](https://www.youtube.com/watch?v=UxnFYN7ZtMI).
+            4. On 2024/12/14, mulsqi improved the record to [**6:30:18**](https://www.twitch.tv/videos/2334634021).
+            5. On 2024/12/21, ChampionBeef improved the record to [**6:16:18**](https://www.twitch.tv/videos/2335013593).
+            6. On 2025/03/06, LeftBishop claimed the record with a time of [**5:50:46**](https://youtu.be/rZTeMKJf-w0), set on 2025/3/6.
+            7. The current world record is held by ChampionBeef with a time of [**5:42:01**](https://youtu.be/_5OfYvMHUyM).
         </Steps>
     </TabItem>
     <TabItem label="Hard, True Ending - Console">
         <Steps>
-        1. The first ever recorded run was done on 2024/11/24 by LillieZora with a time of [**9:35:13**](https://www.twitch.tv/videos/2309601807)
-        2. On 2024/12/3, Liv improved the time to [**7:46:35**](https://www.youtube.com/watch?v=9jo5N_IOeXs)
-        3. On 2024/12/27, generic_worm claimed a new record by 1 second for a [**7:46:34**](https://www.twitch.tv/videos/2337181456)
-        4. The current world record on Console is held by Liv with a time of [**7:09:33**](https://www.youtube.com/watch?v=kPbSN6pBWsk), set on 2025/1/8
+            1. The first ever recorded run was done on 2024/11/24 by LillieZora with a time of [**9:35:13**](https://www.twitch.tv/videos/2309601807).
+            2. On 2024/12/3, Liv improved the time to [**7:46:35**](https://www.youtube.com/watch?v=9jo5N_IOeXs).
+            3. On 2024/12/27, generic_worm claimed a new record by 1 second for a [**7:46:34**](https://www.twitch.tv/videos/2337181456).
+            4. On 2025/01/08, Liv updated the record with a time of [**7:09:33**](https://www.youtube.com/watch?v=kPbSN6pBWsk).
+            5. The current world record is held by Mulsqi with a time of [**6:42:06**](https://youtu.be/WPPlGouJPck).
         </Steps>
     </TabItem>
 </Tabs>
@@ -45,6 +93,7 @@ import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 ## Notes
 - [Hard, True Ending](https://pastebin.com/bNAjWfd1) by mulsqi
 - [Hard, True Ending](https://docs.google.com/spreadsheets/d/1EWQpjTqXpqTIW791EiXsZhVmhyJz75UI8wtqTDO6mLY/edit?usp=sharing) by ChampionBeef (reformat of mulsqi's notes)
+- [100% Notes](https://docs.google.com/spreadsheets/d/1_JnpKjL9X921rhU1L09fZWYv1ZauDSq4iUxNG0WgYVk/edit?gid=0#gid=0) by ChampionBeef
 
 ## Resources
 - [Resource Database](https://docs.google.com/spreadsheets/d/19Qd2Bvv-KAhUidRycswX6EJkXmL19RmjO2sj7ctn1qk/edit?usp=sharing) by ChampionBeef
@@ -52,3 +101,4 @@ import metaphorCover from '/src/assets/covers/metaphor/metaphor.webp'
 - [Damage Number Formulas](https://steamcommunity.com/sharedfiles/filedetails/?id=3349878187) by CTNOB
 - [MetaphorFix](https://github.com/Lyall/MetaphorFix/releases)
 - [SpecialK](https://www.special-k.info/)
+- [Metaphor Skill/Enemy Data](https://docs.google.com/spreadsheets/d/1FDC6T6tr__-AU18tY--4-ZUSzkeaMM_Kg_Crqu6VrcM/edit?gid=2052374500#gid=2052374500)

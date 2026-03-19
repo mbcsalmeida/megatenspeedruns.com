@@ -20,7 +20,8 @@ const {
     content,
     images = [],
     srcUrl,
-    alt
+    alt, 
+    key
 }: Props = Astro.props
 ---
 
@@ -36,7 +37,7 @@ const {
         class="cover"
         />
         :
-        <Tabs>
+        <Tabs syncKey={key}>
             {images.map(({title, altText, imagePath}) => (
                 <TabItem label={title}>
                     <Image 

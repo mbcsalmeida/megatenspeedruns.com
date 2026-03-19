@@ -3,43 +3,92 @@ title: Kyuuyaku Megami Tensei
 description: All Resources for Kyuuyaku Megami Tensei
 ---
 
-import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/others/kmt.png'
 
-<DocsHero 
-    content="Kyuuyaku Megami Tensei is a remaster port of Megami Tensei I and Megami Tensei II ot the SNES with improved graphics and some added QoL features."
-    srcUrl={cover}
-    alt="Kyuuyaku Megami Tensei Cover"
+<DocsHero
+content="Kyuuyaku Megami Tensei is a remaster port of Megami Tensei I and Megami Tensei II ot the SNES with improved graphics and some added QoL features. In 2025, it saw a new surge of runners that led to 3 new routes being developed, the Odin route, a safer iteration of the former Kali route, the Casino route, which as the name implies takes advantage of the casino and the Ruthless route, a riskier version of the casino route."
+srcUrl={cover}
+alt="Kyuuyaku Megami Tensei Cover"
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/kmt" description="See all the submitted runs on Speedrun.com"/>
 
+## About
+
+Kyuuyaku Megami Tensei was released in Japan on March 31, 1995 as the remaster port of Digital Devil Story: Megami Tensei I and Digital Devil Story: Megami Tensei II, bundled in the same game for the SNES. The remaster of Megami Tensei I is a shorter and more popular speedrun and, given the current world record for Megami Tensei II utilizes the casino multiple times, it is likely to stay that way.
+
+### *Megami Tensei I*
+
+Just like many of the Japan-exclusive megaten games, it remained a very niche speedrun for the longest time, with equi's world record time standing for years. The main deterrent holding the runners back from learning this game was how risky the route was - it involved multiple sections of having to get lucky enough not to get wiped to random encounters, leading to runs filled to the brim with Chiron's lovely face.
+
+These changed over time as runners added small improvements to the route, mainly the work of [mulsqi](https://www.twitch.tv/mulsqi), the first to beat equi's longstanding world record and who began closing in on the 1 hour mark.
+
+In 2025, notable megaten runners such as [Jonperi23](https://www.twitch.tv/jonperi23) and [mizusima40](https://www.twitch.tv/mizusima40) picked up the game, which gathered the interest of many other runners and led to major improvements to the routes. The Kali route was put to the side in favor of the Odin route, which grinds for a bit longer at the zoma encounter spot in Bien to reach level 55 and fuse Ganesha, which consequently leads Rick to turn into Odin instead. The runner now no longer relies on Yumiko as much, and therefore doesn't have to worry about raising her level, and Odin and Ganesha's bulkiness helps when dealing with Lucifer.
+
+Later into the year, mizusima40 developed a route that took advantage of the slots game in the casino in Bien. This resulted in the first ever time under 50 minutes to be achieved. This route used the resources acquired at the Casino to purchase stronger armor at the Infini Palace, afterwards skipping the armor pick ups at Infini Palace's 2nd floor, recovering Rick and the White Dragon Orb, instead going straight to Lucifer after obtaining the Hinokagutsuchi. As we don't have a healing demon, all the healing is done with beads received as a casino reward. This route is therefore incredibly dangerous.
+
+During this time, it was concluded that skipping the White Dragon Orb was overall a better strategy, even for no casino runs. The White Dragon Orb is an optional item that prevents Lucifer from being able to use Diarahan during the fight. However, upon experimentation, it was concluded that there was a bug with the way that Diarahan worked, as it seemed that it only worked up to 4 times and, instead of healing Lucifer's full HP, only healed about 500HP. This might seem like a lot, but given that Diarahan costs about 10MP to cast and Lucifer only has about 99MP, having Lucifer's MP drained by Diarahan is a safer strategy than blocking Diarahan and giving him a full 99MP's worth of Bufudynes and curses.
+
+After mastering the casino as well, mulsqi decided the simpler casino route wasn't risky enough and developed the Ruthless route, a route that skips collecting the Hinokagutsuchi and the zoma grind and that, after purchasing stronger equipment at Infini's armor store, rushes straight to Lucifer. This route relies heavily on draining Lucifer's MP before beginning to attack but, if successful, it's an incredibly fast route.
+
+In January of 2026, Jonperi23 developed the All Bosses route, being the first alt category run done for Megami Tensei I. This route fights 3 more boss fights than the original: Hecate, Seth and Loki.
+
+On 2026/02/16, after much community discussion, the Casino and No Casino routes were finally seperated.
+
+### *Megami Tensei II*
+
+Megami Tensei II is a much longer and more dangerous game than Megami Tensei I and, although it still has the casino and the Jack Frost Jr. trick, it has remained much more unappealing for runners to pick up.
+
+Following the casino wave of 2025, mizusima40 developed a KMT2 route that made use of the casino multiple times for armor upgrades, which helps deal with KMT2's scary difficulty jumps. This new route resulted in a time that nearly halfed the longstanding record of KMT2's No Casino category from めし太郎.
+
+
 ## Speedrun History
 
 <Tabs>
-<TabItem label="Megami Tensei">
-<Steps>
-1. Kyuuyaku Megami Tensei was released in Japan on March 31, 1995.
-2. The first available recorded speedrun was done by めし太郎 on 2013/08/11 with a time of [**4:05:29**](https://www.nicovideo.jp/watch/sm21565155).
-3. On 2018/01/01, Darko uploaded a run with a time of [**2:11:44**](https://www.twitch.tv/videos/293976962), close to halving the time of the previous record.
-4. On 2018/01/11, ten days later, equi completed a run with his riskier route and achieved a time of [**1:28:23**](https://www.nicovideo.jp/watch/sm32565606). This time stood as the world record for 4 years.
-5. On 2022/11/13, accomplished megaten runner mulsqi achieved a new world record with a time of [**1:19:27**](https://youtu.be/04lfFz0MtBc).
-6. Mulsqi further improve the record on 2023/09/06 to a time of [**1:05:06**](https://youtu.be/gi0m56nHHiY). On 2025/08/17, mulsqi finally achieved the first sub 1 hour time with a [**59:14**](https://youtu.be/hqjj7M8pSZc).
-7. On 2025/08/18, a day later, mizusima40 stole the world record from mulsqi for the first time in 3 years, achieving a time of [**57:02**](https://youtu.be/uIMc9iNto7A) with his risky Odin route.
-8. Achieved on September 1st 2025, mulsqi updated the record with a time of [**56:45**](https://youtu.be/LpvkfAzRG2Y). 
-9. With the introduction of a route that uses casino, mizusima40 developed a much faster and riskier router and achieved a new world record with a time of [**47:43**](https://youtu.be/62SLYP4iJ64).
-10. The current world record is held by mulsqi with a time of [**47:32**](https://youtu.be/C_-LoQld7wg) achieved with the casino route.
-</Steps>
-</TabItem>
+    <TabItem label="Megami Tensei">
+        <details>
+            <summary>Casino</summary>
+            <Steps>
+                1. With the introduction of a route that uses casino, mizusima40 developed a much faster and riskier router and achieved a new world record for this new category with a time of [**47:43**](https://youtu.be/62SLYP4iJ64).
+                2. mulsqi later achieved the world record with a time of [**47:32**](https://youtu.be/C_-LoQld7wg) with the same casino route.
+                3. mulsqi later improved the world record with a time of [**46:19**](https://youtu.be/67l_yHIotRY) using the Ruthless route.
+                4. The current world record is held by mulsqi with a time of [**40:11**](https://youtu.be/UNu-bf29ROQ).
+            </Steps>
+        </details>
 
-<TabItem label="Megami Tensei II">
-<Steps>
-1. Kyuuyaku Megami Tensei was released in Japan on March 31, 1995.
-2. The first run was done by めし太郎, uploaded on 2013/06/22 with a time of [**7:58:22**](https://www.nicovideo.jp/watch/sm21176718)
-3. The current world record is held by mizusima40 with a time of [**3:20:48**](https://youtu.be/BK5sR05hZ2Y), having developed a new route that makes use of the casino.
-</Steps>
-</TabItem>
+        <details>
+            <summary>No Casino</summary>
+            <Steps>
+                1. The first available recorded speedrun was done by めし太郎 on 2013/08/11 with a time of [**4:05:29**](https://www.nicovideo.jp/watch/sm21565155).
+                2. On 2018/01/01, Darko uploaded a run with a time of [**2:11:44**](https://www.twitch.tv/videos/293976962), close to halving the time of the previous record.
+                3. On 2018/01/11, ten days later, equi completed a run with his riskier route and achieved a time of [**1:28:23**](https://www.nicovideo.jp/watch/sm32565606). This time stood as the world record for 4 years.
+                4. On 2022/11/13, accomplished megaten runner mulsqi achieved a new world record with a time of [**1:19:27**](https://youtu.be/04lfFz0MtBc).
+                5. Mulsqi further improve the record on 2023/09/06 to a time of [**1:05:06**](https://youtu.be/gi0m56nHHiY). On 2025/08/17, mulsqi finally achieved the first sub 1 hour time with a [**59:14**](https://youtu.be/hqjj7M8pSZc).
+                6. On 2025/08/18, a day later, mizusima40 stole the world record from mulsqi for the first time in 3 years, achieving a time of [**57:02**](https://youtu.be/uIMc9iNto7A) with his risky Odin route.
+                7. Achieved on September 1st 2025, mulsqi updated the record with a time of [**56:45**](https://youtu.be/LpvkfAzRG2Y).
+                8. The current world record is held by mulsqi with a time of [**54:37**](https://youtu.be/zD8ZoioM2nM).
+            </Steps>
+        </details>
+
+        <details>
+            <summary>All Bosses</summary>
+            <Steps>
+                1. Jonperi23 developed the route for All Bosses and achieved a first time of [**1:49:47**]
+                2. The current world record is held by Jonperi23 with a time of [**1:47:15**](https://youtu.be/KtNO7VQJI-0).
+            </Steps>
+        </details>
+
+    </TabItem>
+
+    <TabItem label="Megami Tensei II">
+        <Steps>
+            1. Kyuuyaku Megami Tensei was released in Japan on March 31, 1995.
+            2. The first run was done by めし太郎, uploaded on 2013/06/22 with a time of [**7:58:22**](https://www.nicovideo.jp/watch/sm21176718)
+            3. The current world record is held by mizusima40 with a time of [**3:20:48**](https://youtu.be/BK5sR05hZ2Y), having developed a new route that makes use of the casino.
+        </Steps>
+    </TabItem>
 </Tabs>
 
 ## Categories
@@ -48,9 +97,16 @@ import cover from '/src/assets/covers/others/kmt.png'
     <Card title="Megami Tensei II">Completes the game, getting the good ending by defeating YHVH.</Card>
 </CardGrid>
 
+## Glitches & Tricks
+<details>
+    <summary>**Jack Frost Jr. Trick**</summary>
+    By spinning 31 times in front of any room with a treasure chest and entering it again, Jack Frost Jr. will appear and give you a reward of 3500 Macca and 3000 EXP.
+</details>
+
 ## Notes
 - [KMT1 - Equi's route](https://docs.google.com/document/d/1QSrk14lTj72Pb6_ch8RLfbAj9WXyE1ep6tFNO75unU4/edit?tab=t.0#heading=h.k36y6zkq5q24) by Jonperi23, Symm
 - [KMT1 - Odin Route](https://docs.google.com/document/d/1BVVRiD3NEhE6DaLXmCukBXjjQ0s3Uvqn_OINcUlPQ6Y/edit?tab=t.0#heading=h.k36y6zkq5q24) by Jonperi23
+- [KMT1 - All Bosses](https://docs.google.com/document/d/1F2DYeR9lMWZStHaJsn196lR8-dO3zeMDuTBoC-GQ85g/edit?usp=sharing) by Jonperi23
 
 ## Resources
 - [atwiki KMT](http://dds.opatil.com/kmt1/index.html)
