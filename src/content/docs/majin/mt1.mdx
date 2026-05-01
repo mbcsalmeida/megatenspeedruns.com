@@ -7,29 +7,36 @@ import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/majin/majin1.png'
 
-<DocsHero 
-    content="Majin Tensei is a strategy game released by Atlus."
-    srcUrl={cover}
-    alt="Majin Tensei Cover"
+<DocsHero
+content="Majin Tensei is a strategy game released by Atlus. It is a notably slow and long game due to its lack of standard features of a tactics game, such as a Skip Enemy Turn button, and its absurd number of maps."
+srcUrl={cover}
+alt="Majin Tensei Cover"
 />
 
-<Card title='Leaderboard'>There is currently no leaderboard for this game.</Card>
+<LinkCard title="Leaderboards" href="https://www.speedrun.com/Majin_Tensei" description="See all the submitted runs on Speedrun.com"/>
 
 ## Speedrun History
 
 <Tabs>
-<TabItem label="Any%">
-<Steps> 
-1. Majin Tensei was released on January 28th, 1994.
-2. There are currently no known runs of this game.
-</Steps>
-</TabItem>
+    <TabItem label="Any%">
+        <details>
+            <summary>No Overflow Glitch</summary>
+            <Steps>
+                1. On April 16th 2026, Jonperi23 completed the first full run of Majin Tensei with a time of [**24:53:54**](https://www.youtube.com/watch?v=NdLcjuVuFNM).
+            </Steps>
+        </details>
+    </TabItem>
 </Tabs>
 
 ## Categories
 <CardGrid>
     <Card title="Any%"></Card>
+    <Card title="Minotaur%"></Card>
+    <Card title="Medusa%"></Card>
 </CardGrid>
+
+## Notes
+- [Any% No Overflow Glitch](https://docs.google.com/document/d/1ZFvATpX8Z8nH007r0v9QIdAY1Q5jR2AKgJk_UQC2rv4/edit?usp=sharing) - Jonperi23
 
 ## Resources
 - [atwiki](https://w.atwiki.jp/majintensei1/)
