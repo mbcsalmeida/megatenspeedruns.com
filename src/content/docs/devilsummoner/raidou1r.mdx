@@ -7,34 +7,62 @@ import { LinkCard,Card, CardGrid, Tabs, TabItem, Steps } from '@astrojs/starligh
 import DocsHero from '/src/components/DocsHero.astro'
 import cover from '/src/assets/covers/devilsummoner/raidou1r.png'
 
-<DocsHero 
-    content="RAIDOU Remastered - The Mystery of the Soulless Army is a remake of the first entry of the Raidou series, released in 2025 on all platforms. It updated the battle mechanics to match Raidou 2 and added some other QoL features."
-    srcUrl={cover}
-    alt="RAIDOU Remastered - The Mystery of the Soulless Army Cover"
+<DocsHero
+content="RAIDOU Remastered - The Mystery of the Soulless Army is a remake of the first entry of the Raidou series, released in 2025 on all platforms. It updated the battle mechanics to match Raidou 2 and added some other QoL features."
+srcUrl={cover}
+alt="RAIDOU Remastered - The Mystery of the Soulless Army Cover"
 />
 
 <LinkCard title="Leaderboards" href="https://www.speedrun.com/raidou1r" description="See all the submitted runs on Speedrun.com"/>
 
 ## Speedrun History
 <Tabs>
-    <TabItem label="Gumshoe">
-        1. RAIDOU Remastered - The Mystery of the Soulless Army was released on July 19th, 2025.
-        2. Symm completed the first speedrun on Gumshoe difficulty on 2025/06/23 with a time of 4:11:00. He later improved it to a [3:56:18](https://youtu.be/o-7ZgdCFK_k) using a Spear-based route.
-        3. The fastest time for Gumshoe difficulty is [3:45:00](https://www.youtube.com/watch?v=BEShyHm_p6s) achieved by ToxicTT on 2025/07/12, using the axe route introduced in Private Eye runs by mizusima40.
+    <TabItem label="Any%">
+        <details>
+            <summary>Gumshoe</summary>
+            <Steps>
+                1. Symm completed the first speedrun on Gumshoe difficulty on 2025/06/23 with a time of 4:11:00. He later improved it to a [3:56:18](https://youtu.be/o-7ZgdCFK_k) using a Spear-based route.
+                2. The record was then updated to [3:45:00](https://www.youtube.com/watch?v=BEShyHm_p6s) achieved by ToxicTT on 2025/07/12, using the axe route introduced in Private Eye runs by mizusima40.
+                3. The current world record is held by Freedom_Pulse97 with a time of [**3:28:32**](https://youtu.be/0rQoYMc1RYw?si=JJ3wDr4F1uKrPLuV).
+            </Steps>
+        </details>
+        <details>
+            <summary>Private Eye</summary>
+            <Steps>
+                1. mizusima40 completed the first speedrun on Private Eye difficulty on 2025/07/05 with a time of 4:11:04.
+                2. mizusima40 updated the record with a run done on 2025/07/11 and a time of [**3:50:31**](https://www.youtube.com/watch?v=gjTSOr7zn5Q).
+                3. The current world record is held by mizusima40 with a time of [**3:27:08**](https://youtu.be/W3Elqp3Q4uM).
+            </Steps>
+        </details>
+        <details>
+            <summary>Truth Seeker</summary>
+            <Steps>
+                1. There are currently no runs of this category.
+            </Steps>
+        </details>
     </TabItem>
-    <TabItem label="Private Eye">
-        1. RAIDOU Remastered - The Mystery of the Soulless Army was released on July 19th, 2025.
-        2. mizusima40 completed the first speedrun on Private Eye difficulty on 2025/07/05 with a time of 4:11:04.
-        3. mizusima40 updated the record with a run done on 2025/07/11 and a time of [**3:50:31**](https://www.youtube.com/watch?v=gjTSOr7zn5Q).
-        4. The current world record is held by mizusima40 with a time of [**3:27:08**](https://youtu.be/W3Elqp3Q4uM).
+    <TabItem label="All Case Files">
+        <details>
+            <summary>Gumshoe</summary>
+            <Steps>
+               1. The first completed segmented run was done by poogle with a time of [**6:13:14**] with a route developed by poogle and Freedom_Pulse97. The time was later improved to [**5:23:56**].
+               2. The first completed RTA run was done by Freedom_Pulse97 with a time of [**4:55:28**].
+               3. A time of [**4:26:28**] has been achieved by shaggy3311, but the run was invalid due to not complying with leaderboard rules.
+            </Steps>
+        </details>
+        <details>
+            <summary>Truth Seeker</summary>
+            <Steps>
+                1. The current world record is held by shaggy3311 with a time of [**4:59:24**].
+            </Steps>
+        </details>
     </TabItem>
 </Tabs>
 
 ## Categories
 <CardGrid>
-    <Card title="Gumshoe">Beat the game without any restrictions on Gumshoe difficulty. Subcategories for PC and Console</Card>
-    <Card title="Private Eye">Beat the game without any restrictions on Gumshoe difficulty. Subcategories for PC and Console</Card>
-    <Card title="Truthseeker">Beat the game without any restrictions on Gumshoe difficulty. Subcategories for PC and Console</Card>
+    <Card title="Any%">Beat the game without any restrictions. Subcategories for PC and Console and for each difficulty (Gumshoe, Private Eye and Truthseeker)</Card>
+    <Card title="All Case Files">Beat the game starting from New Game, while completing all available Case Files. Runner must pull up the Case File menu prior to beginning the final boss fight, to verify that all Case Files have been completed.. Subcategories for PC and Console and for each difficulty (Gumshoe, Private Eye and Truthseeker)</Card>
     <Card title="NG+">Beat the game without any restrictions on any difficulty, except for Sleuth. Subcategories for PC and Console</Card>
 </CardGrid>
 
@@ -42,3 +70,4 @@ import cover from '/src/assets/covers/devilsummoner/raidou1r.png'
 - [Any% Gumshoe Notes](https://drive.google.com/file/d/1ADd3FbffLHRoiX_XVW79vYpRD3ZcB5zn/view?usp=sharing) by Toxic_TT
 - [Any% Gumshoe Notes](https://docs.google.com/document/d/1rQOwVq5HRmVQJvzOorPHEwmHJPSn9pAsnhA0d0fGIA0/edit?usp=sharing) by Freedom_Pulse97
 - [All Case Files Notes](https://docs.google.com/document/d/1HUf7c-sGVfF4BLNHsDKewJOnrINcGWgKprxIk183UEE/edit?usp=sharing) by poogleracer and Freedom_Pulse97
+- [All Case Files (Gumshoe & Truth Seeker)](https://docs.google.com/spreadsheets/d/1bXTtwDUw7eBr1jyonQe_YVj7X7I30CUa6NFEHXEIDbA/edit?gid=163267267#gid=163267267) by shaggy3311
