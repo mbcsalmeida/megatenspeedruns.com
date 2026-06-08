@@ -1,0 +1,55 @@
+---
+title: Megaten Community Roulette 2026 Schedule
+template: splash
+head:
+  - tag: style
+    content: "
+      .content-panel:has(h1#_top:not([data-page-title])) {
+	        display: none;
+        }
+    "
+---
+
+import { Image } from 'astro:assets';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import BorderlessImageCard  from '/src/components/BorderlessImageCard.astro';
+
+import roulette from "/src/assets/events/roulette2026.png";
+import smtvv from "/src/assets/covers/smt/smt5v.jpg";
+import p5r from "/src/assets/covers/persona/p5r.jpg";
+import p3r from "/src/assets/covers/persona/p3r.jpg";
+import whiteCover from '/src/assets/covers/devilchildren/white.jpg'
+import raidou from '/src/assets/covers/devilsummoner/raidou1r.png'
+import smt1 from '/src/assets/covers/smt/smt1-psx.jpg'
+import sj from '/src/assets/covers/smt/smtsj.jpg'
+import ff7 from '/src/assets/covers/ff7.jpg'
+import romasaga from '/src/assets/covers/romasaga2.jpg'
+import mario from '/src/assets/covers/supermariomon.png'
+import ys1 from '/src/assets/covers/ys1.jpg'
+
+<div class="">
+    <Image src={roulette} alt={"Roulette Logo"} style={{margin: "auto"}} width={800}/>
+    <p>Presenting the Megaten Community's first roulette event. For this event, each participant submitted a few games and categories they were interested in learning and then one was randomly picked for each runner to learn and showcase in this marathon! The event will be streamed in the <a href="https://www.twitch.tv/reallyreallylongathon">Raelly Really Long-a-thon</a> and <a href="https://www.twitch.tv/rpgsu">RPG Speedrunner Union</a> Twitch channels from June 26th to June 28th. </p>
+    <p>You can find the detailed schedule in your timezone <a href="https://horaro.net/megatenroulette/newschedule2026">here.</a> </p>
+    <p>Below are the games that will be showcased - times displayed are based on the Central European Summer Timezone.</p>
+    <h1>June 26th</h1>
+    <CardGrid>
+        <BorderlessImageCard title="Shin Megami Tensei V: Vengeance" description="Hard, CoV Any% by Lonne"  imagePath={smtvv} alt="SMTVV by Lonne" />
+        <BorderlessImageCard title="Final Fantasy VII" description="PC, Any% by Vee"  imagePath={ff7} alt="FF7 by Vee" />
+    </CardGrid>
+    <h1>June 27th</h1>
+    <CardGrid>
+       <BorderlessImageCard title="Super Mariomon" description="Diploma by Lonely" imagePath={mario} alt="Super Mariomon by Lonely" />
+        <BorderlessImageCard title="Persona 5 Royal" description="Hard, True Ending by Snepsol" imagePath={p5r} alt="Persona 5 Royal by Snepsol" />
+    </CardGrid>
+    <h1>June 28th</h1>
+    <CardGrid>
+        <BorderlessImageCard title="Romancing Saga 2: Revenge of the Seven" description="PC New Game, Casual by sioneus" imagePath={romasaga} alt="RomaSaga 2 ROTS by Sion" />
+        <BorderlessImageCard title="Devil Children: White Book" description="Any% by Fitsi" imagePath={whiteCover} alt="Devil Children White Book by Fitsi" />
+        <BorderlessImageCard title="Persona 3 Reload" description="PC Merciless, True Ending by Mattii" imagePath={p3r} alt="Devil Children White Book by Fitsi" />
+        <BorderlessImageCard title="YS 1 Chronicles" description="Any% by Symm" imagePath={ys1} alt="YS 1 Chronicles by Symm" />
+        <BorderlessImageCard title="Raidou Remastered: Mystery of the Soulless Army" description="All Case Files, Truth Seeker by shaggy3311" imagePath={raidou} alt="Raidou Remastered by shaggy" />
+        <BorderlessImageCard title="Shin Megami Tensei: Strange Journey" description="Neutral Ending by Jonperi23" imagePath={sj} alt="SMT Strange Journey by Jonperi23" />
+        <BorderlessImageCard title="Shin Megami Tensei (PSX)" description="Any% by Freedom_Pulse97" imagePath={smt1} alt="SMT 1 PSX by Freedom_Pulse97" />
+    </CardGrid>
+</div>
